@@ -88,7 +88,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
 
 5. Navigate to the **Contacts** tab and set the user named **odl_user <inject key="DeploymentID" enableCopy="false" />** to be an **Expert** and an **Owner**. Click **Save**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Assets can be related to two different types of contacts. **Experts** are often business process or subject matter experts. Where as **Owners** are often senior executives or business area owners that define governance or business processes over certain data areas.
     >
