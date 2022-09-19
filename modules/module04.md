@@ -1,6 +1,6 @@
 # Module 04 - Glossary
 
-## :loudspeaker: Introduction
+## Introduction
 
 A [Glossary](https://docs.microsoft.com/azure/purview/concept-business-glossary), sometimes called Data Glossary or Business Glossary, is a list of business terms with their definitions. A Glossary is an important tool for maintaining and organizing information about your data. It is used for capturing domain knowledge of information that is commonly used, communicated, and shared in organizations as they are conducting business.
 
@@ -10,12 +10,12 @@ When implementing your Glossary it is important to think about how you will stru
 
 In this lab you learn how to create terms using a system and custom term template. You'll also learn how to import and export terms. Lastly, you learn about linking terms to data assets, which helps to relate technical metadata to business metadata.
 
-## :thinking: Prerequisites
+## Prerequisites
 
 * An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
 * A Microsoft Purview account (see [module 01](../modules/module01.md)).
 
-## :dart: Objectives
+## Objectives
 
 * Create a Term in the Glossary using the System Default Term Template.
 * Create a Term in the Glossary using a Custom Term Template.
@@ -24,7 +24,7 @@ In this lab you learn how to create terms using a system and custom term templat
 * Assign a Term to an Asset in the Data Catalog.
 * Update an existing Term with Related Terms and Contacts.
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
 1. [Create a Term (System Default Term Template)](#1-create-a-term-system-default-term-template)
 2. [Create a Term (Custom Term Template)](#2-create-a-term-custom-term-template)
@@ -152,27 +152,27 @@ In this lab you learn how to create terms using a system and custom term templat
 
     ![Import terms](../images/module04/04.29-sample-saveas.png)
     
-1. Select **All files** under **Save as type** and click on **Save**.
+2. Select **All files** under **Save as type** and click on **Save**.
 
    ![Svae](../images/module04/saveas.png)
 
-2. From the **Glossary** screen, click **Import terms**.
+3. From the **Glossary** screen, click **Import terms**.
 
     ![Import terms](../images/module04/M4-T3-S3.png)
 
-3. Select the **System default** term template and click **Continue**.
+4. Select the **System default** term template and click **Continue**.
 
     ![Term Template](../images/module04/04.13-import-default.png)
 
-4. Click **Browse** and open the local copy of **import-terms-sample.csv**.
+5. Click **Browse** and open the local copy of **import-terms-sample.csv**.
 
     ![Browse](../images/module04/04.14-import-browse.png)
 
-5. Click **OK**.
+6. Click **OK**.
 
     ![Upload CSV file](../images/module04/04.15-import-ok.png)
 
-6. Once complete, you should see 50 additional terms beneath the parent (Workplace Analytics). **Tip**: You can quickly find specific types of terms using the filters at the top (e.g. Status = Approved).
+7. Once complete, you should see 50 additional terms beneath the parent (Workplace Analytics). **Tip**: You can quickly find specific types of terms using the filters at the top (e.g. Status = Approved).
 
     ![Filter Terms](../images/module04/M4-T3-S7.png)
 
@@ -239,7 +239,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
     ![Term Contacts](../images/module04/M4-Update10.png)
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q04](http://aka.ms/purviewlab/q04)
 
@@ -259,6 +259,6 @@ In this lab you learn how to create terms using a system and custom term templat
     A ) True  
     B ) False  
     
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to create, export, and import terms into the Microsoft Purview glossary.
