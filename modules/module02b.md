@@ -1,16 +1,16 @@
 # Module 02B - Register & Scan (Azure SQL DB)
 
-## :loudspeaker: Introduction
+## Introduction
 
 To populate Microsoft Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data.
 
 In this module, you'll walk through how to register and scan data sources. You'll create a new collection for your first data source, upload data and configure scanning. By the end of this module you'll have technical metadata, such as schema information, stored in Purview. You can use this to start linking to business terms, allowing your team members to find data more easily.
 
-## :dart: Objectives
+## Objectives
 
 * Register and scan an Azure SQL Database using SQL authentication credentials stored in Azure Key Vault.
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
@@ -58,7 +58,7 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 
     ![Search Principal](../images/module02/prv9.png)
 
-1. Make sure that keyvault updation is success.
+1. Make sure that keyvault updation is success is completed.
 
     ![Search Principal](../images/module02/prv10.png)
 
@@ -223,7 +223,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
     ![](../images/module02/M2BT7S1.png)
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q02](http://aka.ms/purviewlab/q02)
 
@@ -245,6 +245,6 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
     B ) Glossary Terms (e.g. column `Sales Tax` is tagged with the `Sales Tax` glossary term)  
     C ) Classifications (e.g. column `ccnum` is tagged with the `Credit Card Number` classification)
 
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to create a collection, register a source, and trigger a scan.
