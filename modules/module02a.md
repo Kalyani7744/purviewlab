@@ -1,18 +1,18 @@
 # Module 02A - Register & Scan (ADLS Gen2)
 
-## :loudspeaker: Introduction
+##  Introduction
 
 To populate Microsoft Purview with assets for data discovery and understanding, you must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data.
 
 In this module, you'll walk through how to register and scan data sources. You'll create a new collection for your first data source, upload data and configure scanning. By the end of this module you'll have technical metadata, such as schema information, stored in Purview. You can use this to start linking to business terms, allowing your team members to easier find data
 
-## :dart: Objectives
+##  Objectives
 
 * Create a collection.
 * Register and scan an Azure Data Lake Storage Gen2 account using the Microsoft Purview managed identity.
 
 
-## :bookmark_tabs: Table of Contents
+##  Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
@@ -120,7 +120,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 ## 3. Create a Collection
 
->:bulb: **Did you know?**
+> **Did you know?**
 >
 > [Collections](https://docs.microsoft.com/en-us/azure/purview/how-to-create-and-manage-collections) in Microsoft Purview can be used to organize data sources, scans, and assets in a hierarchical model based on how your organization plans to use Microsoft Purview. The collection hierarchy also forms the security boundary for your metadata to ensure users don't have access to data they don't need (e.g. sensitive metadata). 
 >
@@ -208,7 +208,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
     ![](../images/module02/M2AT6S2.png)
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q02](http://aka.ms/purviewlab/q02)
 
