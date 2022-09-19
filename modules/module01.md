@@ -21,7 +21,9 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 ## 1. Create an Microsoft Purview Account
 
 1. In the Azure portal, expand the portal's left navigation and select **+ Create a resource**, search for **Microsoft Purview** and select it.
+    
     ![prv1](../images/module01/prv35.png)
+    
 
     ![prv1](../images/module01/prv2.png)
 
@@ -37,7 +39,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
     | --- | --- |
     | Subscription | `YOUR_AZURE_SUBSCRIPTION` |
     | Resource group | `purviewlab-rg` |
-    | Purview account name | `pvlab-**<inject key="Deployment ID" enableCopy="true"/>**-pv` |
+    | Purview account name | pvlab-**<inject key="Deployment ID" enableCopy="true"/>**-pv |
     | Location | `Choose the same region as the Resource Group` |
     | Managed Resource Group Name | `managed-rg-pvlab` |
 
