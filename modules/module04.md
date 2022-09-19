@@ -37,19 +37,19 @@ In this lab you learn how to create terms using a system and custom term templat
 
 1. Open the **Microsoft Purview Governance Portal** and from the **Data catalog**, click **Glossary**.
 
-    ![](../images/module04/M4-Update1.png)
+    ![](../images/module04/m4-t1-step1.png)
 
 2. Click **New term**.
 
-    ![New Glossary Term](../images/module04/M4-Update2.png)
+    ![New Glossary Term](../images/module04/m4-t1-step2.png)
 
 3. Select the **System default** term template and click **Continue**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > A **Term Template** determines the attributes for a term. The **System default** term template has basic fields only (e.g. Name, Definition, Status, etc). **Custom** term templates on the other hand, can be used to capture additional custom attributes. For more information, check out [How to manage term templates for business glossary](https://docs.microsoft.com/en-us/azure/purview/how-to-manage-term-templates).
 
-    ![System default term template](../images/module04/04.02-term-default.png)
+    ![System default term template](../images/module04/m4-t1-step3.png)
 
 4. Change the **Status** of the term to `Approved` and then **copy** and **paste** the values below into the appropriate field, then click **Create**.
 
@@ -80,7 +80,7 @@ In this lab you learn how to create terms using a system and custom term templat
     https://aka.ms/Azure-Purview
     ```
     
-    ![New Term](../images/module04/M4-T1-S4.png)
+    ![New Term](../images/module04/m4-t1-step4.png)
 
 ## 2. Create a Term (Custom Term Template)
 
