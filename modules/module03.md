@@ -1,19 +1,19 @@
 # Module 03 - Search & Browse
 
-## :loudspeaker: Introduction
+## Introduction
 
 Once sources have been registered and scanned, the underlying data catalog will begin to populate with assets that represent real-world objects (e.g. a table in an Azure SQL Database, a Power BI report, etc.) The surfacing of these assets via Microsoft Purview's search experience helps empower data consumers to find data assets that matters to them.
 
 In this module, you'll learn to edit technical metadata by adding definitions and classifications to data attributes, such as tables and columns. You'll learn to assign technical ownership by linking technical attributes to contact persons. You'll learn to use classifications to mark data. All these activities, such as categorizing data, will help you to better manage your data
 
-## :dart: Objectives
+## Objectives
 
 * Search the catalog by keyword.
 * Browse the catalog by source.
 * Update an existing asset.
 * Perform a bulk edit operation.
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
 1. [Search Catalog](#1-search-catalog)
 2. [Update an Asset](#2-update-an-asset)
@@ -31,7 +31,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
     ![Filter by Classification](../images/module03/prv21.png)
 
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > While **Purview Studio** is provided as the default user experience, customers and partners can interface with the underlying platform using the [Microsoft Purview REST API](https://docs.microsoft.com/en-us/rest/api/purview/). The openness of the platform enables the possibility of integrating Microsoft Purview with custom user interfaces as well as the ability to perform read/write operations programmatically. 
 
@@ -145,7 +145,7 @@ Microsoft Purview allows us to perform certain operations (add/replace/remove) a
 
     ![Deselect](../images/module03/03.16-bulk-deselect.png)
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q03](http://aka.ms/purviewlab/q03)
 
@@ -176,6 +176,6 @@ Microsoft Purview allows us to perform certain operations (add/replace/remove) a
     B ) Owner  
     C ) Reader  
     
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to search, browse, and update assets.
