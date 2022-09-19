@@ -39,7 +39,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
 
 1. Click **Edit** to modify the asset details.
 
-    ![Edit Asset](../images/module03/prv22.png)
+    ![Edit Asset](../images/module03/m3-t2-step1.png)
 
 2. Update the **Description** by copying and pasting the sample text below.
 
@@ -135,7 +135,7 @@ Microsoft Purview allows us to perform certain operations (add/replace/remove) a
 
 3. Click **Bulk edit**.
 
-    ![Bulk Edit](../images/module03/03.14-bulk-edit.png)
+    ![Bulk Edit](../images/module03/m3-t4-step3.png)
 
 4. Set the **Attribute** to `Owner`, set **Operation** to `Add`, select the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** , and click **Apply**.
  
@@ -143,7 +143,7 @@ Microsoft Purview allows us to perform certain operations (add/replace/remove) a
 
 5. Click **Deselect all and close**.
 
-    ![Deselect](../images/module03/03.16-bulk-deselect.png)
+    ![Deselect](../images/module03/m3-t4-step5.png)
 
 ## Knowledge Check
 
