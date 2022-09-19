@@ -86,7 +86,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
 1. Open the **Microsoft Purview Governance Portal** and from the **Data catalog**, click **Glossary**.
 
-    ![](../images/module04/M4-Update1.png)
+    ![](../images/module04/m4-t2-step1.png)
 
 2. Click **New term**.
 
