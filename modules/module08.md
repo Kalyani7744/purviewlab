@@ -1,15 +1,21 @@
 # Module 08 - Monitor
 
-## Introduction
+## :loudspeaker: Introduction
 
-Azure Purview administrators can use Azure Monitor to track the operational state of an Azure Purview account instance. Metrics are collected to provide data points for you to track potential problems, troubleshoot, and improve the reliability of the Purview platform.
+Microsoft Purview administrators can use Azure Monitor to track the operational state of a Microsoft Purview account instance. This information, for example, can be the number of scans completed or cancelled. Metrics are collected to provide data points for you to track potential problems, troubleshoot, and improve the reliability of the Microsoft Purview platform.
 
-## Objectives
+## :thinking: Prerequisites
+
+* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
+* A Microsoft Purview account (see [module 01](../modules/module01.md)).
+* Your subscription must have the **Microsoft.Insights** resource provider registered.
+
+## :dart: Objectives
 
 * View Azure Purview metrics.
 * Send Azure Purview diagnostic logs to Azure Storage.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 1. [Provide a User Access to Azure Purview Metrics](#1-provide-a-user-access-to-azure-purview-metrics)
 2. [Visualize Azure Purview Metrics](#2-visualize-azure-purview-metrics)
@@ -21,43 +27,45 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 * The person who created the Purview account automatically gets permissions to view metrics.
 * Other individuals can be provided access by adding them to the **Monitoring Reader** role.
 
-1. Sign in to the [Azure portal](https://portal.azure.com), navigate to your **Azure Purview** account (e.g. `pvlab-{randomId}-pv`), select **Access Control** and click **Add role assignment**.
+1. Sign in to the [Azure portal](https://portal.azure.com), navigate to your **Azure Purview** account (e.g. `pvlab-{DID}-pv`), select **Access Control** and click **Add role assignment**.
 
-    ![Azure Purview Access Control](../images/module08/08.01-purview-access.png)
+    ![Azure Purview Access Control](../images/module08/M8-T1-S1.png)
 
 2. Filter the list of roles by searching for `Monitoring Reader`, select the **Monitoring Reader** role and then click **Next**.
 
-    ![Add Role Assignment](../images/module08/08.02-access-add.png)
+    ![Add Role Assignment](../images/module08/M8-T1-S2.png)
 
 3. Click **Select members**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** in your Azure Active Directory and select that user from the list, and then click **Select**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > **Monitoring Reader** role can view all monitoring data but cannot modify any resource or edit any settings related to monitoring resources. This role is appropriate for users in an organization such as Azure Purview administrators.
 
-    ![Assign Role](../images/module08/roleassignment.png)
+    ![Assign Role](../images/module08/M8-T1-S3.png)
 
 4. Click **Review + assign** to progress to the final screen, then click **Review + assign** once more to add the role assignment.
 
-    ![Verify Access](../images/module08/08.04-access-verify.png)
+    ![Verify Access](../images/module08/M8-T1-S4.png)
 
 ## 2. Visualize Azure Purview Metrics
 
 1. Navigate to your **Azure Purview** account instance and click **Metrics**.
 
-    ![Azure Purview Metrics](../images/module08/08.05-purview-metrics.png)
+    ![Azure Purview Metrics](../images/module08/M8-T2-Update1.png)
 
 2. Click to open the **Metric** drop-down menu and select one of the metrics (e.g. `Scan time taken`).
 
     **Available Metrics**
     | Metric ID  | Metric Name | Metric Description |
     | --- | --- | --- |
+    | DataMapCapacityUnits | `Data Map Capacity Units` | Indicates the number of capacity units consumed. |
+    | DataMapStorageSize | `Data Map Storage Size` | Indicates the data map storage size. |
     | ScanCancelled | `Scan Cancelled` | Indicates the number of scans cancelled. |
     | ScanCompleted | `Scan Completed` | Indicates the number of scans completed successfully. |
     | ScanFailed | `Scan Failed` | Indicates the number of scans failed. |
     | ScanTimeTaken | `Scan Time Taken` | Indicates the total scan time in seconds. |
 
-    ![Select Metric](../images/module08/08.06-metrics-select.png)
+    ![Select Metric](../images/module08/M8-T2-Update2.png)
 
 3. Click on the chart type to change the graph to a **Bar chart**.
 
@@ -75,31 +83,31 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
 1. Navigate to your **Azure Purview** account instance, click **Diagnostic settings** and select **Add diagnostic setting**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > **Diagnostic settings** can be used to send platform logs and metrics to one or more destinations (Log Analytics Workspace, Storage Account, an Event Hub).
 
-    ![Add Diagnostic Setting](../images/module08/08.14-diagnostic-add.png)
+    ![Add Diagnostic Setting](../images/module08/M8-T3-Update1.png)
 
-2. Provide the diagnostic setting a name as `Audit`, select **ScanStatusLogEvent**, select **Archive to a storage account**, select the existing storage account `pvlab{randomId}adls` and click **Save**.
+2. Provide the diagnostic setting a name as `Audit` (1), select **ScanStatus** (2), select **Archive to a storage account** (3), select the existing storage account `pvlab{randomId}adls` and click **Save**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?***
     >
-    > **ScanStatusLogEvent** tracks the scan life cycle. A scan operation follows progress through a sequence of states, from Queued, Running and finally a terminal state of Succeeded | Failed | Canceled. An event is logged for each state transition.
+    > **ScanStatus** tracks the scan life cycle. A scan operation follows progress through a sequence of states, from Queued, Running and finally a terminal state of Succeeded | Failed | Canceled. An event is logged for each state transition.
 
-    ![Save Diagnostic Setting](../images/module08/08.15-diagnostic-save.png)
+    ![Save Diagnostic Setting](../images/module08/M8-T3-S2.png)
 
-3. To test the capture of raw events, trigger a full scan by navigating to **Azure Purview Studio** > **Data map** > **Sources** and click **View details** on the existing **Azure Data Lake Storage Gen2** tile.
+3. To test the capture of raw events, trigger a full scan by navigating to **Azure Purview Studio**, **Data map**(1) > **Sources**(2) and click **View details**(3) on the existing **Azure Data Lake Storage Gen2** tile.
 
-    ![Source Details](../images/module08/pvcl6.1.png)
+    ![Source Details](../images/module08/M8-T3-S3.png)
 
-4. Navigate to the **Scans** tab and click the name of a previously run scan.
+4. Navigate to the **Scans**(1) tab and click the name of a previously run scan (2).
 
-    ![Source Scans](../images/module08/08.17-sources-scans-1.1.png)
+    ![Source Scans](../images/module08/M8-T3-S4.png)
 
-5. Open the **Run scan now** drop-down menu and select **Full Scan**.
+5. Open the **Run scan now**(1) drop-down menu and select **Full Scan**(2).
 
-    ![Full Scan](../images/module08/08.18-scan-full-1.1.png)
+    ![Full Scan](../images/module08/M8-T3-S5.png)
 
 6. Monitor the scan status by periodically clicking the **Refresh** button.
 
@@ -117,7 +125,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Event JSON](../images/module08/08.21-event-json.png)
 
-## Knowledge Check
+## :mortar_board: Knowledge Check
 
 [http://aka.ms/purviewlab/q08](http://aka.ms/purviewlab/q08)
 
@@ -139,6 +147,5 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
     B ) scanTotalRunTimeInSeconds  
     C ) scanTotalDuration
 
-## Summary
-
+## :tada: Summary
 This module provided an overview of how to visualize Azure Purview metrics within the Azure Portal and how to capture raw telemetry to an Azure Storage account.

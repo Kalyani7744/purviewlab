@@ -1,14 +1,16 @@
 # Module 02B - Register & Scan (Azure SQL DB)
 
-## Introduction
+## :loudspeaker: Introduction
 
-To populate Microsoft Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data. In this module, we will walk through how to register and scan data sources.
+To populate Microsoft Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data.
 
-## Objectives
+In this module, you'll walk through how to register and scan data sources. You'll create a new collection for your first data source, upload data and configure scanning. By the end of this module you'll have technical metadata, such as schema information, stored in Purview. You can use this to start linking to business terms, allowing your team members to find data more easily.
+
+## :dart: Objectives
 
 * Register and scan an Azure SQL Database using SQL authentication credentials stored in Azure Key Vault.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
@@ -22,7 +24,7 @@ To populate Microsoft Purview with assets for data discovery and understanding, 
 
 ## 1. Key Vault Access Policy #1 (Grant Yourself Access)
     
-> **Did you know?**
+> :bulb: **Did you know?**
 >
 > **Azure Key Vault** is a cloud service that provides a secure store for secrets. Azure Key Vault can be used to securely store keys, passwords, certificates, and other secrets. For more information, check out [About Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/overview).
 
@@ -30,61 +32,64 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 
 1. Navigate back to the browser tab in which Azure Portal is open, select the **purviewlab-rg** resource group and then Azure Key Vault resource named **pvlab-kv{randomid}**.
 
+    ![Access Policies](../images/module02/prv38.png)
+
 1. Select **Access policies** from the Key Vault menu.
     
-    ![Access Policies](../images/module02/02.73-keyvault-policies.png)
+    ![Access Policies](../images/module02/prv39.png)
 
-1. Click **Add Access Policy**.
+1. Click **create**.
 
-    ![Add Access Policy](../images/module02/02.74-keyvault-addpolicy.png)
+    ![prv3](../images/module02/prv3.png)
 
-1. Under **Select principal**, click **None selected**.
+1. Under **Permission**, select **secret permission(1)**,click on  **select all(2)** and click on **Next(3)**.
 
-    ![Select Principal](../images/module02/02.48-policy-select.png)
+    ![prv5](../images/module02/prv6.png)
 
-1. Search for **odl_user**, select the account name from the **search results**, then click **Select**.
+1. Under **Principal**, Search for **odl_user_<inject key="Deployment ID" enableCopy="true"/>**, select the account name, then click **Next**.
 
-    ![Search Principal](../images/module02/02.74-keyvault-addpolicy-1.png)
+    ![Search Principal](../images/module02/prv7.png)
 
-1. Under **Secret permissions**, click **Select all**.
+1. Under **Appliction** leave everything as default and click on **Next**.
+   
+    ![Search Principal](../images/module02/prv8.png)
 
-    ![Secret Permissions](../images/module02/02.78-secret-permissions.png)
+1. Under **Review + create** click on **create**.
 
-1. Review your selections then click **Add**.
+    ![Search Principal](../images/module02/prv9.png)
 
-    ![Review Access Policy](../images/module02/02.79-review-permissions.png)
+1. Make sure that keyvault updation is success.
 
-1. Click **Save**.
-
-    ![Save Access Policy](../images/module02/02.75-keyvault-savepolicy.png)
+    ![Search Principal](../images/module02/prv10.png)
 
 ## 2. Key Vault Access Policy #2 (Grant Microsoft Purview Access)
 
 In this next step, we are creating a second access policy which will provide Microsoft Purview the necessary access to retrieve secrets from the Key Vault.
 
-1. From the **Key Vault Access policies** blade, Click **Add Access Policy**.
 
-    ![Add Access Policy](../images/module02/02.81-keyvault-addpolicy2.png)
+1.  Under keyvault named **pvlab-kv{randomid}** under Access policies Click **create**.
 
-1. Under **Select principal**, click **None selected**.
+    ![prv3](../images/module02/prv3.png)
 
-    ![Select Principal](../images/module02/02.48-policy-select.png)
+1. Under **Permission**, select **secret permission(1)**,click on  **select Get,List(2)** and click on **Next(3)**.
 
-1. Search for the name of your Microsoft Purview account pvlab-<inject key="Deployment ID" enableCopy="false" />-pv, select the item, then click **Select**.
+    ![prv11](../images/module02/prv11.png)
 
-    ![Search Principal](../images/module02/02.49-policy-principal-1.png)
+1. Under **Principal**, Search for **pvlab-<inject key="Deployment ID" enableCopy="true"/>-pv**, select the account name, then click **Next**.
 
-1. Under **Secret permissions**, select **Get** and **List**.
+    ![Search Principal](../images/module02/prv12.png)
 
-    ![Secret Permissions](../images/module02/02.50-secret-permissions.png)
+1. Under **Appliction** leave everything as default and click on **Next**.
+   
+    ![Search Principal](../images/module02/prv13.png)
 
-1. Review your selections then click **Add**.
+1. Under **Review + create** click on **create**.
 
-    ![Review Access Policy](../images/module02/02.51-policy-add.png)
+    ![Search Principal](../images/module02/prv14.png)
 
-1. Click **Save**.
+1. Make sure that keyvault updation is success.
 
-    ![Save Access Policy](../images/module02/02.75-keyvault-savepolicy.png)
+    ![Search Principal](../images/module02/prv10.png)
 
 ## 3. Generate a Secret
 
@@ -113,7 +118,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 1. Navigate back to the browser tab in which **Purview Studio** is open, then to this path **Management Center** > **Credentials**, click **Manage Key Vault connections**.
 
-    ![Manage Key Vault Connections](../images/module02/azure-purview-credentials.png)
+    ![prv15](../images/module02/prv15.png)
 
 2. Click **New**.
 
@@ -138,7 +143,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 6. Under **Credentials** click **New**.
 
-    ![](../images/module02/azure-purview-credentials-new.png)
+    ![prv15](../images/module02/prv16.png)
 
 7.  Using the drop-down menu items, set the **Authentication method** to `SQL authentication` and the **Key Vault connection** to `myKeyVault`. Once the drop-down menu items are set, **Copy** and **paste** the values below into the matching fields, and then click **Create**.
 
@@ -163,7 +168,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 1. From the Purview Studio, navigate to **Data map** > **Sources**, and click **Register**.
 
-    ![](../images/module02/M2BT5S1.png)
+    ![prv17](../images/module02/prv17.png)
 
 2. Navigate to the **Azure** tab, select **Azure SQL Database**, click **Continue**.
 
@@ -218,7 +223,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
     ![](../images/module02/M2BT7S1.png)
 
-## Knowledge Check
+## :mortar_board: Knowledge Check
 
 [http://aka.ms/purviewlab/q02](http://aka.ms/purviewlab/q02)
 
@@ -240,6 +245,6 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
     B ) Glossary Terms (e.g. column `Sales Tax` is tagged with the `Sales Tax` glossary term)  
     C ) Classifications (e.g. column `ccnum` is tagged with the `Credit Card Number` classification)
 
-## Summary
+## :tada: Summary
 
 This module provided an overview of how to create a collection, register a source, and trigger a scan.

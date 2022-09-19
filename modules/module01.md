@@ -2,7 +2,9 @@
 
 ## Introduction
 
-To create and use the Microsoft Purview platform, you will need to provision an Microsoft Purview account.
+Microsoft Purview is a unified data governance solution that helps you manage and govern your data at large. It combines many different services for scanning, collecting, organizing and sharing metadata. It uses a catalogue for discoverability, but also offers other features, such as automatic classification, sharing, access management and so on.
+
+When planning your Microsoft Purview deployment, you first need to provision a Microsoft Purview account. Next, you need to define your collections for managing and grouping data assets together. A collection is a logical container in which your metadata, such as data sources, will be managed. When creating collections and placing them in a hierarchy, you need to make different considerations, such as your security requirements, governance structure and democratization needs. For example, a more centralized-alined style of data management leads to different collection structure then a more domain-oriented style of data management. Depending on your needs, different topologies can be used for managing your data. Best practices for this can be found on [this website](https://docs.microsoft.com/azure/purview/concept-best-practices-collections).
 
 ## Objectives
 
@@ -19,6 +21,9 @@ To create and use the Microsoft Purview platform, you will need to provision an 
 ## 1. Create an Microsoft Purview Account
 
 1. In the Azure portal, expand the portal's left navigation and select **+ Create a resource**, search for **Microsoft Purview** and select it.
+    ![prv1](../images/module01/prv35.png)
+
+    ![prv1](../images/module01/prv2.png)
 
 2. On the **Microsoft Purview** blade, select **Create**.
 
@@ -32,13 +37,13 @@ To create and use the Microsoft Purview platform, you will need to provision an 
     | --- | --- |
     | Subscription | `YOUR_AZURE_SUBSCRIPTION` |
     | Resource group | `purviewlab-rg` |
-    | Purview account name | `pvlab-{randomId}-pv` |
+    | Purview account name | `pvlab-**<inject key="Deployment ID" enableCopy="true"/>**-pv` |
     | Location | `Choose the same region as the Resource Group` |
     | Managed Resource Group Name | `managed-rg-pvlab` |
 
-    ![Purview Account Basics](../images/module01/purv2.png)
+    ![Purview Account Basics](../images/module01/prv36.png)
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that is needed to keep the Microsoft Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
     >
@@ -80,11 +85,11 @@ To create and use the Microsoft Purview platform, you will need to provision an 
 
     ![Add Role Assignment](../images/module01/Mod1-purview09.png)
 
-5. Search for the user **user_01** within your Azure Active Directory, select their account, click OK.
+5. Search for the user **user 01** within your Azure Active Directory, select their account, click OK.
 
     ![Add or Remove Data Curators](../images/module01/user01.png)
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > Microsoft Purview has a set of predefined data plane roles that can be used to control who can access what.
     >
@@ -98,6 +103,7 @@ To create and use the Microsoft Purview platform, you will need to provision an 
     | Data Source Admin |  || `Read/Write` | Manage data sources and data scans. |
 
 ## Knowledge Check
+
 
 [http://aka.ms/purviewlab/q01](http://aka.ms/purviewlab/q01)
 

@@ -1,16 +1,18 @@
 # Module 02A - Register & Scan (ADLS Gen2)
 
-## Introduction
+## :loudspeaker: Introduction
 
-To populate Microsoft Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data. In this module, we will walk through how to register and scan data sources.
+To populate Microsoft Purview with assets for data discovery and understanding, you must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data.
 
-## Objectives
+In this module, you'll walk through how to register and scan data sources. You'll create a new collection for your first data source, upload data and configure scanning. By the end of this module you'll have technical metadata, such as schema information, stored in Purview. You can use this to start linking to business terms, allowing your team members to easier find data
+
+## :dart: Objectives
 
 * Create a collection.
 * Register and scan an Azure Data Lake Storage Gen2 account using the Microsoft Purview managed identity.
 
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
@@ -23,7 +25,7 @@ To populate Microsoft Purview with assets for data discovery and understanding, 
 
 ## 1. Grant the Microsoft Purview Managed Identity Access
 
-> **Did you know?**
+> :bulb: **Did you know?**
 >
 > To scan a source, Microsoft Purview requires a set of **credentials**. For Azure Data Lake Storage Gen2, Microsoft Purview supports the following [authentication methods](https://docs.microsoft.com/en-gb/azure/purview/register-scan-adls-gen2#setting-up-authentication-for-a-scan).
 >
@@ -51,7 +53,7 @@ To populate Microsoft Purview with assets for data discovery and understanding, 
     
 5. select **Purview account (1)** from the **Managed Identity** drop-down menu, select the managed identity **pvlab-<inject key="Deployment ID" enableCopy="false" />-pv(2)**, click **Select (3)**. Finally, click **Review + assign**.
    
-    ![Access Control Members](../images/module02/purvex2tsk1stp5.png)
+    ![Access Control Members](../images/module02/prv37.png)
 
 6. Click **Review + assign** once more to perform the role assignment.
 
@@ -62,12 +64,6 @@ To populate Microsoft Purview with assets for data discovery and understanding, 
     ![Role Assignment](../images/module02/Mod2A-purview6.png)
 
 ## 2. Upload Data to Azure Data Lake Storage Gen2 Account
-
-Before proceeding with the following steps, you will need to:
-
-* Download and install [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/).
-* Open Azure Storage Explorer.
-* Sign in to Azure via **View > Account Management > Add an account...**.
 
 1. Download a copy of the **[Bing Coronavirus Query Set](https://github.com/tayganr/purviewlab/raw/main/assets/BingCoronavirusQuerySet.zip)** to your local machine. Note: This data set was originally sourced from [Microsoft Research Open Data](https://msropendata.com/datasets/c5031874-835c-48ed-8b6d-31de2dad0654).
 
@@ -124,7 +120,7 @@ Before proceeding with the following steps, you will need to:
 
 ## 3. Create a Collection
 
-> **Did you know?**
+>:bulb: **Did you know?**
 >
 > [Collections](https://docs.microsoft.com/en-us/azure/purview/how-to-create-and-manage-collections) in Microsoft Purview can be used to organize data sources, scans, and assets in a hierarchical model based on how your organization plans to use Microsoft Purview. The collection hierarchy also forms the security boundary for your metadata to ensure users don't have access to data they don't need (e.g. sensitive metadata). 
 >
@@ -158,7 +154,7 @@ Before proceeding with the following steps, you will need to:
     - **Select a collection**: Select **pvlab-randomId}-pv > Contoso** from the dropdown.
     -  Leave other values as default and click on **Register**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > At this point, we have simply registered a data source. Assets are not written to the catalog until after a scan has finished running.
 
@@ -180,7 +176,7 @@ Before proceeding with the following steps, you will need to:
 
 4. Select the system default scan rule set and click **Continue**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > [Scan Rule Sets](https://docs.microsoft.com/en-us/azure/purview/create-a-scan-rule-set) determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
@@ -212,7 +208,7 @@ Before proceeding with the following steps, you will need to:
 
     ![](../images/module02/M2AT6S2.png)
 
-## Knowledge Check
+## :mortar_board: Knowledge Check
 
 [http://aka.ms/purviewlab/q02](http://aka.ms/purviewlab/q02)
 
@@ -234,6 +230,6 @@ Before proceeding with the following steps, you will need to:
     B ) Glossary Terms (e.g. column `Sales Tax` is tagged with the `Sales Tax` glossary term)  
     C ) Classifications (e.g. column `ccnum` is tagged with the `Credit Card Number` classification)  
 
-## Summary
+## :tada: Summary
 
 This module provided an overview of how to create a collection, register a source, and trigger a scan.
