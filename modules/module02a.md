@@ -230,6 +230,6 @@ In this module, you'll walk through how to register and scan data sources. You'l
     B ) Glossary Terms (e.g. column `Sales Tax` is tagged with the `Sales Tax` glossary term)  
     C ) Classifications (e.g. column `ccnum` is tagged with the `Credit Card Number` classification)  
 
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to create a collection, register a source, and trigger a scan.
