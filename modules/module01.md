@@ -41,7 +41,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
     | Resource group | `purviewlab-rg` |
     | Purview account name | pvlab-**<inject key="Deployment ID" enableCopy="true"/>**-pv |
     | Location | `Choose the same region as the Resource Group` |
-    | Managed Resource Group Name | `managed-rg-pvlab` |
+    | Managed Resource Group Name | managed-rg-pvlab-**<inject key="Deployment ID" enableCopy="true"/>**-pv |
 
     ![Purview Account Basics](../images/module01/prv36.png)
 
