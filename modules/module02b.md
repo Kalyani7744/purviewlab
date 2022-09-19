@@ -73,7 +73,7 @@ In this next step, we are creating a second access policy which will provide Mic
 
 1. Under **Permission**, select **secret permission(1)**,click on  **select Get,List(2)** and click on **Next(3)**.
 
-    ![prv11](../images/module02/prv11.png)
+    ![prv11](../images/module02/m2b-t2-step2.png)
 
 1. Under **Principal**, Search for **pvlab-<inject key="Deployment ID" enableCopy="true"/>-pv**, select the account name, then click **Next**.
 
