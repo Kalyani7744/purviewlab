@@ -1,23 +1,17 @@
 # Module 09 - Integrate with Azure Synapse Analytics
 
-## :loudspeaker: Introduction
+## Introduction
 
 Azure Synapse Analytics, formerly known as Azure SQL Data Warehouse, is a big data analytics solution with enterprise data warehousing features. It provides different types of compute environments for different workloads. It is often used to process large volumes of data and can be used to design a data lake, data warehouse or big data analytics platform.
 
 Registering a Microsoft Purview account to a Synapse workspace allows you to discover Microsoft Purview assets, interact with them through Synapse specific capabilities, and push lineage information to Microsoft Purview. This enables you to see what data is ingested, processed and consumed by what analytical processes.
 
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
-* A Microsoft Purview account (see [module 01](../modules/module01.md)).
-* A Microsoft Purview catalog with some assets (see [module 02](../modules/module02.md)).
-
-## :dart: Objectives
+## Objectives
 
 * Register an Azure Purview account to a Synapse workspace.
 * Query a dataset that exists in the Azure Purview catalog with Azure Synapse Analytics.
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
 1. [Azure Data Lake Storage Gen2 Account Access](#1-azure-data-lake-storage-gen2-account-access)
 2. [Connect to a Purview Account](#2-connect-to-a-purview-account)
@@ -25,7 +19,7 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
 ## 1. Azure Data Lake Storage Gen2 Account Access
 
-> :bulb: **Did you know?**
+>**Did you know?**
 >
 > One of the key benefits of integrating Azure Synapse Analytics with Azure Purview, is the ability to discover Azure Purview assets from within Synapse Studio (i.e. no need to swtich between user experiences), with added abilities using Synapse specific capabilities (e.g. SELECT TOP 100). 
 >
@@ -63,7 +57,7 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
 4. Once the connection has been established, you will receive a notification that **Registration succeeded**. Switch to the **Purview account** tab to confirm that the Purview account is connected. On this page, you will also see a list of integration capabilities that are now available (e.g. Azure Purview search, Synapse Pipeline lineage, etc).
 
-    > :bulb: **Did you know?**
+    >**Did you know?**
     >
     > When connecting a Synapse workspace to Purview, Synapse will attempt to add the necessary Purview role assignment (i.e. `Data Curator`) to the Synapse managed identity automatically. This operation will be successful if you belong to the **Collection admins** role on the Purview root collection and have access to the Azure Purview account. For more information, check out [Connect a Synapse workspace to an Azure Purview account](https://docs.microsoft.com/en-us/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview).
 
@@ -91,7 +85,7 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
     ![Run Query](../images/module09/09.15-synapse-run.png)
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q09](http://aka.ms/purviewlab/q09)
 
@@ -110,6 +104,6 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
     A ) True    
     B ) False  
 
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to register an Azure Purview account to an Azure Synapse Analytics Workspace, view the details of an asset that exists outside of the Synapse workspace, and how you can quickly query an external source.
