@@ -1,27 +1,21 @@
 # Module 05 - Classifications
 
-## :loudspeaker: Introduction
+## Introduction
 
 In Microsoft Purview, classifications are similar to subject tags, and are used to mark and identify data of a specific type that's found within your data estate during scanning. Classifications help you to better manage your data. You can use them for prioritizing your data efforts or improve data security and regulatory compliance. Classifications also improve user productivity and decision-making, and allow you to reduce costs by classifying and finding unused data.
 
 Microsoft Purview provides a large set of default classifications that represent typical data types that might exist in your data estate (e.g. email address, credit card number, passport number, etc). In this module you learn how to create a custom classification, which can be an alternative to default classifications when they don't meet your needs.
 
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
-* An Azure Data Lake Storage Gen2 Account (see [module 00](../modules/module00.md)).
-* A Microsoft Purview account (see [module 01](../modules/module01.md)).
-
-## :hammer: Tools
+## Tools
 
 * [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/)
 
-## :dart: Objectives
+## Objectives
 
 * Create a custom classification.
 * Trigger a scan that will apply the custom classification to an asset.
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
 
 
@@ -73,7 +67,7 @@ Microsoft Purview provides a large set of default classifications that represent
     | State | `Enabled` |
     | Type | `Regular Expression` |
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > There are two types of classification rules. **Regular Expression** performs pattern matching against the actual data and/or column name. Where as **Dictionary** based classification rules allows us to supply a list of all possible values via a CSV or TSV file.
 
@@ -93,7 +87,7 @@ Microsoft Purview provides a large set of default classifications that represent
 
 6. Select the data pattern associated to the **Handle** column and click **Add to patterns**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Thresholds** help minimise the possibility of false-positive classifications. **Minimum match threshold** is the minimum percentage of data value matches in a column that needs to be found by the scanner for the classification to be applied.
 
@@ -114,7 +108,7 @@ Microsoft Purview provides a large set of default classifications that represent
 
 1. Navigate to **Data map**(1) > **Scan rule sets**(2) (under Source management) and click **New**(3).
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Scan Rule Sets** determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
@@ -243,7 +237,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
     ![Asset Schema](../images/module05/M5-T6-S4.png)
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q05](http://aka.ms/purviewlab/q05)
 
@@ -264,6 +258,6 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
     B ) False  
 
 
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to create a custom classification, and how to have the classification automatically applied as part of a scan using a custom scan rule set.
