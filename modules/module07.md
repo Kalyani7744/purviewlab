@@ -1,16 +1,7 @@
 # Module 07 - Insights
 
 
-
->  <p align=center style=bold> <b>PLEASE READ BEFORE PROCEEDING!!</b> </p>
->  
-> * Data Estate Insights can take several hours to surface post the completion of a scan.          
-> * At this point of the workshop, only a limited number of data visualisations may be populated.  
-> * To populate all reports with data, Microsoft Purview requires an environment with a variety of sources and assets to be scanned that is beyond the scope of this workshop.                      
-> * The screenshots and information below, has been provided so that you can conceptualise the typeof insights that can be gleaned from a fully populated environment.                              
- 
-
-## :loudspeaker: Introduction
+## Introduction
 
 Insights provides customers, a single pane of glass view into their catalog and further aims to provide specific insights to the data source administrators, business users, data stewards, data officer, and security administrators. Microsoft Purview currently has the following reports available:
 
@@ -28,17 +19,11 @@ Insights provides customers, a single pane of glass view into their catalog and 
 * Classifications
 * Sensitivity labels
 
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
-* A Microsoft Purview account (see [module 01](../modules/module01.md)).
-* Set up and complete a scan (see [module 02](../modules/module02.md)).
-
-## :dart: Objectives
+## Objectives
 
 * Understand the different types of insights that can be gleaned from the out of the box reporting.
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
  1. [Data Stewardship Insights](#1-data-stewardship-insights) 
  2. [Assets Insights](#2-assets-insights) 
@@ -47,6 +32,15 @@ Insights provides customers, a single pane of glass view into their catalog and 
  5. [Sensitivity Labels Insights](#5-sensitivity-labels-insights) 
 
 <div align="right"><a href="#module-07---insights">↥ back to top</a></div>
+
+>  <p align=center style=bold> <b>PLEASE READ BEFORE PROCEEDING!!</b> </p>
+>  
+> * Data Estate Insights can take several hours to surface post the completion of a scan.          
+> * At this point of the workshop, only a limited number of data visualisations may be populated.  
+> * To populate all reports with data, Microsoft Purview requires an environment with a variety of sources and assets to be scanned that is beyond the scope of this workshop.                      
+> * The screenshots and information below, has been provided so that you can conceptualise the typeof insights that can be gleaned from a fully populated environment.
+
+
 
 ## 1. Data Stewardship Insights
 
@@ -122,7 +116,7 @@ View key metrics about your data estate's assets.
 
     ![Assets Graph 03](../images/module07/07.13-assets-resourcesets.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Using the quick filters on the **Data assets by source type** graph and drilling into the details by clicking **View details**, is a quick and easy way of identifying which sources contain certain types of data (e.g. set the **Classification category** filter to `Personal`).
 
@@ -157,7 +151,7 @@ View key metrics about glossary terms.
 
     ![Glossary Graph 03](../images/module07/07.18-glossary-incomplete.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Terms are considered **incomplete** if they are missing a definition, expert, or steward. If a term is missing more than one of these things, it is shown as **Missing multiple items**.
 
@@ -243,7 +237,7 @@ View key metrics about the sensitivity labels applied to sources, files, and tab
 
 <div align="right"><a href="#module-07---insights">↥ back to top</a></div>
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [https://aka.ms/purviewlab/q07](https://aka.ms/purviewlab/q07)
 
@@ -266,7 +260,7 @@ View key metrics about the sensitivity labels applied to sources, files, and tab
 
 <div align="right"><a href="#module-07---insights">↥ back to top</a></div>
 
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to glean insights on Data stewardship, Assets, Glossary, Classifications and Sensitivity Labels across your data estate.
 
