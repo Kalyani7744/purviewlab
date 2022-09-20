@@ -1,8 +1,7 @@
 # Module 16 - Data Sharing
 
-[< Previous Module](../modules/module14.md) - **[Home](../README.md)**
 
-## :loudspeaker: Introduction
+## Introduction
 
 Organizations are increasingly looking for ways to enable seamless and secure data sharing. Whether that be to send and receive data to external organizations or for inter-departmental use cases. However, doing so in a way where organizations are able to maintain control and visibility can be a challenge. Even today, data continues to be shared using File Transfer Protocols (FTPs), Application Programming Interfaces (APIs), USB devices, and email attachments. These methods are traditionally not secure, challenging to govern, and generally inefficient.
 
@@ -11,29 +10,24 @@ With Microsoft Purview Data Sharing:
 * Data providers can now share data in-place from Azure Data Lake Storage Gen2 and Azure Storage accounts, both within and across orgnaizations. Share data directly without data duplication and centrally manage your sharing activities from within Microsoft Purview.
 * Data consumers can now have near real-time access to shared data. With storage data access and transactions charged to the data consumers based on what they use, at no additional cost to the data provider.
 
-## :thinking: Prerequisites
-
-* A Microsoft Purview account (see [module 01](../modules/module01.md)).
-
-## :dart: Objectives
+## Objectives
 
 * OBJECTIVE_PLACHOLDER
 * OBJECTIVE_PLACHOLDER
 * OBJECTIVE_PLACHOLDER
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
-| #  | Section | Role |
-| --- | --- | --- |
-| 1 | [Enable the AllowDataSharing preview feature](#1-enable-the-allowdatasharing-preview-feature) | Azure Administrator |
-| 2 | [Create a Storage Account](#2-create-a-storage-account) | Azure Administrator |
-| 3 | [Populate the Storage Account](#3-populate-the-storage-account) | Data Producer |
-| 4 | [Assign a Storage Account Role](#4-assign-a-storage-account-role) | Azure Administrator |
-| 5 | [Register a Storage Account](#5-register-a-storage-account) | Data Source Administrator|
-| 6 | [Create a Sent Share](#6-create-a-sent-share) | Data Share Contributor |
-| 7 | [Accept a Received Share](#7-accept-a-received-share) | Data Share Contributor |
 
-<div align="right"><a href="#module-16---data-sharing">↥ back to top</a></div>
+ 1.  [Enable the AllowDataSharing preview feature](#1-enable-the-allowdatasharing-preview-feature)|
+ 2.  [Create a Storage Account](#2-create-a-storage-account) 
+ 3.  [Populate the Storage Account](#3-populate-the-storage-account) 
+ 4.  [Assign a Storage Account Role](#4-assign-a-storage-account-role)
+ 5. [Register a Storage Account](#5-register-a-storage-account)
+ 6.  [Create a Sent Share](#6-create-a-sent-share) 
+ 7.  [Accept a Received Share](#7-accept-a-received-share) 
+
+
 
 ## 1. Enable the AllowDataSharing preview feature
 
@@ -51,7 +45,6 @@ Your Azure subscription must be registered for the Microsoft.Storage **AllowData
 
     ![ALT](/images/module16/16.03.png)
 
-<div align="right"><a href="#module-16---data-sharing">↥ back to top</a></div>
 
 ## 2. Create a Storage Account
 
@@ -99,8 +92,6 @@ Microsoft Purview Data Sharing supports sharing of files and folders in-place fr
 
     ![ALT](/images/module16/16.08.png)
 
-<div align="right"><a href="#module-16---data-sharing">↥ back to top</a></div>
-
 ## 3. Populate the Storage Account
 
 Before we can create a share, we must populate our storage account with some folders and files.
@@ -145,7 +136,6 @@ Before we can create a share, we must populate our storage account with some fol
 
     ![ALT](/images/module16/16.21.png)
 
-<div align="right"><a href="#module-16---data-sharing">↥ back to top</a></div>
 
 ## 4. Assign a Storage Account Role
 
@@ -187,8 +177,6 @@ Before we can create a share, both the data provider and data consumer must have
 
     ![ALT](/images/module16/M16-T4-S8.png)
 
-<div align="right"><a href="#module-16---data-sharing">↥ back to top</a></div>
-
 ## 5. Register a Storage Account
 
 Before we can create create or receive a share, the storage account needs to be registered with a collection.
@@ -209,7 +197,6 @@ Before we can create create or receive a share, the storage account needs to be 
 
     ![ALT](/images/module16/16.32.png)
 
-<div align="right"><a href="#module-16---data-sharing">↥ back to top</a></div>
 
 ## 6. Create a Sent Share
 
@@ -243,7 +230,6 @@ Data sharing within Microsoft Purview allows data providers to share data with d
 
     ![ALT](/images/module16/16.39.png)
 
-<div align="right"><a href="#module-16---data-sharing">↥ back to top</a></div>
 
 ## 7. Accept a Received Share
 
@@ -272,7 +258,7 @@ Data sharing within Microsoft Purview allows data providers to share data with d
 
     ![ALT](/images/module16/16.45.png)
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 1. PLACEHOLDER_KNOWLEDGE_CHECK_QUESTION
 
@@ -290,10 +276,9 @@ Data sharing within Microsoft Purview allows data providers to share data with d
     A ) True  
     B ) False  
 
-<div align="right"><a href="#module-16---data-sharing">↥ back to top</a></div>
 
-## :tada: Summary
+## Summary
 
 MODULE_SUMMARY
 
-[Continue >](../modules/module00.md)
+
