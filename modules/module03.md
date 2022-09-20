@@ -55,7 +55,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
 
 4. Navigate to the **Schema** tab and update the **Asset description** for each column using the sample text below.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Classifications** and **Glossary Terms** can be assigned at the asset level (e.g. a Table within a Database) as well as at the schema level (e.g. a Column within a Table Schema).
 
