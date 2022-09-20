@@ -71,7 +71,9 @@ View key metrics about your data estate's health and performance.
 
     ![Stewardship Graph 03](../images/module07/07.05-stewardship-gap.png)
 
-    **Active users by feature category**
+4.  Navigate to **Catalog adoption** to view the following tile.
+   
+   **Active users by feature category**
 
     ![Stewardship Graph 04](../images/module07/07.06-stewardship-activeusers.png)
 
@@ -83,7 +85,6 @@ View key metrics about your data estate's health and performance.
 
     ![Stewardship Graph 06](../images/module07/07.08-stewardship-topsearched.png)
 
-<div align="right"><a href="#module-07---insights">↥ back to top</a></div>
 
 ## 2. Assets Insights
 
