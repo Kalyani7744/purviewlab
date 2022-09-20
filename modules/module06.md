@@ -1,6 +1,6 @@
 # Module 06 - Lineage
 
-## :loudspeaker: Introduction
+## Introduction
 
 One of the features of Microsoft Purview is the ability to show the lineage between datasets created by data processes. Data lineage shows how data moves over time and enables you to see how data is used and what changes to data have been made. This visibility helps you to understand, trace back and correct data at the source of origin. Lineage, thus also results into better data quality.
 
@@ -8,27 +8,19 @@ Lineage is typically captured from tools that extract, transform and load data. 
 
 Microsoft Purview also supports the ability to upload custom lineage. Custom lineage is lineage that you created yourself, for example by uploading metadata using the Microsoft Purview's Atlas REST APIs. Lineage in Purview includes relationships between datasets and processes.
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > * **Dataset**: A dataset (structured or unstructured) provided as an input to a process. For example, a SQL Table, Azure blob, and files (such as .csv and .xml), are all considered datasets. In the lineage section of Purview, datasets are represented by **rectangular boxes**.
 >
 > * **Process**: An activity or transformation performed on a dataset is called a process. For example, ADF Copy activity, Data Share snapshot and so on. In the lineage section of Purview, processes are represented by **round-edged boxes**.
 
-## :thinking: Prerequisites
 
-* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
-* An Azure Data Lake Storage Gen2 Account (see [module 00](../modules/module00.md)).
-* An Azure Data Factory Account (see [module 00](../modules/module00.md)).
-* A Microsoft Purview account (see [module 01](../modules/module01.md)).
-
-This module steps through what is required for connecting an Azure Data Factory account with a Microsoft Purview account to track data lineage.
-
-## :dart: Objectives
+## Objectives
 
 * Connect an Azure Data Factory account with an Azure Purview account.
 * Trigger a Data Factory pipeline to run so that the lineage metadata can be pushed into Purview.
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
 1. [Create an Azure Data Factory Connection in Azure Purview](#1-create-an-azure-data-factory-connection-in-azure-purview)
 2. [Copy Data using Azure Data Factory](#2-copy-data-using-azure-data-factory)
@@ -38,13 +30,13 @@ This module steps through what is required for connecting an Azure Data Factory 
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Management** > **Data Factory** (under Lineage connections) and click **New**.
 
-    > :warning: To view/add/remove Data Factory connections, you need to be assigned the **Collection admin** role on the root collection.
+    > **Note**:To view/add/remove Data Factory connections, you need to be assigned the **Collection admin** role on the root collection.
 
     ![](../images/module06/M6-T1-S1.png)
 
 2. Select your Azure Data Factory account instance from the drop-down menu (e.g. `pvlab-{randomId}-adf`) and click **OK**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Azure Purview can connect to **multiple** Azure Data Factories but each Azure Data Factory account can only connect to **one** Azure Purview account.
 
@@ -56,7 +48,7 @@ This module steps through what is required for connecting an Azure Data Factory 
 
 4. To confirm that Azure Data Factory has been provided the necessary access, navigate to **Data map** > **Collections** > `YOUR_ROOT_COLLECTION` > **Role assignments**, within **Data curators** you should be able to see the Azure Data Factory managed identity.
 
-    > :bulb: **Did you know?**
+    >**Did you know?**
     >
     > When a user creates an Azure Data Factory connection, behind the scenes the Data Factory managed identity is added to the `Data Curator` role. This provides Azure Data Factory the necessary access to push lineage to Azure Purview during a pipeline execution. See [supported Azure Data Factory activities](https://docs.microsoft.com/en-us/azure/purview/how-to-link-azure-data-factory#supported-azure-data-factory-activities) for more information.
 
@@ -155,7 +147,7 @@ This module steps through what is required for connecting an Azure Data Factory 
 
     ![](../images/module06/M6-T3-S6.png)
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 [http://aka.ms/purviewlab/q06](http://aka.ms/purviewlab/q06)
 
 1. An Azure Purview account can connect to multiple Azure Data Factories?
@@ -173,6 +165,6 @@ This module steps through what is required for connecting an Azure Data Factory 
     A ) Squared edges  
     B ) Rounded edges  
 
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to integrate Azure Purview with Azure Data Factory and how relationships between assets and ETL activities can be automatically created at run time, allowing us to visually represent data lineage and trace upstream and downstream dependencies.
