@@ -143,12 +143,13 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 |---|---|
 |Resource Group|purviewlab-rg|
 |Virtual machine name|pur-M11-VM|
+|Availability Options| No infrastructure reduncancy required|
 |Image|Windows 10 pro|
 |Username|demouser|
 |Password|demo!pass123|
 
 
-   ![ALT](../images/module11/M11-T4-img2.png)
+   ![ALT](../images/module11/M11-T4-img1-New.png)
 
 3. In the **Create virtual machine** pane select **Networking** and ensure the virtual network created in the previous task is selected and select **Review+Create**
 ![ALT](../images/module11/M11-T4-img3.png)
