@@ -141,11 +141,9 @@ Microsoft Purview provides a large set of default classifications that represent
 
 ## 4. Upload Data to an Azure Data Lake Storage Gen2 Account
 
-  * Sign in to Azure via **View > Account Management > Add an account...**.
+  >**Note**: If you have not created an Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
 
-   > **Note**: If you have not created an Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
-
-  1. Download a copy of **[twitter_handles.parquet](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.parquet)** to your labvm by opening the link in a new tab, right-click within the body of the content, and click **Save as**. 
+  1. Download a copy of **[twitter_handles.parquet](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.parquet)** to your labvm by clicking on the link
 
   2. Navigate back to the Storage Explorer on your labvm, select your Azure Data Lake Storage Gen2 Account named **pvlab{randomId}adls**, expand **Blob Containers**, and **Open** the **raw** container. 
   
