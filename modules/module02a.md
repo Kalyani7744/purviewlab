@@ -25,7 +25,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 ## 1. Grant the Microsoft Purview Managed Identity Access
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > To scan a source, Microsoft Purview requires a set of **credentials**. For Azure Data Lake Storage Gen2, Microsoft Purview supports the following [authentication methods](https://docs.microsoft.com/en-gb/azure/purview/register-scan-adls-gen2#setting-up-authentication-for-a-scan).
 >
@@ -154,7 +154,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
     - **Select a collection**: Select **pvlab-randomId}-pv > Contoso** from the dropdown.
     -  Leave other values as default and click on **Register**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > At this point, we have simply registered a data source. Assets are not written to the catalog until after a scan has finished running.
 
@@ -176,7 +176,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 4. Select the system default scan rule set and click **Continue**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > [Scan Rule Sets](https://docs.microsoft.com/en-us/azure/purview/create-a-scan-rule-set) determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
