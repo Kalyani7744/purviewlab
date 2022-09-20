@@ -49,7 +49,7 @@ In this lab you learn how to create terms using a system and custom term templat
     >
     > A **Term Template** determines the attributes for a term. The **System default** term template has basic fields only (e.g. Name, Definition, Status, etc). **Custom** term templates on the other hand, can be used to capture additional custom attributes. For more information, check out [How to manage term templates for business glossary](https://docs.microsoft.com/en-us/azure/purview/how-to-manage-term-templates).
 
-    ![System default term template](../images/module04/m4-t1-step3.png)
+    ![System default term template](../images/module04/m4-t1-step3-1.png)
 
 4. Change the **Status** of the term to `Approved` and then **copy** and **paste** the values below into the appropriate field, then click **Create**.
 
@@ -98,7 +98,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
 4. Provide the Term Template a **Name** as `Contoso Template` and click **New attribute**.
 
-    ![Term template](../images/module04/04.06-attribute-new.png)
+    ![Term template](../images/module04/04.06-attribute-new1.png)
 
 5. Populate the attribute fields as per the examples below and click **Apply**.
 
@@ -110,7 +110,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
     > **Info**: Click on **Choices** to add a choice.
 
-    ![Attribute](../images/module04/04.07-attribute-properties.png)
+    ![Attribute](../images/module04/04.07-attribute-properties1.png)
 
 6. Click **Create**.
 
@@ -118,7 +118,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
 7. Select **Contoso Template** and click **Continue**.
     
-    ![Custom Term Template](../images/module04/04.09-term-custom.png)
+    ![Custom Term Template](../images/module04/04.09-term-custom1.png)
 
 8. Change the **Status** of the term to `Approved` and then **copy** and **paste** the values below into the appropriate field, then click **Create**.
 
@@ -139,7 +139,7 @@ In this lab you learn how to create terms using a system and custom term templat
     Marketing
     ```
     
-    ![](../images/module04/M4-T2-S8.png)
+    ![](../images/module04/M4-T2-S8.1.png)
 
 
 9. Navigate back to **Glossary** screen, change the view to **Hierarchical view** to see the hierarchical glossary.
@@ -150,7 +150,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
 1. Download a copy of **[import-terms-sample.csv](https://github.com/tayganr/purviewlab/raw/main/assets/import-terms-sample.csv)** to your **labvm** by opening the link in a new tab, right-click within the body of the content, click **Save as** .
 
-    ![Import terms](../images/module04/04.29-sample-saveas.png)
+    ![Import terms](../images/module04/04.29-sample.1-saveas.png)
     
 2. Select **All files** under **Save as type** and click on **Save**.
 
@@ -158,66 +158,66 @@ In this lab you learn how to create terms using a system and custom term templat
 
 3. From the **Glossary** screen, click **Import terms**.
 
-    ![Import terms](../images/module04/M4-T3-S3.png)
+    ![Import terms](../images/module04/M4-T3-S3.1.png)
 
 4. Select the **System default** term template and click **Continue**.
 
-    ![Term Template](../images/module04/04.13-import-default.png)
+    ![Term Template](../images/module04/04.13-import-default.1.png)
 
 5. Click **Browse** and open the local copy of **import-terms-sample.csv**.
 
-    ![Browse](../images/module04/04.14-import-browse.png)
+    ![Browse](../images/module04/04.14.1-import-browse.png)
 
 6. Click **OK**.
 
-    ![Upload CSV file](../images/module04/04.15-import-ok.png)
+    ![Upload CSV file](../images/module04/04.15-import-ok.1.png)
 
 7. Once complete, you should see 50 additional terms beneath the parent (Workplace Analytics). **Tip**: You can quickly find specific types of terms using the filters at the top (e.g. Status = Approved).
 
-    ![Filter Terms](../images/module04/M4-T3-S7.png)
+    ![Filter Terms](../images/module04/M4-T3-S7.1.png)
 
 ## 4. Bulk Export Terms
 
 1. From the **Glossary** screen, we want to select ALL terms (top check box) and then de-select terms that do not belong to Workplace Analytics (i.e. Contoso Parent, Contoso Child). **All Workplace Analytics terms** should be selected. Click **Export terms**. 
 
    
-   ![Export Terms](../images/module04/M4-T4-S1.png)
+   ![Export Terms](../images/module04/M4-T4-S1.1.png)
 
 2. If the export was successful, you should find a **CSV** file has been copied to your **labvm** in the **Downloads** folder.
 
-    ![Downloads](../images/module04/04.18-export-downloads.png)
+    ![Downloads](../images/module04/04.18.1-export-downloads.png)
 
 ## 5. Assign a Term to an Asset
 
 1. Perform a wildcard search by typing asterisk (**\***) into the search bar and hitting the Enter key to submit the query. Click on an asset title `QueriesByState` to view the details.
 
-    ![Wildcard Search](../images/module04/M4-Update4.png)
+    ![Wildcard Search](../images/module04/M4-Update4.1.png)
 
 2. Click **Edit**.
 
-    ![Edit Asset](../images/module04/M4-Update5.png)
+    ![Edit Asset](../images/module04/M4-Update5.1.png)
 
 3. Open the **Glossary terms** drop-down menu and select a glossary term named `Contoso Child`. Click **Save**.
 
-    ![Assign Term](../images/module04/M4-Update6.png)
+    ![Assign Term](../images/module04/M4-Update6.1.png)
 
 4. Click on the **Contoso Child** hyperlinked term name to view the glossary term details.
 
-    ![Assigned Terms](../images/module04/M4-Update7.png)
+    ![Assigned Terms](../images/module04/M4-Update7.1.png)
 
 5. Click **Refresh** to view the **Catalog assets** that the term is assigned to .
 
-    ![Catalog assets](../images/module04/M4-Update8.png)
+    ![Catalog assets](../images/module04/M4-Update8.1.png)
     
 ## 6. Update an Existing Term
 
 1. From the **Glossary** screen, open an existing term `Aggregation`.
 
-    ![Term Details](../images/module04/M4-T6-S1.png)
+    ![Term Details](../images/module04/M4-T6-S1.1.png
 
 2. Navigate to the **Related** tab and click **Edit**.
 
-    ![Related](../images/module04/M4-Update9.png)
+    ![Related](../images/module04M4-Update9.1.png)
 
 3. Use the drop-down menu to assign two glossary terms as **Synonyms** i.e **Workspace Analytics> Attended** and **Workspace Analytics> Attendee**.
 
@@ -225,11 +225,11 @@ In this lab you learn how to create terms using a system and custom term templat
     >
     > **Synonyms** are other terms with the same or similar definitions. Where as **Related terms** are other terms that are related but have different definitions.
 
-    ![Synonyms](../images/module04/M4-T6-S3.png)
+    ![Synonyms](../images/module04/M4-T6-S3.1.png)
 
 4. Use the drop-down menu to assign two glossary terms as **Related terms** i.e  **Workspace Analytics> Collaborator group** and **Workspace Analytics> Collaborators** .
 
-    ![Related Terms](../images/module04/M4-T6-S4.png)
+    ![Related Terms](../images/module04/M4-T6-S4.1.png)
 
 5. Navigate to the **Contacts** tab and assign an **Expert** and a **Steward** to the user named **ODL_User [DID]**. Click **Save**.
 
@@ -237,7 +237,7 @@ In this lab you learn how to create terms using a system and custom term templat
     >
     > Glossary terms can be related to two different types of contacts. **Experts** are typically business process or subject matter experts. Where as **Stewards** define the standards for a data object or business term. They drive quality standards, nomenclature, rules.
 
-    ![Term Contacts](../images/module04/M4-Update10.png)
+    ![Term Contacts](../images/module04/M4-Update10.1.png)
 
 ## Knowledge Check
 
