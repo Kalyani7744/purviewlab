@@ -276,9 +276,3 @@ Data sharing within Microsoft Purview allows data providers to share data with d
     A ) True  
     B ) False  
 
-
-## Summary
-
-MODULE_SUMMARY
-
-
