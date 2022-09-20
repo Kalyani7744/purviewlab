@@ -1,8 +1,6 @@
 # Module 15 - Azure SQL Database Lineage Extraction
 
-[< Previous Module](../modules/module14.md) - **[Home](../README.md)**
-
-## :loudspeaker: Introduction
+## Introduction
 
 As you've learned in the [Lineage Module](../modules/module06.md), Microsoft Purview can show us how data moves through various systems; this is referred to as data lineage and part of the lifecycle of any piece of data in an organization.
 
@@ -10,34 +8,23 @@ Lineage extraction is a complicated process because there are many ways data may
 
 In this module, we'll implement the Azure SQL Database Lineage Extraction functionality.
 
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
-* An Azure SQL Database (see [module 00](../modules/module00.md)).
-* A Microsoft Purview account (see [module 01](../modules/module01.md)).
-* An Azure SQL Database set up as a data source in Microsoft Purview (see [module 02B](../modules/module02b.md)).
-
-This module steps through what is required for connecting an Azure SQL Database with a Microsoft Purview account to track data lineage.
-
-## :dart: Objectives
+## Objectives
 
 * Connect an Azure SQL Database with a Microsoft Purview account, with lineage extraction enabled.
 * Observe scanning process and examine lineage extracted by using the sample code below.
 
-## :bookmark_tabs: Table of Contents
+##  Table of Contents
 
-| #  | Section | Role |
-| --- | --- | --- |
-| 1 | [Add Azure SQL Database Administrator](#1-add-azure-sql-database-administrator) | Azure Administrator |
-| 2 | [Configure the Microsoft Purview MSI in the Azure SQL Database](#2-configure-the-microsoft-purview-msi-in-the-azure-sql-database) | Azure Administrator |
-| 2 | [Configure the Microsoft Purview MSI in the Azure SQL Database](#2-configure-the-microsoft-purview-msi-in-the-azure-sql-database) | Azure Administrator |
-| 3 | [Add example tables and stored procedure to Azure SQL Database](#3-add-example-tables-and-stored-procedure-to-azure-sql-database) | Database Administrator |
-| 4 | [Add a new Azure SQL Database Scan with lineage enabled](#4-add-a-new-azure-sql-database-scan-with-lineage-enabled) | Microsoft Purview Administrator |
-| 5 | [Execute the stored procedure to simulate data movement](#5-execute-the-stored-procedure-to-simulate-data-movement) | Azure Administrator |
-| 6 | [Re-run lineage scan and observe output](#6-re-run-lineage-scan-and-observe-output) | Microsoft Purview Administrator |
-| 7 | [Clean-up and considerations](#7-clean-up-and-considerations) | Microsoft Purview Administrator |
 
-<div align="right"><a href="#module-00---title">↥ back to top</a></div>
+ 1.  [Add Azure SQL Database Administrator](#1-add-azure-sql-database-administrator) 
+ 2.  [Configure the Microsoft Purview MSI in the Azure SQL Database](#2-configure-the-microsoft-purview-msi-in-the-azure-sql-database)
+ 3.  [Configure the Microsoft Purview MSI in the Azure SQL Database](#2-configure-the-microsoft-purview-msi-in-the-azure-sql-database)
+ 4.  [Add example tables and stored procedure to Azure SQL Database](#3-add-example-tables-and-stored-procedure-to-azure-sql-database) 
+ 5.  [Add a new Azure SQL Database Scan with lineage enabled](#4-add-a-new-azure-sql-database-scan-with-lineage-enabled) 
+ 6.  [Execute the stored procedure to simulate data movement](#5-execute-the-stored-procedure-to-simulate-data-movement) 
+ 7.  [Re-run lineage scan and observe output](#6-re-run-lineage-scan-and-observe-output) 
+ 8.  [Clean-up and considerations](#7-clean-up-and-considerations) 
+
 
 ## 1. Add Azure SQL Database Administrator
 
@@ -48,11 +35,10 @@ In order for Microsoft Purview to be able to scan for lineage in an Azure SQL Da
     ![Set SQL Admin](../images/module15/M15-T1-img1.png)
 
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > An Azure AD account is required do add the Microsoft Purview MSI in the next step.
 
-<div align="right"><a href="#module-15---azure-sql-database-lineage-extraction">↥ back to top</a></div>
 
 ## 2. Configure the Microsoft Purview MSI in the Azure SQL Database
 
@@ -78,7 +64,6 @@ The SQL statements above will:
 
     ![Query Editor](../images/module15/M15-T2-img1.1.png)
 
-<div align="right"><a href="#module-15---azure-sql-database-lineage-extraction">↥ back to top</a></div>
 
 ## 3. Add example tables and stored procedure to Azure SQL Database
 
@@ -132,7 +117,6 @@ WHERE dbo.SourceTest.ID = @UserId
 
  > **Note**: We'll be returning to the Query editor shortly, so we recommend opening the Microsoft Purview portal, if not already open, in another tab for convenience as you progress in the next steps.
 
-<div align="right"><a href="#module-15---azure-sql-database-lineage-extraction">↥ back to top</a></div>
 
 ## 4. Add a new Azure SQL Database Scan with lineage enabled
 
@@ -181,7 +165,6 @@ If the "Test connection" fails because of a permissions issue, ensure the earlie
   
  > **Note**: Keep this page open in the Microsoft Purview portal as we'll be returning here shortly.
 
-<div align="right"><a href="#module-15---azure-sql-database-lineage-extraction">↥ back to top</a></div>
 
 ## 5. Execute the stored procedure to simulate data movement
 
@@ -198,7 +181,6 @@ SELECT * FROM dbo.DestinationTest
 
 ![New Scan](../images/module15/M15-T5-img1.png)
 
-<div align="right"><a href="#module-15---azure-sql-database-lineage-extraction">↥ back to top</a></div>
 
 ## 6. Re-run lineage scan and observe output
 
@@ -207,7 +189,7 @@ SELECT * FROM dbo.DestinationTest
 
     ![New Scan](../images/module15/M15-T6-img1.png)
 
->:bulb: **Did you know?**
+>**Did you know?**
 >
 > In order for Microsoft Purview to detect the lineage, it observes the actual execution of the stored procedure. Therefore, the lineage will not be detected until there is an execution of the MoveDataTest stored procedure.
 
@@ -227,7 +209,7 @@ SELECT * FROM dbo.DestinationTest
 
     ![New Scan](../images/module15/M15-T6-img5.png)
 
-<div align="right"><a href="#module-15---azure-sql-database-lineage-extraction">↥ back to top</a></div>
+
 
 ## 7. Clean-up and considerations
 
@@ -242,9 +224,8 @@ drop table dbo.DestinationTest
 ```
 ![New Scan](../images/module15/M15-T7-img1.png)
 
-<div align="right"><a href="#module-15---azure-sql-database-lineage-extraction">↥ back to top</a></div>
 
-## :thinking: Troubleshooting / FAQ
+## Troubleshooting / FAQ
 
 ### Do I have to assign an AD Admin to the Azure SQL Database to add the Microsoft Purview Managed Identity?
 
@@ -273,9 +254,7 @@ GO
 
 Read more about Azure SQL Database lineage extraction in the [Azure blog located here](https://azure.microsoft.com/en-us/blog/introducing-dynamic-lineage-extraction-from-azure-sql-databases-in-azure-purview/) and on [Microsoft Docs](https://docs.microsoft.com/en-us/azure/purview/register-scan-azure-sql-database?tabs=sql-authentication#lineagepreview).
 
-<div align="right"><a href="#module-15---azure-sql-database-lineage-extraction">↥ back to top</a></div>
-
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 1. When creating a scan with Lineage Extraction enabled, how many scans are actually created as a result?
 
@@ -302,8 +281,7 @@ Read more about Azure SQL Database lineage extraction in the [Azure blog located
 
 <div align="right"><a href="#module-15---azure-sql-database-lineage-extraction">↥ back to top</a></div>
 
- ## :tada: Summary
+ ## Summary
 
 In this module, you learned how to configure Microsoft Purview to extract lineage information from stored procedures.
 
-[Continue >](../modules/module00.md)
