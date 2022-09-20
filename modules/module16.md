@@ -126,8 +126,7 @@ Before we can create a share, we must populate our storage account with some fol
 
 8. Browse your local machine to upload sample data and click **Upload**.
 
-    > **Note**:
-    >
+    > **Note**:    >
     > In this example, we are using the [Hippocorpus dataset](https://msropendata.com/datasets/0a83fb6f-a759-4a17-aaa2-fbac84577318) from Microsoft Research Open Data. If you would like to use this data, [download a copy of the zip file](https://github.com/tayganr/purviewlab/raw/main/assets/hippocorpus-u20220112.zip) and extract the contents to your local machine.
 
     ![ALT](/images/16.20.png)
@@ -141,9 +140,8 @@ Before we can create a share, we must populate our storage account with some fol
 
 Before we can create a share, both the data provider and data consumer must have appropriate levels of access to the storage account.
 
-> **Note**
->
-> Below are eligible roles for sharing data and receiving shares.
+> **Note**: Below are eligible roles for sharing data and receiving shares.
+> 
 > | Persona | Owner | Contributor | Storage Blob Data Owner | Storage Blob Data Contributor |
 > | --- | -- | -- | -- | -- |
 > | Data Provider | :white_check_mark: | | :white_check_mark: | |
