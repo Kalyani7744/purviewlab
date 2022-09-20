@@ -1,8 +1,7 @@
 # Module 13 - Process events using Atlas Kafka topics via Event Hubs and NodeJS
 
-[< Previous Module](../modules/module12.md) - **[Home](../README.md)** - [Next Module >](../modules/module14.md)
 
-## :loudspeaker: Introduction
+## Introduction
 
 Microsoft Purview is a unified data governance solution that runs on Azure. Some people say it is a data catalog, but it better to Purview as a control framework for managing and controlling your data landscape. For example, you can use Microsoft Purview as a metastore for dynamically orchestrating your data pipelines.
 
@@ -10,13 +9,7 @@ When Microsoft Purview is deployed, a managed event hub is created as part of yo
 
 In this lab you'll learn how read and publish events using Azure Event Hubs and NodeJS.
 
-## :thinking: Prerequisites
-
-- An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
-- A Microsoft Purview account (see [module 01](../modules/module01.md)).
-- NodeJS installed: [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
-
-## :dart: Objectives
+## Objectives
 
 - Connect to on premise data source using a self-hosted integration runtime.
 
@@ -333,7 +326,7 @@ As demonstrated in this tutorial you can programmatically monitor for metadata c
 
 <div align="right"><a href="#module-13---process-events-using-atlas-kafka-topics-via-event-hubs-and-nodejs">↥ back to top</a></div>
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 1. When publishing events to Microsoft Purview you need to make use of the ATLAS_HOOK topic name.
 
@@ -342,11 +335,10 @@ As demonstrated in this tutorial you can programmatically monitor for metadata c
 
 <div align="right"><a href="#module-13---process-events-using-atlas-kafka-topics-via-event-hubs-and-nodejs">↥ back to top</a></div>
 
-## :tada: Summary
+## Summary
 
 In this module, you learned how to send events to and receive events from Microsoft Purview's Atlas Kafka topics via event hub using the NodeJS library. If you'd like continue with this module to complete further tasks, please feel free to complete the tutorial links below:
 
 - [Publish messages to and process messages from Microsoft Purview's Atlas Kafka topics via Event Hubs using .NET](https://docs.microsoft.com/azure/purview/manage-kafka-dotnet)
 - [Modern Data Pipelines with Azure Synapse Analytics and Microsoft Purview](https://piethein.medium.com/modern-data-pipelines-with-azure-synapse-analytics-and-microsoft-purview-fe752d874c67)
 
-[Back to Home >](../README.md)
