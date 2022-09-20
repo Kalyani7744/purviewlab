@@ -30,7 +30,7 @@ In this module, we'll implement the Azure SQL Database Lineage Extraction functi
 
 In order for Microsoft Purview to be able to scan for lineage in an Azure SQL Database, we'll need to configure the appropriate permissions. In the steps below, we'll assume you are using the Azure SQL Database provisioned in this lab. If you are using a new or other Azure SQL Database, apply these steps to that database.
 
-1. From the Azure portal, open the Azure SQL Database server, select **Azure Active Directory**, and click **Set admin**. In the menu that appears, search for your **ODL_User** and click **Select**.
+1. From the **Azure portal**, open the **Azure SQL Database server**, select **Azure Active Directory**, and click **Set admin**. In the menu that appears, search for your **ODL_User** and click **Select** and **Save**.
 
     ![Set SQL Admin](../images/module15/M15-T1-img1.png)
 
@@ -42,7 +42,7 @@ In order for Microsoft Purview to be able to scan for lineage in an Azure SQL Da
 
 ## 2. Configure the Microsoft Purview MSI in the Azure SQL Database
 
-1. From the Azure portal, open the Azure SQL Database instance and select **Query editor**. Log into the **Query editor** using your **ODL_User** account.
+1. From the **Azure portal**, open the **Azure SQL Database** instance and select **Query editor**. Log into the **Query editor** using your **ODL_User** account.
 
     ![Query Editor](../images/module15/M-15.png)
 
