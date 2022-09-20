@@ -75,6 +75,11 @@ To make a data resource available for policy management, the Data Use Management
     ![Create policy](../images/module14/14.07-create-policy.png)
 
 2. On the new policy page, enter the **Name** and **Description** of the policy and select the **New policy statement** button, to add a new policy.
+     
+     |Setting|Value|
+     |---|---|
+     |Name| SalesDataLakeLab|
+     |Description| Access to Sales data|
 
     ![Add policy](../images/module14/14.08-new-policy.png)
 
@@ -90,7 +95,7 @@ To make a data resource available for policy management, the Data Use Management
     
     ![Data Resource1](../images/module14/14.10-data-resource2.png)
 
-7. Select the **Subjects** button and enter **`odl_user_DID@cloudevents.ai`** identity as a principal, group, or MSI. Then select the **OK** button. This will take you back to the policy editor.
+7. Select the **Subjects** button and enter **odl_user_<inject key="DeploymentID" enableCopy="false" />** identity as a principal, group, or MSI. Then select the **OK** button. This will take you back to the policy editor.
 
     ![Policy Subject](../images/module14/M14-T2-img3.png)
 
