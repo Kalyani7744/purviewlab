@@ -31,9 +31,9 @@ Insights provides customers, a single pane of glass view into their catalog and 
  4. [Classifications Insights](#4-classifications-insights) 
  5. [Sensitivity Labels Insights](#5-sensitivity-labels-insights) 
 
-<div align="right"><a href="#module-07---insights">↥ back to top</a></div>
 
->  <p align=center style=bold> <b>PLEASE READ BEFORE PROCEEDING!!</b> </p>
+
+>  **PLEASE READ BEFORE PROCEEDING!!**
 >  
 > * Data Estate Insights can take several hours to surface post the completion of a scan.          
 > * At this point of the workshop, only a limited number of data visualisations may be populated.  
