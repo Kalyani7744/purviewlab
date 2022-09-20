@@ -35,15 +35,15 @@ Your Azure subscription must be registered for the Microsoft.Storage **AllowData
 
 1. Open the Azure portal, type `Subscriptions` in the search bar and click **Subscriptions**.
 
-    ![ALT](/images/module16/16.01.png)
+    ![ALT](/images/16.01.png)
 
 2. Select your Azure subscription.
 
-    ![ALT](/images/module16/16.02.png)
+    ![ALT](/images/16.02.png)
 
 3. Scroll down on the left side menu and click **Preview features**, filter the results by searching for `AllowDataSharing`, select the **AllowDataSharing** feature and click **Register**. Periodically click **Refresh** to confirm the state is **Registered**. Note: This can take 15 minutes to 1 hour to complete.
 
-    ![ALT](/images/module16/16.03.png)
+    ![ALT](/images/16.03.png)
 
 
 ## 2. Create a Storage Account
@@ -58,11 +58,11 @@ Microsoft Purview Data Sharing supports sharing of files and folders in-place fr
 
 1. From the Azure portal, open the portal menu and click **Create a resource**.
 
-    ![ALT](/images/module16/16.04.png)
+    ![ALT](/images/16.04.png)
 
 2. Select **Storage account**.
 
-    ![ALT](/images/module16/16.05.png)
+    ![ALT](/images/16.05.png)
 
 3. Populate the Basics screen and click **Review**.
 
@@ -80,17 +80,17 @@ Microsoft Purview Data Sharing supports sharing of files and folders in-place fr
 
     > **Note**: You can find the **Deployment ID** value from the **Environment Details** page.
    
-    ![ALT](/images/module16/16.06.png)
+    ![ALT](/images/16.06.png)
     
     
 
 4. Click **Create**.
 
-    ![ALT](/images/module16/16.07.png)
+    ![ALT](/images/16.07.png)
 
 5. Once your deployment is complete, click **Go to resource**.
 
-    ![ALT](/images/module16/16.08.png)
+    ![ALT](/images/16.08.png)
 
 ## 3. Populate the Storage Account
 
@@ -98,31 +98,31 @@ Before we can create a share, we must populate our storage account with some fol
 
 1. On the side menu, click **Storage browser**.
 
-    ![ALT](/images/module16/16.10.png)
+    ![ALT](/images/16.10.png)
 
 2. Open **Blob containers**.
 
-    ![ALT](/images/module16/16.11.png)
+    ![ALT](/images/16.11.png)
 
 3. Click **Add container**.
 
-    ![ALT](/images/module16/16.12.png)
+    ![ALT](/images/16.12.png)
 
 4. Set the container name `send` and click **Create**.
 
-    ![ALT](/images/module16/16.13.png)
+    ![ALT](/images/16.13.png)
 
 5. Open the `send` container and click **Add Directory**.
 
-    ![ALT](/images/module16/16.17.png)
+    ![ALT](/images/16.17.png)
 
 6. Set the virtual directory name `data`.
 
-    ![ALT](/images/module16/16.18.png)
+    ![ALT](/images/16.18.png)
 
 7. Click **Upload**.
 
-    ![ALT](/images/module16/16.19.png)
+    ![ALT](/images/16.19.png)
 
 8. Browse your local machine to upload sample data and click **Upload**.
 
@@ -130,11 +130,11 @@ Before we can create a share, we must populate our storage account with some fol
     >
     > In this example, we are using the [Hippocorpus dataset](https://msropendata.com/datasets/0a83fb6f-a759-4a17-aaa2-fbac84577318) from Microsoft Research Open Data. If you would like to use this data, [download a copy of the zip file](https://github.com/tayganr/purviewlab/raw/main/assets/hippocorpus-u20220112.zip) and extract the contents to your local machine.
 
-    ![ALT](/images/module16/16.20.png)
+    ![ALT](/images/16.20.png)
 
 9. Once the upload is complete, click the close icon.
 
-    ![ALT](/images/module16/16.21.png)
+    ![ALT](/images/16.21.png)
 
 
 ## 4. Assign a Storage Account Role
@@ -151,31 +151,31 @@ Before we can create a share, both the data provider and data consumer must have
 
 1. Open **Access Control (IAM)**.
 
-    ![ALT](/images/module16/16.22.png)
+    ![ALT](/images/16.22.png)
 
 2. Click **Add role assignment**.
 
-    ![ALT](/images/module16/16.23.png)
+    ![ALT](/images/16.23.png)
 
 3. Filter the list of roles by searching for `Storage Blob Data Owner`, select the **Storage Blob Data Owner** role, and click **Next**.
 
-    ![ALT](/images/module16/16.24.png)
+    ![ALT](/images/16.24.png)
 
 4. Click **Select members**.
 
-    ![ALT](/images/module16/16.25.png)
+    ![ALT](/images/16.25.png)
 
 5. Filter the results by searching for your account, select your account, and click **Select**.
 
-    ![ALT](/images/module16/M16-T4-S6.png)
+    ![ALT](/images/M16-T4-S6.png)
 
 6. Click **Review + assign**.
 
-    ![ALT](/images/module16/M16-T4-S7.png)
+    ![ALT](/images/M16-T4-S7.png)
 
 7. Click **Review + assign**.
 
-    ![ALT](/images/module16/M16-T4-S8.png)
+    ![ALT](/images/M16-T4-S8.png)
 
 ## 5. Register a Storage Account
 
@@ -183,19 +183,19 @@ Before we can create create or receive a share, the storage account needs to be 
 
 1. From the Azure portal, navigate to your **Microsoft Purview account**, and open the **Microsoft Purview Governance Portal**.
 
-    ![ALT](/images/module16/16.29.png)
+    ![ALT](/images/16.29.png)
 
 2. Navigate to **Data map** > **Sources**, and click **Register**.
 
-    ![ALT](/images/module16/16.30.png)
+    ![ALT](/images/16.30.png)
 
 3. Filter the list of sources by searching for `Blob`, select **Azure Blob Storage**, and click **Continue**.
 
-    ![ALT](/images/module16/16.31.png)
+    ![ALT](/images/16.31.png)
 
 4. Select your **Azure subscription**, **Storage account**, and click **Register**.
 
-    ![ALT](/images/module16/16.32.png)
+    ![ALT](/images/16.32.png)
 
 
 ## 6. Create a Sent Share
@@ -204,31 +204,31 @@ Data sharing within Microsoft Purview allows data providers to share data with d
 
 1. Navigate to **Data share** > **Sent shares**, and click **New share**.
 
-    ![ALT](/images/module16/16.33.png)
+    ![ALT](/images/16.33.png)
 
 2. Provide a share name  `sentShare01`, select the Share type **In-place share**, and click **Continue**.
 
-    ![ALT](/images/module16/16.34.png)
+    ![ALT](/images/16.34.png)
 
 3. Click **Add assets**.
 
-    ![ALT](/images/module16/16.35.png)
+    ![ALT](/images/16.35.png)
 
 4. Set the **Type** to **Azure Blob Storage**, select your registered Azure Blob Storage **source**, and click **Continue**.
 
-    ![ALT](/images/module16/16.36.png)
+    ![ALT](/images/16.36.png)
 
 5. Open the `send` container, select the `data` folder, and click **Add**.
 
-    ![ALT](/images/module16/16.37.png)
+    ![ALT](/images/16.37.png)
 
 6. Click **OK**.
 
-    ![ALT](/images/module16/16.38.png)
+    ![ALT](/images/16.38.png)
 
 7. Type your email address (use the same email address currently logged into Microsoft Purview) as a recipient and click **Create and Share**.
 
-    ![ALT](/images/module16/16.39.png)
+    ![ALT](/images/16.39.png)
 
 
 ## 7. Accept a Received Share
@@ -236,27 +236,27 @@ Data sharing within Microsoft Purview allows data providers to share data with d
 
 1. Navigate to **Data share** > **Received shares** > **Pending**, and click to open the received share `sentShare01`.
 
-    ![ALT](/images/module16/M16-T7-S1.png)
+    ![ALT](/images/M16-T7-S1.png)
 
 2. Update the received share name `receivedShare01` and click **Accept and configure**.
 
-    ![ALT](/images/module16/M16-T7-S2.png)
+    ![ALT](/images/M16-T7-S2.png)
 
 3. Click **Map**.
 
-    ![ALT](/images/module16/16.42.png)
+    ![ALT](/images/16.42.png)
 
 4. Select the target Azure Blob Storage account from the list of sources, set the **Path**, set the **Folder**, and click **Map to target**.
 
-    ![ALT](/images/module16/16.43.png)
+    ![ALT](/images/16.43.png)
 
 5. Click **Close**.
 
-    ![ALT](/images/module16/16.44.png)
+    ![ALT](/images/16.44.png)
 
 6. Periodically click **Refresh** until the asset is **Mapped**.
 
-    ![ALT](/images/module16/16.45.png)
+    ![ALT](/images/16.45.png)
 
 ## Knowledge Check
 
