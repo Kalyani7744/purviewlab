@@ -1,23 +1,16 @@
 # Module 11 - Securely scan sources using Self-Hosted Integration Runtimes
 
-[< Previous Module](../modules/module10.md) - **[Home](../README.md)** - [Next Module >](../modules/module12.md)
-
-## :loudspeaker: Introduction
+## Introduction
 
 Microsoft Purview comes with a managed infrastructure component called AutoResolveIntegrationRuntime. This component is required when scanning sources and most useful when connecting to data stores and computes services with public accessible endpoints. However some of your sources might be VM-based or can be applications that either sit in a private network (VNET) or other networks, such as on-premises. For these kind of scenarios a Self-Hosted Integration Runtime (SHIR) is recommended.
 
 In this lab you learn how to setup a more complex scenario of using a SHIR and private virtual network. First, you'll deploy a virtual network and storage account, then you will deploy and use private endpoints to route all traffic securely, without using any public accessible endpoints. Lastly, you configure the SHIR, Azure Key Vault and configure everything in Microsoft Purview.
 
-## :thinking: Prerequisites
-
-- An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
-- A Microsoft Purview account (see [module 01](../modules/module01.md)).
-
-## :dart: Objectives
+## Objectives
 
 - Connect to on premise data source using a self-hosted integration runtime.
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
 1. [Virtual network creation](#1-virtual-network-creation)
 2. [Storage account creation](#2-storage-account-creation)
@@ -45,7 +38,12 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
   ![ALT](../images/module11/M11-T1-img3.png)
 
-4. Provide a unique name for your Virtual Network and your desired region, click on **Next: IP Addresses>**.
+4. Provide the following details for your Virtual Network and click on **Next: IP Addresses>**.
+  
+  |Settings| Value|
+  |---|---|
+  |Name|PurView_vnet_<inject key="DeploymentID" enableCopy="false" />|
+  |Region|East US
   
   ![ALT](../images/module11/M11-T1-img4.png)
 
@@ -69,9 +67,17 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 3. On the **Create Storage Account** tab, select your subcription, and from the dropdown for **Resource Group** select **purviewlab-rg**. 
    
   ![ALT](../images/module11/M11-T2-img3.png)
-4. Provide a unique name for your storage account and click **Next: Advanced>**.
+
+4. Provide the following details for your storage account and click **Next: Advanced>**.
   
-   ![ALT](../images/module11/M11-T2-img4.png)
+  |Settings|Value|
+  |---|---|
+  |Storage Account Name| purviewsacc<inject key="DeploymentID" enableCopy="false" />|
+  |Region|East Us|
+  |Redundancy| Locally-redundant storage (LRS)|
+  
+
+   ![ALT](../images/module11/M11-T2-S4-N.png)
 
 5. In the **Advanced** section of **Create Storage Account** ensure that **hierarchical namespaces** are selected. Click next to jump over to the **Networking tab**.
 
@@ -91,11 +97,11 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
 Your next step is creating a private endpoint: a network interface that uses a private IP address from your virtual network. This network interface connects you privately and securely to your storage account. It also means all network traffic is routed internally, which is useful to mitigate network exfiltration risks.
 
-1. For creating a new private endpoint, go to your storage account. Click on **Networking**(1) on the left side. Go to **Private endpoint connections**(2) and click on the **+ Private endpoint**(3) icon.
+1. For creating a new private endpoint, go to your storage account **purviewsacc<inject key="DeploymentID" enableCopy="false" />**. Click on **Networking**(1) on the left side. Go to **Private endpoint connections**(2) and click on the **+ Private endpoint**(3) icon.
 
-   ![ALT](../images/module11/M11-T3-img1.png)
+   ![ALT](../images/module11/M11-T3-img1-New.png)
 
-2. On the basics tab provide a name. This will be name of your **Network Interface** created in the virtual network. Click on **Next:Resource>**
+2. On the basics tab provide name as `MyprivateEndpoint` . This will be name of your **Network Interface** created in the virtual network. Click on **Next:Resource>**
 
    
    ![ALT](../images/module11/M11-T3-img2.png)
@@ -113,7 +119,7 @@ Your next step is creating a private endpoint: a network interface that uses a p
 
    ![ALT](../images/module11/M11-T3-img5.png)
 
-6. After creating the endpoint return to the network overview settings, Go back to the **Firewall and virtual networks**(1) settings within your Storage Account. Under Public network access select **Enabled from selected virtual networks and IP addresses**(2), select **Add existing virtual network**(3) under Virtual networks. On the Add network pane select your **virtual network**(4) and **subnet**(5) from the list that you created previously, and click **Enable**(6) and **Add**. Then select **Save**(7).
+6. After creating the endpoint return to the network overview settings, Go back to the **Firewall and virtual networks**(1) settings within your **Storage Account**. Under Public network access select **Enabled from selected virtual networks and IP addresses**(2), select **Add existing virtual network**(3) under Virtual networks. On the Add network pane select your **virtual network**(4) and **subnet**(5) from the list that you created previously, and click **Enable**(6) and **Add**. Then select **Save**(7).
 
    ![ALT](../images/module11/M11-T3-img6.png)
 
