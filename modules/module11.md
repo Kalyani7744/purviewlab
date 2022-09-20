@@ -172,19 +172,19 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 
       ![ALT](../images/module11/M11-T4-img5.png)
 
-8. On the **Intergartion run time setup** pane select **Self hosted**, and **Continue**.
+8. On the **Intergartion run time setup** pane select **Self hosted**, and **Continue** and **Create**.
   
  
       ![ALT](../images/module11/M11-T4-img6.png)
 
-8. After completing the wizard, you see a link where you can download the latest version of the runtime. You also find two keys. Copy the first one to your clipboard.
+9. After completing the wizard, you see a link where you can download the latest version of the runtime. You also find two keys. Copy the first one to your clipboard.
 
    > **Note**: The runtime has to be installed on the VM you are connected through RDP (i.e,- *pur-M11-VM*).
    
     
    ![ALT](../images/module11/pic14.png)
  
-9. Open the download link in the Remote VM, and select download.
+10. Open the download link in the Remote VM, and select download.
 
       ![ALT](../images/module11/M11-T4-img7.png)
    
@@ -223,36 +223,34 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 
       ![ALT](../images/module11/pic16.png)
       
-<div align="right"><a href="#module-11---securely-scan-sources-using-self-hosted-integration-runtimes">↥ back to top</a></div>
 
 ## 5. Key vault creation
 
 For securely accessing your storage account you will store your storage account key in a Key Vault. A key vault is a central place for managing your keys, secrets, credentials and certifications. This avoids keys get lost or changing these is a cumbersome task.
 
-1. For creating a Key Vault go back to your Azure Portal. Search for Key Vault, hit create, provide the details mentioned below and select **Review+Create**.
+1. For creating a Key Vault go back to your **Azure Portal**. Search for **Key Vault**, hit create, provide the details mentioned below and select **Review+Create**.
 
 |Settings|Value|
 |---|---|
 |Resource Group|purviewlab-rg|
-|Key vault name|Keyvault-DID|
+|Key vault name|Keyvault-<inject key="DeploymentID" enableCopy="false" />|
 
-  > **Note**: Replace **DID** value it is available in the **Environment Details**
-   
+    
    ![ALT](../images/module11/M11-T5-img1.png)
 
 2. After deployment you need to ensure that Microsoft Purview has read access to the Key Vault. Open Key Vault, go to **Access configuration**, and hit **Go to access policies**.
 
    ![ALT](../images/module11/pic19.png)
 
-3. Inside **Access Policies** select the **ODL_User_DID** and select **+Create**.
+3. Inside **Access Policies** select the **ODL_User_<inject key="DeploymentID" enableCopy="false" />** and select **+Create**.
    
    ![ALT](../images/module11/M11-T5-img3.png)
 
-4. Because the Account Key is just a secret we will only provide access for Get and List. Click **Next**.
+4. Because the Account Key is just a secret we will only provide access for **Get** and **List**. Click **Next**.
 
    ![ALT](../images/module11/M11-T5-img4.png)
 
-5. For providing access you need to use the system-managed identity of Microsoft Purview. This identity has the same name as your Purview instance name. Find **pvlab-DID-pv**, select it and hit **Next**.
+5. For providing access you need to use the system-managed identity of Microsoft Purview. This identity has the same name as your Purview instance name. Find **pvlab-<inject key="DeploymentID" enableCopy="false" />-pv**, select it and hit **Next**.
 
    ![ALT](../images/module11/M11-T5-img5.png)
    
@@ -260,7 +258,11 @@ For securely accessing your storage account you will store your storage account 
  
    ![ALT](../images/module11/M11-T5-img6.png)
  
-7. Next you need to ensure two things: 1) purview’s managed identity has access to read from the storage account 2) the storage account key has been stored in the Key Vault. Go back to your storage account. Navigate to **Access Control (IAM)** and select **Add** in the drop down select **Add role assignment**.
+7. Next you need to ensure two things: 
+    1) purview’s managed identity has access to read from the storage account 
+    2) the storage account key has been stored in the Key Vault. 
+   
+   Go back to your storage account. Navigate to **Access Control (IAM)** and select **Add** in the drop down select **Add role assignment**.
 
    ![ALT](../images/module11/M11-T5-img7.png)
 
@@ -268,7 +270,7 @@ For securely accessing your storage account you will store your storage account 
 
    ![ALT](../images/module11/M11-T5-img8.png)
 
-9. Under **Members** choose **Managed identity**(1) for **Assign access to**, click on **+Select members**(2), in the **Select managed identities** pane from the drop down for **Managed identities** select **Microsoft Purview account**(3), under **Select** choose **pvlab-728330-pv**(4) and **Select**(5).
+9. Under **Members** choose **Managed identity**(1) for **Assign access to**, click on **+Select members**(2), in the **Select managed identities** pane from the drop down for **Managed identities** select **Microsoft Purview account**(3), under **Select** choose **pvlab-<inject key="DeploymentID" enableCopy="false" />-pv**(4) and **Select**(5).
 
  ![ALT](../images/module11/M11-T5-img9.png)
  
@@ -276,7 +278,7 @@ For securely accessing your storage account you will store your storage account 
  
  ![ALT](../images/module11/M11-T5-img10.png)
 
-11. Next, go to **Access keys** within the storage account section. Show the keys using the button at the top. Select Key1 and copy the secret to your clipboard. Head back to your Key Vault.
+11. Next, go to **Access keys** within the **Storage account** section. Show the keys using the show button. Select Key1 and copy the secret to your clipboard. Head back to your Key Vault.
 
    ![ALT](../images/module11/pic18.png)
 
@@ -284,7 +286,7 @@ For securely accessing your storage account you will store your storage account 
 
  ![ALT](../images/module11/M11-T5-img11.png)
 
-13.The dialog below should pop up. Enter name **"key-purview-secret"** for your secret and copy/paste the Storage Account Key value from your clipboard. Hit Create to store your newly created secret.
+13.The dialog below should pop up. Enter name **`key-purview-secret`** for your secret and copy/paste the Storage Account Key value from your clipboard. Hit **Create** to store your newly created secret.
 
    ![ALT](../images/module11/M11-T5-img12.png)
 
@@ -310,7 +312,7 @@ Now the Storage Account Key has been stored in the Key Vault it is time to move 
 2. Now you can move to **Data map**(1)>**Sources**(2) and select **Register**(3) in the **Register source** pane , search and select **Azure Data Lake Storage Gen2**(4) and **Continue**(5) select your storage account from the list.
 
 
-     ![ALT](../images/module11/M11-T6-img2.png)
+    [ALT](../images/module11/M11-T6-img2.png)
 
 3. In the **Register sources** select your storage account and register.
      
