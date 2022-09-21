@@ -42,25 +42,21 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 
     ![prv3](../images/module02/prv3.png)
 
-1. Under **Permission**, select **secret permission(1)**,click on  **select all(2)** and click on **Next(3)**.
+1. On the **Permission** blade, select **secret permission(1)**,click on  **select all(2)** and click on **Next(3)**.
 
     ![prv5](../images/module02/prv6.png)
 
-1. Under **Principal**, Search for **odl_user_<inject key="Deployment ID" enableCopy="true"/>**, select the account name, then click **Next**.
+1. On the **Principal** blade, Search for **odl_user_<inject key="Deployment ID" enableCopy="true"/>**, select the account name, then click **Next**.
 
     ![Search Principal](../images/module02/prv7.png)
 
-1. Under **Appliction** leave everything as default and click on **Next**.
+1. On the **Appliction** blade, leave everything as default and click on **Next**.
    
     ![Search Principal](../images/module02/prv8.png)
 
-1. Under **Review + create** click on **create**.
+1. On the **Review + create** blade, click on **create**.
 
     ![Search Principal](../images/module02/prv9.png)
-
-1. Make sure that keyvault updation is success is completed.
-
-    ![Search Principal](../images/module02/prv10.png)
 
 ## 2. Key Vault Access Policy #2 (Grant Microsoft Purview Access)
 
@@ -71,25 +67,22 @@ In this next step, we are creating a second access policy which will provide Mic
 
     ![prv3](../images/module02/prv3.png)
 
-1. Under **Permission**, select **secret permission(1)**,click on  **select Get,List(2)** and click on **Next(3)**.
+1. On the **Permission** blade, select **secret permission(1)**,click on  **select Get,List(2)** and click on **Next(3)**.
 
    ![prv11](../images/module02/m2b-t2-step2.png)
 
-1. Under **Principal**, Search for **pvlab-<inject key="Deployment ID" enableCopy="true"/>-pv**, select the account name, then click **Next**.
+1. On the **Principal** blade, search for **pvlab-<inject key="Deployment ID" enableCopy="false"/>-pv**, select the account name, then click **Next**.
 
     ![Search Principal](../images/module02/prv12.png)
 
-1. Under **Appliction** leave everything as default and click on **Next**.
+1. On the **Appliction** blade, leave everything as default and click on **Next**.
    
     ![Search Principal](../images/module02/prv13.png)
 
-1. Under **Review + create** click on **create**.
+1. On the **Review + create** blade, click on **create**.
 
     ![Search Principal](../images/module02/prv14.png)
 
-1. Make sure that keyvault updation is success.
-
-    ![Search Principal](../images/module02/prv10.png)
 
 ## 3. Generate a Secret
 
@@ -116,11 +109,15 @@ In order to securely store our Azure SQL Database password, we need to generate 
 
 To make the secret accessible to Microsoft Purview, we must first establish a connection to Azure Key Vault.
 
-1. Navigate back to the browser tab in which **Purview Studio** is open, then to this path **Management Center** > **Credentials**, click **Manage Key Vault connections**.
+1. Navigate back to the browser tab in which **Purview Studio** is open, then select **Management** from the left hand side menu.
+
+    ![prv15](../images/module02/prv15.1.png)
+    
+1. Click on **Credentials** then select **Manage Key Vault connections**.
 
     ![prv15](../images/module02/prv15.png)
 
-2. Click **New**.
+2. Click on **New** to add the new Key Vault connection.
 
     ![New Key Vault Connection](../images/module02/m2b-t4-step2.png)
 
@@ -141,11 +138,11 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
     ![](../images/module02/m2b-t4-step4.png)
 
-6. Under **Credentials** click **New**.
+6. From the **Management** tab, select **Credentials** and click on **New**.
 
     ![prv15](../images/module02/prv16.png)
 
-7.  Using the drop-down menu items, set the **Authentication method** to `SQL authentication` and the **Key Vault connection** to `myKeyVault`. Once the drop-down menu items are set, **Copy** and **paste** the values below into the matching fields, and then click **Create**.
+7.  Set the **Authentication method** to `SQL authentication` and the **Key Vault connection** to `myKeyVault` using the drop-down menu. **Copy** and **paste** the values below into the matching fields, and then click **Create**.
 
     **Name**
     ```
