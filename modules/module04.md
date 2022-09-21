@@ -193,7 +193,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
     ![Wildcard Search](../images/module04/M4-Update4.1.png)
 
-2. Click **Edit**.
+2. Click on **Edit** to edit the dataset.
 
     ![Edit Asset](../images/module04/M4-Update5.1.png)
 
