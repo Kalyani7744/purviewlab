@@ -4,7 +4,7 @@
 
 Microsoft Purview is a unified data governance solution that helps you manage and govern your data at large. It combines many different services for scanning, collecting, organizing and sharing metadata. It uses a catalogue for discoverability, but also offers other features, such as automatic classification, sharing, access management and so on.
 
-When planning your Microsoft Purview deployment, you first need to provision a Microsoft Purview account. Next, you need to define your collections for managing and grouping data assets together. A collection is a logical container in which your metadata, such as data sources, will be managed. When creating collections and placing them in a hierarchy, you need to make different considerations, such as your security requirements, governance structure and democratization needs. For example, a more centralized-alined style of data management leads to different collection structure then a more domain-oriented style of data management. Depending on your needs, different topologies can be used for managing your data. Best practices for this can be found on [this website](https://docs.microsoft.com/azure/purview/concept-best-practices-collections).
+When planning your Microsoft Purview deployment, you first need to provision a Microsoft Purview account. Next, you need to define your collections for managing and grouping data assets together. A collection is a logical container in which your metadata, such as data sources, will be managed. When creating collections and placing them in a hierarchy, you need to make different considerations, such as your security requirements, governance structure and democratization needs. For example, a more centralized-alined style of data management leads to a different collection structure then a more domain-oriented style of data management. Depending on your needs, different topologies can be used for managing your data. Best practices for this can be found on [this website](https://docs.microsoft.com/azure/purview/concept-best-practices-collections).
 
 ## Objectives
 
@@ -33,7 +33,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
 3. Provide the below inputs on the **Basics** tab.  
 
-    > Note: Replace the **{randomId}** with the **Deployment Id** from the Environemnt Details Page.
+    > Note: Replace the **{randomId}** with the **Deployment Id** from the Environment Details Page.
 
     | Parameter  | Example Value |
     | --- | --- |
@@ -47,7 +47,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
     > **Did you know?**
     >
-    > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that is needed to keep the Microsoft Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
+    > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that are needed to keep the Microsoft Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
     >
     > Capacity Units are required regardless of whether you plan to invoke the Microsoft Purview API endpoints directly (i.e. ISV scenario) or indirectly via Purview Studio (GUI).
     >
@@ -87,7 +87,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
     ![Add Role Assignment](../images/module01/Mod1-purview09.png)
 
-5. Search for the user **user 01** within your Azure Active Directory, select their account, click OK.
+5. Search for the user **user 01** within your Azure Active Directory, select their account and click OK.
 
     ![Add or Remove Data Curators](../images/module01/user01.png)
 
@@ -135,4 +135,4 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
 ## Summary
 
-This module provided an overview of how to provision an Microsoft Purview account using the Azure Portal and how to grant the appropriate level of access to Microsoft Purview's data plane.
+This module provided an overview of how to provision a Microsoft Purview account using the Azure Portal and how to grant the appropriate level of access to Microsoft Purview's data plane.
