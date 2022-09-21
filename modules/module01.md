@@ -1,4 +1,4 @@
-# Module 01 - Create an Microsoft Purview Account
+# Module 01 - Create a Microsoft Purview Account
 
 ## Introduction
 
@@ -18,7 +18,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 | 1 | [Create an Microsoft Purview Account](#1-create-an-azure-purview-account) | Azure Administrator |
 | 2 | [Grant Access to Microsoft Purview's Data Plane](#2-grant-access-to-azure-purviews-data-plane) | Collection Administrator |
 
-## 1. Create an Microsoft Purview Account
+## 1. Create a Microsoft Purview Account
 
 1. In the Azure portal, expand the portal's left navigation and select **+ Create a resource**, search for **Microsoft Purview** and select it.
     
