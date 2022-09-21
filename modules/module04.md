@@ -213,7 +213,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
 1. From the **Glossary** screen, open an existing term `Aggregation`.
 
-    ![Term Details](../images/module04/M4-T6-S1.1.png
+   ![Term Details](../images/module04/M4-T6-S1.1.png)
 
 2. Navigate to the **Related** tab and click **Edit**.
 
