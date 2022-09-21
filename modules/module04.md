@@ -189,7 +189,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
 ## 5. Assign a Term to an Asset
 
-1. Perform a wildcard search by typing asterisk (**\***) into the search bar and hitting the Enter key to submit the query. Click on an asset title `QueriesByState` to view the details.
+1. Perform a wildcard search by typing asterisk (**\***) into the search bar and hitting the Enter key to submit the query. Click on the asset title `QueriesByState` to view the details.
 
     ![Wildcard Search](../images/module04/M4-Update4.1.1.png)
 
@@ -205,7 +205,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
     ![Assigned Terms](../images/module04/M4-Update7.1.png)
 
-5. Click **Refresh** to view the **Catalog assets** that the term is assigned to .
+5. Click **Refresh** to view the **Catalog assets** that the term is assigned to.
 
     ![Catalog assets](../images/module04/M4-Update8.1.png)
     
@@ -235,7 +235,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
     > **Did you know?**
     >
-    > Glossary terms can be related to two different types of contacts. **Experts** are typically business process or subject matter experts. Where as **Stewards** define the standards for a data object or business term. They drive quality standards, nomenclature, rules.
+    > Glossary terms can be related to two different types of contacts. **Experts** are typically a business process or subject matter experts. Where as **Stewards** define the standards for a data object or business term. They drive quality standards, nomenclature, rules.
 
     ![Term Contacts](../images/module04/M4-Update10.1.png)
 
