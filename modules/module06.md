@@ -2,11 +2,11 @@
 
 ## Introduction
 
-One of the features of Microsoft Purview is the ability to show the lineage between datasets created by data processes. Data lineage shows how data moves over time and enables you to see how data is used and what changes to data have been made. This visibility helps you to understand, trace back and correct data at the source of origin. Lineage, thus also results into better data quality.
+One of the features of Microsoft Purview is the ability to show the lineage between datasets created by data processes. Data lineage shows how data moves over time and enables you to see how data is used and what changes to data have been made. This visibility helps you to understand, trace back and correct data at the source of origin. Lineage, thus also results in to better data quality.
 
 Lineage is typically captured from tools that extract, transform and load data. These ETL tools are, for example, Data Factory, Data Share, and Power BI. They capture the lineage of data as it moves. By scanning these ETL tools you can capture and visualize the lineage in Microsoft Purview.
 
-Microsoft Purview also supports the ability to upload custom lineage. Custom lineage is lineage that you created yourself, for example by uploading metadata using the Microsoft Purview's Atlas REST APIs. Lineage in Purview includes relationships between datasets and processes.
+Microsoft Purview also supports the ability to upload custom lineage. Custom lineage is a lineage that you created yourself, for example by uploading metadata using  Microsoft Purview's Atlas REST APIs. Lineage in Purview includes relationships between datasets and processes.
 
 > **Did you know?**
 >
@@ -126,7 +126,7 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
 
 ## 3. View Lineage in Azure Purview
 
-1. Navigate back to the Purview Studio, from the **Data catalog** screen click **Browse assets**.
+1. Navigate back to the Purview Studio, from the **Data catalog** screen click **Browse**.
 
     ![](../images/module06/m6tsk3stp1.1.png)
 
