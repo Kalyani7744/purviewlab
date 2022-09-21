@@ -8,14 +8,14 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
 ## Objectives
 
-* Create an Microsoft Purview account using the Azure portal.
+* Create a Microsoft Purview account using the Azure portal.
 * Provide additional users access to Microsoft Purview's data plane.
 
 ## Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
-| 1 | [Create an Microsoft Purview Account](#1-create-an-azure-purview-account) | Azure Administrator |
+| 1 | [Create a Microsoft Purview Account](#1-create-an-azure-purview-account) | Azure Administrator |
 | 2 | [Grant Access to Microsoft Purview's Data Plane](#2-grant-access-to-azure-purviews-data-plane) | Collection Administrator |
 
 ## 1. Create a Microsoft Purview Account
