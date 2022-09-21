@@ -191,11 +191,11 @@ In this lab you learn how to create terms using a system and custom term templat
 
 1. Perform a wildcard search by typing asterisk (**\***) into the search bar and hitting the Enter key to submit the query. Click on an asset title `QueriesByState` to view the details.
 
-    ![Wildcard Search](../images/module04/M4-Update4.1.png)
+    ![Wildcard Search](../images/module04/M4-Update4.1.1.png)
 
 2. Click on **Edit** to edit the dataset.
 
-    ![Edit Asset](../images/module04/M4-Update5.1.png)
+    ![Edit Asset](../images/module04/M4-Update5.1.1.png)
 
 3. Open the **Glossary terms** drop-down menu and select a glossary term named `Contoso Child`. Click **Save**.
 
