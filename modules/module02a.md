@@ -79,11 +79,11 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
    ![](../images/module02/stg1.png)
    
-5. Select **Account Managment** and click on **Add an account** to add the account. 
+5. Select **Account Management** and click on **Add an account** to add the account. 
 
    ![](../images/module02/stg1.1.png)
  
-6. On the **Select Resource** blade, select **Subcription**.
+6. On the **Select Resource** blade, select **Subscription**.
 
 7. On the **select Azure Environment** page, select **Azure** and click on **Next**. Sign in using the below credentials.
 
@@ -135,7 +135,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
    ```
    Contoso
    ```
-
+   
     ![New Collection](../images/module02/02.76-collection-create.png)
 
 ## 4. Register a Source (ADLS Gen2)
@@ -220,7 +220,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 2. At which point does Microsoft Purview begin to populate the data map with assets?
 
-    A ) After an Microsoft Purview account is created  
+    A ) After a Microsoft Purview account is created  
     B ) After a Data Source has been registered    
     C ) After a Data Source has been scanned
 
