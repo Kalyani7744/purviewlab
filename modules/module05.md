@@ -217,7 +217,7 @@ Microsoft Purview provides a large set of default classifications that represent
 
 1. Once the scan has complete, perform a wildcard search by typing in the asterisk character (**\***) into the search bar and hit Enter.
 
-    ![Wildcard Search](../images/module05/m5ex1stp1.png)
+    ![Wildcard Search](../images/module05/m5ex6stp1.png)
 
 2. Limit the search results by setting **Classification** within the filter panel to **Twitter Handle**. Click on the asset title (**twitter_handles.parquet**) to view the asset details.
 
