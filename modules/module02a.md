@@ -41,7 +41,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 2. Select **Access Control (IAM) (1)** from the left navigation menu and click **Add role assignments (2)**.
 
-    ![Microsoft Purview](../images/module02/m2ex1stp2.png)
+    ![Microsoft Purview](../images/module02/m2ex1stp2.1.png)
 
 3. Filter the list of roles by searching for **Storage Blob Data Reader (1)**, click the row to select the role, and then click **Next (2)**.
 
