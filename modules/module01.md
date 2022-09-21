@@ -20,18 +20,20 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
 ## 1. Create a Microsoft Purview Account
 
-1. In the Azure portal, expand the portal's left navigation and select **+ Create a resource**, search for **Microsoft Purview** and select it.
+1. In the Azure portal, expand the left navigation menu and select **+ Create a resource**. 
     
     ![prv1](../images/module01/prv35.png)
     
 
+2. In the marketplace search for **Microsoft Purview** and select it.
+
     ![prv1](../images/module01/prv2.png)
 
-2. On the **Microsoft Purview** blade, select **Create**.
+3. On the **Microsoft Purview** blade, select **Create**.
 
     ![Create Purview Resource](../images/module01/purv1.png)
 
-3. Provide the below inputs on the **Basics** tab.  
+4. Provide the below inputs on the **Basics** tab.  
 
     > Note: Replace the **{randomId}** with the **Deployment Id** from the Environment Details Page.
 
@@ -57,15 +59,15 @@ When planning your Microsoft Purview deployment, you first need to provision a M
     >
     > For more information, check out the [Microsoft Purview Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-purview/) page.
 
-4. On the **Networking** tab, select **All networks**.
+5. On the **Networking** tab, select **All networks**.
    
     ![Networking](../images/module01/purv3.png)
 
-5. On the **Review + Create** tab, once the message in the ribbon returns "Validation passed", verify your selections and click **Create**.
+6. On the **Review + Create** tab, once the message in the ribbon returns "Validation passed", verify your selections and click **Create**.
 
     ![Create Purview Account](../images/module01/purv4.png)
 
-6. Wait several minutes while your deployment is in progress. Once complete, click **Go to resource**.
+7. Wait several minutes while your deployment is in progress. Once complete, click **Go to resource**.
 
     ![Go to resource](../images/module01/Mod1-purview05.png)
 
