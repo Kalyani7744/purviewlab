@@ -35,17 +35,17 @@ In this module, you'll walk through how to register and scan data sources. You'l
 > 
 > In this module we will walk through how to grant the Microsoft Purview Managed Identity the necessary access to successfully configure and run a scan.
 
-1. Navigate to the **purviewlab-rg** resource group, and then go to `pvlab{randomId}adls` storage account.
+1. Navigate to the **purviewlab-rg** resource group, and select `pvlab{randomId}adls` storage account.
 
-    ![Microsoft Purview](../images/module02/Mod2A-purview1.png)
+    ![Microsoft Purview](../images/module02/m2ex1stp1.png)
 
 2. Select **Access Control (IAM) (1)** from the left navigation menu and click **Add role assignments (2)**.
 
-    ![Microsoft Purview](../images/module02/Mod2A-purview2.png)
+    ![Microsoft Purview](../images/module02/m2ex1stp2.png)
 
 3. Filter the list of roles by searching for **Storage Blob Data Reader (1)**, click the row to select the role, and then click **Next (2)**.
 
-    ![Access Control Role](../images/module02/Mod2A-purview3.png)
+    ![Access Control Role](../images/module02/m2ex1stp3.png)
 
 4. Under **Assign access to**, select **Managed identity (1)** and click **+ Select members (2)**. 
 
@@ -77,7 +77,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
     
 4. Go to the **desktop** and Open the **Azure Storage Explorer** application.
 
-   ![](../images/module02/stg1.png)
+   ![](../images/module02/m2ex2stp4.png)
    
 5. Select **Account Management** and click on **Add an account** to add the account. 
 
@@ -128,7 +128,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 1. Navigate back to the browser tab in which Purview Studio is open. From the Purview Studio, navigate to **Data Map** > **Collections**, and click  **Add a collection**.
 
-    ![New Collection](../images/module02/M2AT3S1.png)
+    ![New Collection](../images/module02/m2aex3stp1.png)
 
 2. Provide the below value for the collection name and click on **Create**.
 
@@ -142,7 +142,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 1. From the Purview Studio, navigate to **Data Map** > **Sources**, and click on **Register**.
 
-    ![Register](../images/module02/M2AT4S1.png)
+    ![Register](../images/module02/m2aex4stp1.png)
 
 2. On the **Register Sources** blade, scroll down and select **Azure Data Lake Storage Gen2** and click **Continue**.
 
@@ -158,13 +158,13 @@ In this module, you'll walk through how to register and scan data sources. You'l
     >
     > At this point, we have simply registered a data source. Assets are not written to the catalog until after a scan has finished running.
 
-    ![Source Properties](../images/module02/02.22-sources-properties-1.png)
+    ![Source Properties](../images/module02/m2aex4stp3.png)
 
 ## 5. Scan a Source with the Microsoft Purview Managed Identity
 
 1. From the Purview Studio, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, click the **New Scan** button.
 
-    ![New Scan](../images/module02/M2AT5S1.png)
+    ![New Scan](../images/module02/m2aex5stp1.png)
 
 2. Click **Test connection** to ensure the Microsoft Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. If successful, click **Continue**.
 
@@ -188,11 +188,11 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 6. Click **Save and Run**.
 
-    ![Run Scan](../images/module02/m2a-t5-step6.png)
+    ![Run Scan](../images/module02/m2aex5stp6.png)
 
 7. To monitor the progress of the scan run, click **View Details**.
 
-    ![View Details](../images/module02/M2AT5S7.png)
+    ![View Details](../images/module02/m2aex5stp7.png)
 
 8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
 
