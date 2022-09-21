@@ -61,6 +61,7 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
     ![](../images/module06/06.09-adf-author.png)
 
 2. Click **Ingest**.
+
     ![](../images/module06/06.10-adf-copywizard.png)
 
 3. Select **Built-in copy task** and then click **Next**.
@@ -127,25 +128,25 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
 
 1. Navigate back to the Purview Studio, from the **Data catalog** screen click **Browse assets**.
 
-    ![](../images/module06/M6-T3-S1.png)
+    ![](../images/module06/m6tsk3stp1.1.png)
 
 2. Switch to the **By source type** tab and then select **Azure Data Factory**.
 
-    ![](../images/module06/M6-T3-S2.png)
+    ![](../images/module06/m6tsk3stp2.png)
 
 3. Select the **Azure Data Factory account instance**.
 
-    ![](../images/module06/M6-T3-S3.png)
+    ![](../images/module06/m6tsk3stp3.png)
 
 4. Select the **Copy Pipeline** and click to open the **Copy Activity**.
     
-    ![](../images/module06/pvdf8.png)
+    ![](../images/module06/m6tsk3stp4.png)
 
 5. Navigate to the **Lineage** tab.
 
 6. You can see the lineage information has been automatically pushed from Azure Data Factory to Purview. On the left are the two sets of files that share a common schema in the source folder, the copy activity sits in the center, and the output file sits on the right.
 
-    ![](../images/module06/M6-T3-S6.png)
+    ![](../images/module06/m6tsk3st5.png)
 
 ## Knowledge Check
 [http://aka.ms/purviewlab/q06](http://aka.ms/purviewlab/q06)
