@@ -104,7 +104,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
 
 While the search experience is ideal for keyword based discovery, Purview Studio allows alternate methods of browsing assets (i.e. by collection OR by source type).
 
-1. Open the **Microsoft Purview Governance Portal**, navigate to **Data Catalog** and click **Browse**.
+1. Open the **Microsoft Purview Governance Portal**, navigate to **Data Catalog** and click **Browse Assets**.
 
     ![Browse Assets](../images/module03/prv28.png)
 
