@@ -182,7 +182,10 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 ## 6. Scan a Source with Azure Key Vault Credentials
 
-1. From the Purview Studio, navigate to **Data map** > **Sources**, and within the Azure SQL Database tile, click the **New Scan** button.
+1. From the Purview Studio, select **Data map** from the left hand side menu.
+
+    ![](../images/module01/purvex1tsk2stp2.png)
+1. Navigate to**Sources**, and within the Azure SQL Database tile, click the **New Scan** button.
 
     ![](../images/module02/Mod2B-purview03-1.png)
 
