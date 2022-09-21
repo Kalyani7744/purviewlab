@@ -32,7 +32,7 @@ Microsoft Purview provides a large set of default classifications that represent
 
 1. Open Purview Studio, navigate to **Data map**(1) > **Classifications**(2) (under Annotation management) and click **New**(3).
 
-    ![New Classification](../images/module05/M5-T1-S1.png)
+    ![New Classification](../images/module05/m5ex1stp1.png)
 
 2. **Copy** and **paste** the values below into the appropriate fields and click **OK**.
 
@@ -49,13 +49,13 @@ Microsoft Purview provides a large set of default classifications that represent
 
 3. Navigate to the **Custom** tab to confirm the custom classification has been created.
 
-    ![Create Classification](../images/module05/M5-T1-S3.png)
+    ![Create Classification](../images/module05/m5tsk1stp3.png)
 
 ## 2. Create a Custom Classification Rule (Regular Expression)
 
 1. Navigate to **Data map**(1) > **Classification rules**(2) (under Annotation management) and click **New**(3).
 
-    ![New Classification Rule](../images/module05/M5-T2-S1.png)
+    ![New Classification Rule](../images/module05/m5ex2stp1.png)
 
 2. Populate the classification rule fields as per the example below and click **Continue**.
 
@@ -112,7 +112,7 @@ Microsoft Purview provides a large set of default classifications that represent
     >
     > **Scan Rule Sets** determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
-    ![New Scan Rule Set](../images/module05/M5-T3-S1.png)
+    ![New Scan Rule Set](../images/module05/m5ex3stp1.png)
 
 2. Change the **Source Type** to `Azure Data Lake Storage Gen2` then **copy** and **paste** the values below into the appropriate fields. Click **Continue**.
 
@@ -165,7 +165,7 @@ Microsoft Purview provides a large set of default classifications that represent
 
 6. Select the local copy of **twitter_handles.parquet** and click **Upload**.
 
-    ![Upload Parquet](../images/module05/05.16-explorer-parquet.png)
+    ![Upload Parquet](../images/module05/m5tsk4stp6.png)
 
 ## 5. Scan an Azure Data Lake Storage Gen2 Account
 
@@ -173,7 +173,7 @@ Microsoft Purview provides a large set of default classifications that represent
   
     > **Note**: If you have not registered your Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
 
-    ![New Scan](../images/module05/M5-T5-S1.png)
+    ![New Scan](../images/module05/m5ex5stp1.png)
 
 2. Click **Test connection** to ensure the credentials have access and click **Continue**.
 
@@ -205,31 +205,31 @@ Microsoft Purview provides a large set of default classifications that represent
 
 9. To view the progress of the scan, navigate to **Data map**(1)>**Sources**(2) and click **View details**(3) on the Azure Data Lake Storage Gen2 tile.
 
-    ![Source Details](../images/module05/M5-T5-S9.png)
+    ![Source Details](../images/module05/m5ex5stp9.png)
 
 10. Periodically click **Refresh** to update the scan status until **Complete**. 
    
     > **Note**: This will take approximately 5 to 10 minutes.
 
-    ![Scan Progress](../images/module05/pvcl7.2.png)
+    ![Scan Progress](../images/module05/m5ex5st10.png)
 
 ## 6. Search by Classification
 
 1. Once the scan has complete, perform a wildcard search by typing in the asterisk character (**\***) into the search bar and hit Enter.
 
-    ![Wildcard Search](../images/module05/M5-T6-S1.png)
+    ![Wildcard Search](../images/module05/m5ex1stp1.png)
 
 2. Limit the search results by setting **Classification** within the filter panel to **Twitter Handle**. Click on the asset title (**twitter_handles.parquet**) to view the asset details.
 
-    ![Filter Classification](../images/module05/M5-T6-S2.png)
+    ![Filter Classification](../images/module05/05.28-search-filter.png)
 
 3. You will notice on the Overview tab that the schema includes the Twitter Handle classification. To identity which column has been classified, navigate to the **Schema** tab.
 
-    ![Asset Details](../images/module05/M5-T6-S3.png)
+    ![Asset Details](../images/module05/05.29-asset-details.png)
 
 4. Within the Schema tab we can see that **Account name** is the column that has been classified.
 
-    ![Asset Schema](../images/module05/M5-T6-S4.png)
+    ![Asset Schema](../images/module05/05.30-asset-schema.png)
 
 ## Knowledge Check
 
