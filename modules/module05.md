@@ -89,11 +89,11 @@ Microsoft Purview provides a large set of default classifications that represent
 
     > **Did you know?**
     >
-    > **Thresholds** help minimise the possibility of false-positive classifications. **Minimum match threshold** is the minimum percentage of data value matches in a column that needs to be found by the scanner for the classification to be applied.
+    > **Thresholds** help minimize the possibility of false-positive classifications. **Minimum match threshold** is the minimum percentage of data value matches in a column that needs to be found by the scanner for the classification to be applied.
 
     ![Pattern Detection](../images/module05/M5-Update5.png)
 
-7. Modify the **Data Pattern** by replacing the plus symbol (`+`) with with `{5,15}`.
+7. Modify the **Data Pattern** by replacing the plus symbol (`+`) with  `{5,15}`.
 
     * The plus symbol (`+`) indicates one or more characters matching the preceding item. This may lead to false positives as it would allow for an unlimited number of alphanumeric characters. Twitter handles must be a minimum of 5 and a maximum of 15 characters.
     * With `{5,15}`, this will ensure matches only occur where there is a at least 5 and at most 15 occurrences of the preceding item.
@@ -215,7 +215,7 @@ Microsoft Purview provides a large set of default classifications that represent
 
 ## 6. Search by Classification
 
-1. Once the scan has complete, perform a wildcard search by typing in the asterisk character (**\***) into the search bar and hit Enter.
+1. Once the scan has been completed, perform a wildcard search by typing in the asterisk character (**\***) into the search bar and hit Enter.
 
     ![Wildcard Search](../images/module05/m5ex6stp1.png)
 
@@ -223,7 +223,7 @@ Microsoft Purview provides a large set of default classifications that represent
 
     ![Filter Classification](../images/module05/05.28-search-filter.png)
 
-3. You will notice on the Overview tab that the schema includes the Twitter Handle classification. To identity which column has been classified, navigate to the **Schema** tab.
+3. You will notice on the Overview tab that the schema includes the Twitter Handle classification. To identify which column has been classified, navigate to the **Schema** tab.
 
     ![Asset Details](../images/module05/05.29-asset-details.png)
 
@@ -246,7 +246,7 @@ Microsoft Purview provides a large set of default classifications that represent
     A ) True  
     B ) False
 
-3. Custom classifications are automatically in scope of a system default scan rule set.
+3. Custom classifications are automatically in the scope of a system default scan rule set.
 
     A ) True  
     B ) False  
