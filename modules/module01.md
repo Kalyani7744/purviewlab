@@ -85,7 +85,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
     ![Collections](../images/module01/m1ex2stp3.png)
 
-4. On the **Role assignments (2)** blade, scroll down and click on the **Add** icon that is next to **Data curators**.
+4. On the **Role assignments** blade, scroll down and click on the **Add** icon that is next to **Data curators**.
 
     ![Add Role Assignment](../images/module01/Mod1-purview09.png)
 
