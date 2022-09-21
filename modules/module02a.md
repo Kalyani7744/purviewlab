@@ -196,17 +196,17 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
 
-    ![Monitor Scan](../images/module02/M2AT5S8.png)
+    ![Monitor Scan](../images/module02/m2aex5stp8.png)
 
 ## 6. View Assets
 
 1. Navigate to **Purview Studio** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hit the Enter key to submit the query.
 
-    ![](../images/module02/M2AT6S1.png)
+    ![](../images/module02/m2ex6stp1.png)
 
 2. You should be able to see a list of assets within the search results, which is a result of the scan.
 
-    ![](../images/module02/M2AT6S2.png)
+    ![](../images/module02/m2aex6stp2.png)
 
 ## Knowledge Check
 
