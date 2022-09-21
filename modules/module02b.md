@@ -32,7 +32,7 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 
 1. Navigate back to the browser tab in which Azure Portal is open, select the **purviewlab-rg** resource group and then Azure Key Vault resource named **pvlab-kv{randomid}**.
 
-    ![Access Policies](../images/module02/prv38.png)
+    ![Access Policies](../images/module02/prv38.1.png)
 
 1. Select **Access policies** from the Key Vault menu.
     
