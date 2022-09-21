@@ -77,7 +77,7 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
 
 8. Click **Browse**.
 
-    ![](../images/module06/06.16-adf-browse.png)
+    ![](../images/module06/06.16-adf-browse.png))
 
 9. Navigate to `raw/BingCoronavirusQuerySet/2020/` and click **OK**.
     
@@ -93,7 +93,7 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
 
 13. Change the **Destination type** to `Azure Data Lake Storage Gen2`, set the **Connection** to the existing connection (e.g. `AzureDataLakeStorage1`), and then click **Browse**.
 
-    ![](../images/module06/M6-T2-S10.png)
+    ![](../images/module06/06.21-adf-browseoutput.png)
 
 14. Navigate to `raw/` and click **OK**.
 
@@ -101,23 +101,23 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
 
 15. Confirm your folder path selection, set the **file name** to `2020_merged.parquet`, set the **copy behavior** to **Merge files**, and click **Next**.
 
-    ![](../images/module06/M6-T2-S12.png)
+    ![](../images/module06/06.23-adf-merge.png)
 
 16. Set the **file format** to **Parquet** and click **Next**.
 
-    ![](../images/module06/M6-T2-S13.png)
+    ![](../images/module06/06.24-adf-format.png)
 
 17. Leave the default settings and click **Next**.
 
-    ![](../images/module06/M6-T2-S14.png)
+    ![](../images/module06/06.25-adf-settings.png)
 
 18. Review the summary and proceed by clicking **Next**.
 
-    ![](../images/module06/M6-T2-S15.png)
+    ![](../images/module06/06.26-adf-summary.png)
 
 19. Once the deployment is complete, click **Finish**.
 
-    ![](../images/module06/M6-T2-S16.png)
+    ![](../images/module06/06.27-adf-finish.png)
 
 20. Navigate to the **Monitoring** screen to confirm the pipeline has run **successfully**.
 
