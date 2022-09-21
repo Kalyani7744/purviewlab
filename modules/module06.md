@@ -32,7 +32,7 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
 
     > **Note**:To view/add/remove Data Factory connections, you need to be assigned the **Collection admin** role on the root collection.
 
-    ![](../images/module06/M6-T1-S1.png)
+    ![](../images/module06/m6tsk1stp1.png)
 
 2. Select your Azure Data Factory account instance from the drop-down menu (e.g. `pvlab-{randomId}-adf`) and click **OK**.
 
@@ -52,7 +52,7 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
     >
     > When a user creates an Azure Data Factory connection, behind the scenes the Data Factory managed identity is added to the `Data Curator` role. This provides Azure Data Factory the necessary access to push lineage to Azure Purview during a pipeline execution. See [supported Azure Data Factory activities](https://docs.microsoft.com/en-us/azure/purview/how-to-link-azure-data-factory#supported-azure-data-factory-activities) for more information.
 
-    ![](../images/module06/M6-T1-S4.png)
+    ![](../images/module06/m6tsk1stp4.png)
 
 ## 2. Copy Data using Azure Data Factory
 
@@ -151,12 +151,12 @@ Microsoft Purview also supports the ability to upload custom lineage. Custom lin
 ## Knowledge Check
 [http://aka.ms/purviewlab/q06](http://aka.ms/purviewlab/q06)
 
-1. An Azure Purview account can connect to multiple Azure Data Factories?
+1. A Microsoft Purview account can connect to multiple Azure Data Factories?
 
     A ) True  
     B ) False
 
-2. An Azure Data Factory can connect to multiple Azure Purview accounts?
+2. An Azure Data Factory can connect to multiple Microsoft Purview accounts?
 
     A ) True  
     B ) False  
