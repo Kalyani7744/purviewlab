@@ -39,7 +39,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
     ![](../images/module04/m4-t1-step1.png)
 
-2. Click **New term**.
+2. Click on **New term** to create a new **Glossary** item.
 
     ![New Glossary Term](../images/module04/m4-t1-step2.png)
 
@@ -84,7 +84,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
 ## 2. Create a Term (Custom Term Template)
 
-1. Open the **Microsoft Purview Governance Portal** and from the **Data catalog**, click **Glossary**.
+1. Open the **Microsoft Purview Studio** and from the **Data catalog**, click **Glossary**.
 
     ![](../images/module04/m4-t2-step1.png)
 
@@ -106,17 +106,17 @@ In this lab you learn how to create terms using a system and custom term templat
     | --- | --- |
     | Attribute name | `Business Unit` |
     | Field type | `Single choice` |
-    | Choices | `Sales`, `Marketing`, `Finance`, `Human Resources`, `IT`, |
+    | Choices | `Sales`, `Marketing`, `Finance`, `Human Resources`, `IT` |
 
     > **Info**: Click on **Choices** to add a choice.
 
     ![Attribute](../images/module04/04.07-attribute-properties1.png)
 
-6. Click **Create**.
+6. Click on **Create** to create the template.
 
     ![Create term template](../images/module04/04.08-template-create.png)
 
-7. Select **Contoso Template** and click **Continue**.
+7. Select the **Contoso Template** and click on **Continue**.
     
     ![Custom Term Template](../images/module04/04.09-term-custom1.png)
 
