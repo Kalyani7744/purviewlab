@@ -113,15 +113,15 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
     ![prv15](../images/module02/prv15.1.png)
     
-1. Click on **Credentials** then select **Manage Key Vault connections**.
+2. Click on **Credentials** then select **Manage Key Vault connections**.
 
     ![prv15](../images/module02/prv15.png)
 
-2. Click on **New** to add the new Key Vault connection.
+3. Click on **New** to add the new Key Vault connection.
 
     ![New Key Vault Connection](../images/module02/m2b-t4-step2.png)
 
-3. **Copy** and **paste** the value below to set the name of your **Key Vault connection**, and then use the drop-down menu items to select the appropriate **Subscription** and **Key Vault** named **pvlab-kv{randomid}**, then click **Create**.
+4. **Copy** and **paste** the value below to set the name of your **Key Vault connection**, and then use the drop-down menu items to select the appropriate **Subscription** and **Key Vault** named **pvlab-kv{randomid}**, then click **Create**.
 
     **Name**
     ```
@@ -130,19 +130,19 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
     ![Create Key Vault Connection](../images/module02/02.59-vault-create-1.png)
 
-4. Since we have already granted the Microsoft Purview managed identity access to our Azure Key Vault, click **Confirm**.
+5. Since we have already granted the Microsoft Purview managed identity access to our Azure Key Vault, click **Confirm**.
 
     ![](../images/module02/m2b-t4-step4.png)
 
-5. Click **Close**.
+6. Click **Close**.
 
-    ![](../images/module02/m2b-t4-step4.png)
+    ![](../images/module02/m2bex4stp5.png)
 
-6. From the **Management** tab, select **Credentials** and click on **New**.
+7. From the **Management** tab, select **Credentials** and click on **New**.
 
     ![prv15](../images/module02/prv16.png)
 
-7.  Set the **Authentication method** to `SQL authentication` and the **Key Vault connection** to `myKeyVault` using the drop-down menu. **Copy** and **paste** the values below into the matching fields, and then click **Create**.
+8.  Set the **Authentication method** to `SQL authentication` and the **Key Vault connection** to `myKeyVault` using the drop-down menu. **Copy** and **paste** the values below into the matching fields, and then click **Create**.
 
     **Name**
     ```
