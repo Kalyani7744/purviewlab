@@ -1,6 +1,6 @@
 # Module 10 - REST API
 
-## :loudspeaker: Introduction
+## Introduction
 
 While Purview Studio is the default method of interfacing with Azure Purview, the underlying platform can be accessed via a set of API's. This opens up the possibility of a variety of scenarios including:  
   * Working with Azure Purview assets programmatically (e.g. bulk create/read/update/delete).
@@ -11,13 +11,13 @@ While Purview Studio is the default method of interfacing with Azure Purview, th
 
 The primary focus of this module is the **catalog** which is based on the open-source [Apache Atlas](https://atlas.apache.org/) project. Read below for more details on Apache Atlas and how it relates to Azure Purview.
 
-## :dart: Objectives
+## Objectives
 
 * Understand the high-level Apache Atlas concepts.
 * Generate an access token.
 * Read data from the Azure Purview platform.
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
 1. [Apache Atlas](#1-apache-atlas)
 2. [Register an Application](#2-register-an-application)
@@ -621,7 +621,7 @@ Note: While Azure Purview is using Apache Atlas, there are certain areas such as
 
 To invoke the REST API, we must first register an application (i.e. service principal) that will act as the identity that the Azure Purview platform reognizes and is configured to trust.    
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > An Azure **service principal** is an identity created for use with applications, hosted services, and automated tools to access Azure resources.
 
@@ -652,7 +652,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![](../images/module10/Mod7-purview3.png)
 
-2. Provide a **Description** and set the **expiration** to `In 1 year`, click **Add**.
+2. Provide a **Description** and set the **expiration** to `In 12 months`, click **Add**.
 
     | Property | Example Value |
     | --- | --- |
@@ -663,7 +663,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 3. **Copy** the client secret value for later use.
 
-     > :bulb: **Did you know?**
+     > **Did you know?**
      >
      > A **client secret** is a secret string that the application uses to prove its identity when requesting a token, this can also can be referred to as an application password.
 
@@ -693,7 +693,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 1. Now, click on **Skip and go to the app** to skip the account creation and create a new **HTTP request** as per the details below.
  
     
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > The OAuth2 service endpoint is used to gain access to protected resources such as Azure Purview. The HTTP request enables us to acquire an `access_token`, this will subsequently be used to query the Azure Purview API.
     
@@ -749,7 +749,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 3.  If successful, Postman should return a JSON document in the body of the response. Click on the **magnifying glass** and search for the following phrase `"name": "azure_sql_table"` to jump down to the entity definition for an Azure SQL Table.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > While Azure Purview provides a number of system built type definitions for a variety of object types, Customers can use the API to create their own custom type definitions.
 
@@ -825,7 +825,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![ALT](../images/module10/10.20-create-term-200OK.png)
 
-4. Navigate to the **Microsoft Purview Governance Portal > Manage Glossary** and write in the search bar the name of your newly created term to check if this appears in your glossary:
+4. Navigate to the **Microsoft Purview Governance Portal > Manage Glossary** and write in the search bar the name of your newly created term `MyOwnTerm` to check if this appears in your glossary:
 
  ![ALT](../images/module10/10.21-create-term-studio.png)
 
@@ -855,7 +855,8 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
    > **Note**: You generated an `access_token` in the previous request. Copy and paste this value. Ensure to include the "Bearer " prefix.
 
-    ![ALT](../images/module10/10.22-edit-term-auth.png)
+    
+   ![ALT](../images/module10/10.22-edit-term-auth.png)
 
 2. Navigate to **Body** and for the **raw** section, select **JSON** option. To update a simple attribute for your glossary term, copy the following **JSON** and paste, replace **"YOUR_GUID"** with the guid you copied in the previous task , then click **Send**, in this exercise you will modify the **Status** from **Draft** (the default when a new term is created) to **Approved**.
 ```json
@@ -937,7 +938,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![ALT](../images/module10/10.28-edit-contacts-200OK.png)
 
-4. Navigate to the **Microsoft Purview Governance Portal > Manage Glossary** and write in the search bar the name of your term to check if this appears with the corresponding contacts:
+4. Navigate to the **Microsoft Purview Governance Portal > Manage Glossary** and write in the search bar the name of your term `MyOwnTerm` to check if this appears with the corresponding contacts:
 
  ![ALT](../images/module10/10.29-edit-contacts-studio.png)
 
@@ -1148,7 +1149,8 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 <div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
 
-## :mortar_board: Knowledge Check
+
+ ## Knowledge Check
 
 [https://aka.ms/purviewlab/q10](https://aka.ms/purviewlab/q10)
 
@@ -1170,7 +1172,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 <div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
 
-## :tada: Summary
+## Summary
 
 In this module, you learned how to get started with the Microsoft Purview REST API. To learn more about the Microsoft Purview REST API, check out the Microsoft Purview [Swagger documentation](https://github.com/Azure/Purview-Samples/raw/master/rest-api/PurviewCatalogAPISwagger.zip).
 

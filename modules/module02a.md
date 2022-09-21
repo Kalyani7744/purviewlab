@@ -25,7 +25,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 ## 1. Grant the Microsoft Purview Managed Identity Access
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > To scan a source, Microsoft Purview requires a set of **credentials**. For Azure Data Lake Storage Gen2, Microsoft Purview supports the following [authentication methods](https://docs.microsoft.com/en-gb/azure/purview/register-scan-adls-gen2#setting-up-authentication-for-a-scan).
 >
@@ -69,11 +69,11 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 2. Locate the downloaded zip file via File Explorer and unzip the contents by right-clicking the file and selecting **Extract All...**.
 
-    ![Extract zip file](../images/module02/02.10-explorer-unzip.png)
+    ![Extract zip file](../images/module02/m2a-t2-step2.png)
 
 3. Click **Extract**.
 
-    ![Extract](../images/module02/02.11-explorer-extract.png)
+    ![Extract](../images/module02/m2a-t2-step3.png)
     
 4. Go to the **desktop** and Open the **Azure Storage Explorer** application.
 
@@ -94,29 +94,29 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
     > You can also find the credentials from the **Environment Details** page
     
-7. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription and then `pvlab{randomId}adls` Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
+8. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription and then `pvlab{randomId}adls` Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
 
-    ![Create Blob Container](../images/module02/02.12-explorer-container.png)
+    ![Create Blob Container](../images/module02/m2a-t2-step8.png)
 
-8. With the **raw** container selected, click on the **Upload** button and select **Upload Folder...**.
+9. With the **raw** container selected, click on the **Upload** button and select **Upload Folder...**.
 
-    ![Upload Folder](../images/module02/02.13-explorer-upload.png)
+    ![Upload Folder](../images/module02/m2a-t2-step9.png)
 
-9. Click on the **ellipsis** to select a folder.
+10. Click on the **ellipsis** to select a folder.
 
     ![Browse](../images/module02/02.14-explorer-browse.png)
 
-10. Navigate to the extracted **BingCoronavirusQuerySet** folder (e.g. Downloads\BingCoronavirusQuerySet) and click **Select Folder**.
+11. Navigate to the extracted **BingCoronavirusQuerySet** folder (e.g. Downloads\BingCoronavirusQuerySet) and click **Select Folder**.
 
     ![Folder](../images/module02/02.15-explorer-folder.png)
 
-11. Click **Upload**.
+12. Click **Upload**.
 
     ![Upload](../images/module02/02.16-explorer-data.png)
 
-12. Monitor the **Activities** until the transfer is complete.
+13. Monitor the **Activities** until the transfer is complete.
 
-    ![Transfer Complete](../images/module02/02.17-explorer-transfer.png)
+    ![Transfer Complete](../images/module02/m2a-t2-step13.png)
 
 ## 3. Create a Collection
 
@@ -146,7 +146,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 2. On the **Register Sources** blade, scroll down and select **Azure Data Lake Storage Gen2** and click **Continue**.
 
-    ![Sources](../images/module02/02.21-sources-adls.png)
+    ![Sources](../images/module02/m2a-t4-step2.png)
 
 3. Now, on the **Register sources (Azure Data Lake Storage Gen2)** blade, enter the following information:
     - **Azure subscription**: Select your subscription from the dropdown.
@@ -154,7 +154,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
     - **Select a collection**: Select **pvlab-randomId}-pv > Contoso** from the dropdown.
     -  Leave other values as default and click on **Register**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > At this point, we have simply registered a data source. Assets are not written to the catalog until after a scan has finished running.
 
@@ -172,23 +172,23 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 3. Expand the hierarchy to see which assets will be within the scans scope, and click **Continue**.
 
-    ![Scan Scope](../images/module02/02.25-scan-scope.png)
+    ![Scan Scope](../images/module02/m2a-t5-step3.png)
 
 4. Select the system default scan rule set and click **Continue**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > [Scan Rule Sets](https://docs.microsoft.com/en-us/azure/purview/create-a-scan-rule-set) determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
-    ![Scan rule set](../images/module02/02.26-scan-ruleset.png)
+    ![Scan rule set](../images/module02/m2a-t5-step4.png)
 
 5. Select **Once** and click **Continue**.
 
-    ![Scan Trigger](../images/module02/02.27-scan-trigger.png)
+    ![Scan Trigger](../images/module02/m2a-t5-step5.png)
 
 6. Click **Save and Run**.
 
-    ![Run Scan](../images/module02/02.28-scan-run.png)
+    ![Run Scan](../images/module02/m2a-t5-step6.png)
 
 7. To monitor the progress of the scan run, click **View Details**.
 
@@ -230,6 +230,6 @@ In this module, you'll walk through how to register and scan data sources. You'l
     B ) Glossary Terms (e.g. column `Sales Tax` is tagged with the `Sales Tax` glossary term)  
     C ) Classifications (e.g. column `ccnum` is tagged with the `Credit Card Number` classification)  
 
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to create a collection, register a source, and trigger a scan.

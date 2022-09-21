@@ -41,11 +41,11 @@ When planning your Microsoft Purview deployment, you first need to provision a M
     | Resource group | `purviewlab-rg` |
     | Purview account name | pvlab-**<inject key="Deployment ID" enableCopy="true"/>**-pv |
     | Location | `Choose the same region as the Resource Group` |
-    | Managed Resource Group Name | `managed-rg-pvlab` |
+    | Managed Resource Group Name | managed-rg-pvlab-**<inject key="Deployment ID" enableCopy="true"/>**-pv |
 
     ![Purview Account Basics](../images/module01/prv36.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that is needed to keep the Microsoft Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
     >
@@ -91,7 +91,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
     ![Add or Remove Data Curators](../images/module01/user01.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Microsoft Purview has a set of predefined data plane roles that can be used to control who can access what.
     >

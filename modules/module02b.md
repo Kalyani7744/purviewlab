@@ -24,7 +24,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 ## 1. Key Vault Access Policy #1 (Grant Yourself Access)
     
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > **Azure Key Vault** is a cloud service that provides a secure store for secrets. Azure Key Vault can be used to securely store keys, passwords, certificates, and other secrets. For more information, check out [About Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/overview).
 
@@ -73,7 +73,7 @@ In this next step, we are creating a second access policy which will provide Mic
 
 1. Under **Permission**, select **secret permission(1)**,click on  **select Get,List(2)** and click on **Next(3)**.
 
-    ![prv11](../images/module02/prv11.png)
+   ![prv11](../images/module02/m2b-t2-step2.png)
 
 1. Under **Principal**, Search for **pvlab-<inject key="Deployment ID" enableCopy="true"/>-pv**, select the account name, then click **Next**.
 
@@ -97,7 +97,7 @@ In order to securely store our Azure SQL Database password, we need to generate 
 
 1. Navigate to **Secrets** and click **Generate/Import**.
 
-    ![Generate Secret](../images/module02/02.55-vault-secrets.png)
+    ![Generate Secret](../images/module02/m2b-t3-step1.png)
 
 2. **Copy** and **paste** the values below into the matching fields and then click **Create**.
 
@@ -122,7 +122,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 2. Click **New**.
 
-    ![New Key Vault Connection](../images/module02/02.58-vault-new.png)
+    ![New Key Vault Connection](../images/module02/m2b-t4-step2.png)
 
 3. **Copy** and **paste** the value below to set the name of your **Key Vault connection**, and then use the drop-down menu items to select the appropriate **Subscription** and **Key Vault** named **pvlab-kv{randomid}**, then click **Create**.
 
@@ -135,11 +135,11 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 4. Since we have already granted the Microsoft Purview managed identity access to our Azure Key Vault, click **Confirm**.
 
-    ![](../images/module02/02.60-vault-access.png)
+    ![](../images/module02/m2b-t4-step4.png)
 
 5. Click **Close**.
 
-    ![](../images/module02/02.61-vault-close.png)
+    ![](../images/module02/m2b-t4-step4.png)
 
 6. Under **Credentials** click **New**.
 
@@ -162,7 +162,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
     sql-secret
     ```
 
-    ![](../images/module02/02.63-credentials-create.png)
+    ![](../images/module02/m2b-t4-step7.png)
 
 ## 5. Register a Source (Azure SQL DB)
 
@@ -172,7 +172,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 2. Navigate to the **Azure** tab, select **Azure SQL Database**, click **Continue**.
 
-    ![](../images/module02/02.43-register-sqldb.png)
+    ![](../images/module02/m2b-t5-step2.png)
 
 3. On the **Register sources (Azure SQL Database)** blade, enter the following information:
 
@@ -181,7 +181,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
     - **Select a collection**: Select **pvlab-{randomId}-pv > Contoso** from the dropdown.
     -  Leave other values as default and click on **Register**.
 
-    ![](../images/module02/02.44-register-azuresql.png)
+    ![](../images/module02/m2b-t5-step3.png)
 
 ## 6. Scan a Source with Azure Key Vault Credentials
 
@@ -195,19 +195,19 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 3. Click **Continue**.
 
-    ![](../images/module02/02.66-sqlscan-scope.png)
+    ![](../images/module02/m2b-t6-step3.png)
 
 4. Click **Continue**.
 
-    ![](../images/module02/02.67-sqlscan-scanruleset.png)
+    ![](../images/module02/m2b-t6-step4.png)
 
 5. Set the trigger to **Once**, click **Continue**.
 
-    ![](../images/module02/02.68-sqlscan-schedule.png)
+    ![](../images/module02/m2b-t6-step5.png)
 
 6. Click **Save and Run**.
 
-    ![](../images/module02/02.69-sqlscan-run.png)
+    ![](../images/module02/m2b-t6-step6.png)
 
 7. To monitor the progress of the scan, click **View Details**.
 

@@ -1,24 +1,17 @@
 # Module 12 - Managed private endpoints
 
-[< Previous Module](../modules/module11.md) - **[Home](../README.md)** - [Next Module >](../modules/module13.md)
 
-## :loudspeaker: Introduction
+## Introduction
 
 An integration runtime (IR) is compute infrastructure that Microsoft Purview uses to power data scan across different network environments. These integration runtimes come in different flavors. One of them is using managed private endpoints, which Microsoft recently added. With this new set of features you can better manage and secure your data scanning within Purview. As a result your metadata traffic is distributed via Azure Private Link, which eliminated any exposure to the internet. This protects you from any data exfiltration risks.
 
 In this lab you'll learn how to make use a managed private endpoints. You'll learn how to configure them.
 
-## :thinking: Prerequisites
-
-- An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
-- A SQL Virtual Machine (see [module 00](../modules/module00.md)).
-- A Microsoft Purview account (see [module 01](../modules/module01.md)).
-
-## :dart: Objectives
+## Objectives
 
 - Connect to on premise data source using a self-hosted integration runtime.
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
 1. [Storage account creation](#1-storage-account-creation)
 2. [Authentication for a scan](#2-authenticate-for-a-scan)
@@ -170,13 +163,13 @@ With the newly released features Microsoft Purview now provides three options fo
    
 If everything goes well you’ll notice new metadata will be added to Purview. This all will be very secure, because all metadata is transferred using private endpoints.
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > By using managed private endpoints, you do not have to manage your own VNETs. Microsoft takes care of managing this. [More information](https://docs.microsoft.com/azure/purview/catalog-managed-vnet).
 
 <div align="right"><a href="#module-12---managed-private-endpoints">↥ back to top</a></div>
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 1. By using managed private endpoints you're protected from any data exfiltration risks.
 
@@ -185,10 +178,10 @@ If everything goes well you’ll notice new metadata will be added to Purview. T
 
 <div align="right"><a href="#module-12---managed-private-endpoints">↥ back to top</a></div>
 
-## :tada: Summary
+## Summary
 
 In this module, you learned how to install managed private endpoints. If you'd like continue with this module to complete further tasks, please feel free to complete the tutorial links below:
 
 - [Use a Managed VNet with your Microsoft Purview account](https://docs.microsoft.com/azure/purview/catalog-managed-vnetn)
 
-[Continue >](../modules/module13.md)
+

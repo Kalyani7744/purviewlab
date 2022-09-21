@@ -1,8 +1,6 @@
 # Module 14 - Data owner policies (Azure Storage)
 
-[< Previous Module](../modules/module13.md) - **[Home](../README.md)** - [Next Module >](../modules/module15.md)
-
-## :loudspeaker: Introduction
+## Introduction
 
 A new feature of Purview is Policies, which enables you to secure your data estate from within the Microsoft Purview Governance Portal. This feature is in Preview as of July 2022.
 
@@ -10,19 +8,12 @@ Data access policies can be enforced through Purview on data systems that have b
 
 A **policy** is a named collection of policy statements. When a policy is published to one or more data systems under Purview’s governance, it's then enforced by the system. A policy definition includes a policy name, description, and a list of one or more policy statements.
 
-## :thinking: Prerequisites
-
-* An Azure account with an active subscription.
-* An Azure Data Lake Storage Gen2 Account (see module 00) in same subscription.
-* A Azure SQL DB account in same subscription.
-* A Microsoft Purview account (see module 01).
-
-## :dart: Objectives
+## Objectives
 
 * Register data source for data use management
 * Create data owner access policy for Azure Storage
 
-## :bookmark_tabs: Table of Contents
+## Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
@@ -70,7 +61,7 @@ To make a data resource available for policy management, the Data Use Management
 
     ![Enable DUM](../images/module14/M14-T1-img8a.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **DSA** role can publish a policy.  
     > **Policy authors** role can create or edit a policy.
@@ -84,6 +75,11 @@ To make a data resource available for policy management, the Data Use Management
     ![Create policy](../images/module14/14.07-create-policy.png)
 
 2. On the new policy page, enter the **Name** and **Description** of the policy and select the **New policy statement** button, to add a new policy.
+     
+     |Setting|Value|
+     |---|---|
+     |Name| SalesDataLakeLab|
+     |Description| Access to Sales data|
 
     ![Add policy](../images/module14/14.08-new-policy.png)
 
@@ -99,7 +95,7 @@ To make a data resource available for policy management, the Data Use Management
     
     ![Data Resource1](../images/module14/14.10-data-resource2.png)
 
-7. Select the **Subjects** button and enter **`odl_user_DID@cloudevents.ai`** identity as a principal, group, or MSI. Then select the **OK** button. This will take you back to the policy editor.
+7. Select the **Subjects** button and enter **odl_user_<inject key="DeploymentID" enableCopy="false" />** identity as a principal, group, or MSI. Then select the **OK** button. This will take you back to the policy editor.
 
     ![Policy Subject](../images/module14/M14-T2-img3.png)
 
@@ -118,7 +114,7 @@ To make a data resource available for policy management, the Data Use Management
 
 <div align="right"><a href="#module-14---data-owner-policies-azure-storage">↥ back to top</a></div>
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 1. The data source has to be scanned before the policy can be published on it.
 
@@ -138,8 +134,7 @@ To make a data resource available for policy management, the Data Use Management
 
 <div align="right"><a href="#module-00---title">↥ back to top</a></div>
 
-## :tada: Summary
+## Summary
 
 Purview policies allow you to manage access to data source from within the governance portal.
 
-[Continue >](../modules/module15.md)
