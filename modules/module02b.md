@@ -48,7 +48,7 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 
 1. On the **Principal** blade, Search for **odl_user_<inject key="Deployment ID" enableCopy="true"/>**, select the account name, then click **Next**.
 
-    ![Search Principal](../images/module02/prv7.png)
+    ![Search Principal](../images/module02/prv7.1.png)
 
 1. On the **Appliction** blade, leave everything as default and click on **Next**.
    
