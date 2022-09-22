@@ -27,7 +27,7 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
 1. Navigate to the **Azure Data Lake Storage Gen2 account** `pvlab{DID}adls`), select **Access Control (IAM)**, and then click **Add role assignment**.
 
-    ![Storage Access Control](../images/module09/09.01-storage-accessa.png)
+    ![Storage Access Control](../images/module09/upd-M8-T1-S1.png)
 
 2. Filter the list of roles available by searching for `Storage Blob Data Reader`, select the **Storage Blob Data Reader** role from the list, and click **Next**.
 
