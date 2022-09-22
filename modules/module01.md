@@ -137,4 +137,4 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
 ## Summary
 
-This module provided an overview of how to provision a Microsoft Purview account using the Azure Portal and how to grant the appropriate level of access to Microsoft Purview's data plane.
+This module provided an overview on how to provision a Microsoft Purview account using the Azure Portal and how to grant the appropriate level of access to Microsoft Purview's data plane.
