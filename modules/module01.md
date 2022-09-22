@@ -49,7 +49,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
     > **Did you know?**
     >
-    > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that are needed to keep the Microsoft Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
+    > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that are needed to keep the Microsoft Purview platform up and running. 1 Capacity Unit can support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
     >
     > Capacity Units are required regardless of whether you plan to invoke the Microsoft Purview API endpoints directly (i.e. ISV scenario) or indirectly via Purview Studio (GUI).
     >
