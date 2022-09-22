@@ -25,7 +25,7 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 >
 > Note: Before we can demonstrate the ability to query external data sources from Azure Synapse Analytics, we need to ensure our account has the appropriate level of access (i.e. `Storage Blob Data Reader`).
 
-1. Navigate to the **Azure Data Lake Storage Gen2 account** `pvlab{DID}adls`), select **Access Control (IAM) (1)**, and then click **Add role assignment (2)**.
+1. Navigate to the **Azure Data Lake Storage Gen2 account** `pvlab{DID}adls`), select **Access Control (IAM)**, and then click **Add role assignment**.
 
     ![Storage Access Control](../images/module09/upd-M9-T1-S1.png)
 
@@ -43,7 +43,7 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
 ## 2. Connect to a Purview Account
 
-1. Within the Azure portal, navigate to the **purviewlab-rg** and open the Synapse workspace named **pvlab-{randomId}-synapse** and click **Open Synapse Studio**.
+1. Within the Azure portal, navigate to the **purviewlab-rg** and open the Synapse workspace named **pvlab-{randomId}-synapse** and click **Open** under Open Synapse Studio.
 
     ![Open Synapse Studio](../images/module09/upd-09.08-synapse-studioa.png)
 
@@ -63,7 +63,7 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
     ![Purview Account Registered](../images/module09/09.11-synapse-success-1.1.png)
 
-5. To validate that Synapse was able to successfully add the Synapse managed identity to the Data Curator role, navigate to the **Microsoft Purview Governance Portal**, **Data map**(1) > **Collections**(2) > **YOUR_ROOT_COLLECTION**(3), switch to the **Role assignments**(4) tab and expand **Data curators**(5). You should be able to see the **Synapse Service Principal**(6) listed as one of the Data curators. This will provide Synapse read/write access to the catalog.
+5. To validate that Synapse was able to successfully add the Synapse managed identity to the Data Curator role, navigate to the **Microsoft Purview Portal**, **Data map**(1) > **Collections**(2) > **YOUR_ROOT_COLLECTION**(3), switch to the **Role assignments**(4) tab and expand **Data curators**(5). You should be able to see the **Synapse Service Principal**(6) listed as one of the Data curators. This will provide Synapse read/write access to the catalog.
 
     ![](../images/module09/09.18-synapsemi-curator.1.1.png)
 
