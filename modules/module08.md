@@ -29,7 +29,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Add Role Assignment](../images/module08/upd-M8-T1-S2.png)
 
-3. Click **Select members (1)**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** in your Azure Active Directory and select that user from the list (2), and then click **Select (3)**. Once the user is selected click **Next (4)**.
+3. Click **Select members (1)**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** in your Azure Active Directory and select that user from the list **(2)**, and then click **Select (3)**. Once the user is selected click **Next (4)**.
 
     > **Did you know?**
     >
@@ -73,7 +73,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
  > **Note**: The account instance would need some historical scan activity in order to visualize the metric. 
 
  
- ![Metrics Graph](../images/module08/upd-08.09-metrics-graph.png)
+ ![Metrics Graph](../images/module08/upd-M8-t2-s5.png)
 
 ## 3. Send Diagnostic Logs to Azure Storage
 
@@ -85,7 +85,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Add Diagnostic Setting](../images/module08/upd-M8-T3-Update1.png)
 
-2. Provide the diagnostic setting a name as `Audit` (1), select **ScanStatus** (2), select **Archive to a storage account** (3), select the existing storage account `pvlab{randomId}adls` and click **Save** (4).
+2. Provide the diagnostic setting a name as `Audit` **(1)**, select **ScanStatus (2)**, select **Archive to a storage account (3)**, select the existing storage account `pvlab{randomId}adls` and click **Save (4)**.
 
     > **Did you know?***
     >
@@ -93,15 +93,15 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Save Diagnostic Setting](../images/module08/upd-M8-T3-S2.png)
 
-3. To test the capture of raw events, trigger a full scan by navigating to **Azure Purview Studio**, **Data map**(1) > **Sources**(2) and click **View details**(3) on the existing **Azure Data Lake Storage Gen2** tile.
+3. To test the capture of raw events, trigger a full scan by navigating to **Azure Purview Studio**, **Data map (1)** > **Sources (2)** and click **View details (3)** on the existing **Azure Data Lake Storage Gen2** tile.
 
     ![Source Details](../images/module08/upd-M8-T3-S3.png)
 
-4. Navigate to the **Scans**(1) tab and click the name of a previously run scan (2).
+4. Navigate to the **Scans (1)** tab and click the name of a previously run scan **(2)**.
 
     ![Source Scans](../images/module08/updt-M8-T3-S4.png)
 
-5. Open the **Run scan now**(1) drop-down menu and select **Full Scan**(2).
+5. Open the **Run scan now (1)** drop-down menu and select **Full Scan (2)**.
 
     ![Full Scan](../images/module08/upd-M8-T3-S5.png)
 
