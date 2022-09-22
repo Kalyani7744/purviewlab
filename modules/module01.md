@@ -49,7 +49,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
     > **Did you know?**
     >
-    > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that are needed to keep the Microsoft Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
+    > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that are needed to keep the Microsoft Purview platform up and running. 1 Capacity Unit can support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
     >
     > Capacity Units are required regardless of whether you plan to invoke the Microsoft Purview API endpoints directly (i.e. ISV scenario) or indirectly via Purview Studio (GUI).
     >
@@ -67,7 +67,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
     ![Create Purview Account](../images/module01/purv4.png)
 
-7. Wait several minutes while your deployment is in progress. Once complete, click **Go to resource**.
+7. Please wait for 5 - 10 minutes until the deployment is completed and then click on **Go to resource**.
 
     ![Go to resource](../images/module01/Mod1-purview05.png)
 
@@ -137,4 +137,4 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
 ## Summary
 
-This module provided an overview of how to provision a Microsoft Purview account using the Azure Portal and how to grant the appropriate level of access to Microsoft Purview's data plane.
+This module provided an overview on how to provision a Microsoft Purview account using the Azure Portal and how to grant the appropriate level of access to Microsoft Purview's data plane.
