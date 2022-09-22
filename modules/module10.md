@@ -682,7 +682,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 ## 5. Get an Access Token
 
  
-1. Right-click on the Windows Start Menu and select **Windows PowerShell (Admin)** to launch a terminal window. Then, run the below coammnd to install Postman.
+1. Right-click on the Windows Start Menu and select **Windows PowerShell (Admin)** to launch a terminal window and then run the below coammnd to install Postman.
  
    ```
    choco install postman -y -force
@@ -833,7 +833,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
  > **Note**: If you don’t specify the status when you create a glossary term, by default it appears in **“Draft”** mode.
 
-## 9. Add/edit simple attribute for a glossary term
+## 9. Add/Edit simple attribute for a glossary term
 
 1. Using [Postman](https://www.postman.com/product/rest-client/) once more, create a new **HTTP request** as per the details below.
 
