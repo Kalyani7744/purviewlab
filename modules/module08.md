@@ -43,11 +43,11 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
 ## 2. Visualize Azure Purview Metrics
 
-1. Navigate to your **Microsoft Purview** account instance on the **Azure portal** and click **Metrics**.
+1. Navigate to your **Microsoft Purview** account instance on the **Azure portal** and click on **Metrics**.
 
     ![Azure Purview Metrics](../images/module08/upd-M8-T2-Update1.png)
 
-2. Click to open the **Metric** drop-down menu and select the metrics `Scan time taken`.
+2. Click on **Metric** drop-down menu and select `Scan time taken`.
 
     **Available Metrics**
     | Metric ID  | Metric Name | Metric Description |
@@ -61,11 +61,11 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Select Metric](../images/module08/upd-M8-T2-Update2.png)
 
-3. Click on the chart type to change the graph to a **Bar chart**.
+3. Click on the chart type drop-down button and change the graph to **Bar chart**.
 
     ![Metrics Chart Type](../images/module08/upd-08.07-metrics-chart.png)
 
-4. Click on the **time range (1)** to change the duration to **Last 30 Days (2)** and click **Apply (3)**.
+4. Click on **time range (1)** and change the duration to **Last 30 Days (2)** and click on **Apply (3)**.
 
     ![Metrics Time Range](../images/module08/upd-08.08-metrics-range.png)
 
@@ -77,7 +77,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
 ## 3. Send Diagnostic Logs to Azure Storage
 
-1. Navigate to your **Microsoft Purview** account instance on the **Azure portal**, click **Diagnostic settings (1)** and select **Add diagnostic setting (2)**.
+1. Navigate to your **Microsoft Purview** account instance on the **Azure portal**, click on **Diagnostic settings (1)** and select **Add diagnostic setting (2)**.
 
     > **Did you know?**
     >
@@ -85,7 +85,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Add Diagnostic Setting](../images/module08/upd-M8-T3-Update1.png)
 
-2. Provide the diagnostic setting a name as `Audit` **(1)**, select **ScanStatus (2)**, select **Archive to a storage account**, select the existing storage account `pvlab{randomId}adls` **(3)** and click **Save (4)**.
+2. Provide the diagnostic setting name as `Audit` **(1)**, select **ScanStatus (2)**, select **Archive to a storage account**, select the existing storage account `pvlab{randomId}adls` **(3)** and click on **Save (4)**.
 
     > **Did you know?***
     >
@@ -93,11 +93,11 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Save Diagnostic Setting](../images/module08/upd-M8-T3-S2.png)
 
-3. To test the capture of raw events, trigger a full scan by navigating to **Microsoft Purview Studio**, **Data map (1)** > **Sources (2)** and click **View details (3)** on the existing **Azure Data Lake Storage Gen2** tile.
+3. To test the capture of raw events, trigger a full scan by navigating to **Microsoft Purview Studio**, **Data map (1)** > **Sources (2)** and click on **View details (3)** on the existing **Azure Data Lake Storage Gen2** tile.
 
     ![Source Details](../images/module08/upd-M8-T3-S3.png)
 
-4. Navigate to the **Scans (1)** tab and click the name of a previously run scan **(2)**.
+4. Navigate to the **Scans (1)** tab and click on the name of the previously run scan **(2)**.
 
     ![Source Scans](../images/module08/updt-M8-T3-S4.png)
 
