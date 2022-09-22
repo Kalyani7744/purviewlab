@@ -213,7 +213,7 @@ SELECT * FROM dbo.DestinationTest
 
 ## 7. Clean-up and considerations
 
-The lineage scan will automatically run every 6 hours. For development/testing purposes, consider deleting the scan when not needed -- particularly if the database is set to deallocate after an idle period (as the database in this lab is configured to do). Running the scan periodically will resume the database.
+The lineage scan will automatically run every 6 hours. For development/testing purposes, consider deleting the scan when not needed - particularly if the database is set to deallocate after an idle period (as the database in this lab is configured to do). Running the scan periodically will resume the database.
 
 1. If you would like to delete the artifacts created in this module, you can navigate back to azure portal where the Query editor window is open, clear the Query editor once again, and **Run** the script below. 
 
