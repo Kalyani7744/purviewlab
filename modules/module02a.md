@@ -110,11 +110,11 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
     ![Folder](../images/module02/02.15-explorer-folder.png)
 
-12. Click **Upload**.
+12. Click on **Upload**.
 
     ![Upload](../images/module02/02.16-explorer-data.png)
 
-13. Monitor the **Activities** until the transfer is complete.
+13. Please wait for 4 - 5 minutes until the upload is completed. You can monitor the **Activities** until the transfer is complete.
 
     ![Transfer Complete](../images/module02/m2a-t2-step13.png)
 

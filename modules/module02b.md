@@ -63,11 +63,11 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 In this next step, we are creating a second access policy which will provide Microsoft Purview the necessary access to retrieve secrets from the Key Vault.
 
 
-1.  Under keyvault named **pvlab-kv{randomid}** under Access policies Click **create**.
+1.  Under key vault named **pvlab-kv{randomid}** under Access policies Click **create**.
 
     ![prv3](../images/module02/prv3.png)
 
-1. On the **Permission** blade, select **secret permission(1)**,click on  **select Get,List(2)** and click on **Next(3)**.
+1. On the **Permission** blade, navigate to the **secret permission(1)** tab, Select the **Get**, and **List(2)** secret permissions. Click on **Next(3)**.
 
    ![prv11](../images/module02/m2b-t2-step2.png)
 
@@ -138,7 +138,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
     ![](../images/module02/m2bex4stp5.png)
 
-7. From the **Management** tab, select **Credentials** and click on **New**.
+7. From the **Management** tab, select **Credentials** from the side blade and click on **New**.
 
     ![prv15](../images/module02/prv16.png)
 
@@ -189,7 +189,12 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
     ![](../images/module02/Mod2B-purview03-1.png)
 
-2. Select the **Database** named **pvlab-{randomId}-sqldb** and **Credential** named **credential-SQL** from the drop-down menus. Set **Lineage extraction (preview)** to **Off**. Click **Test connection**. Click **Continue**.
+2. In the **Scan "AzureSqlDatabase-H30"**, Provide the following deatils and click on **Continue** **(6)**
+    - Database name: **pvlab-{randomId}-sqldb** **(1)**
+    - Credential: **credential-SQL** **(2)**
+    - Lineage extraction (preview): Toggle **off** **(3)** the button.
+    - Select a collection: **pvlab-{randomId}-pv> Contoso** **(4)**
+    - Click on **Test connection** **(5)** and make sure that the connection testing is successful.
 
     ![](../images/module02/azure-purview-azuresqldatabase.png)
 

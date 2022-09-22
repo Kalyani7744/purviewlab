@@ -179,7 +179,7 @@ Microsoft Purview provides a large set of default classifications that represent
 
     ![Test Connection](../images/module05/scan-test.png)
 
-3. By default, Azure Purview will have the parent Azure Data Lake Storage Gen2 account selected and therefore include all paths in scope. To reduce the scope, deselect the parent and select the **Twitter** folder only. Click **Continue**.
+3. By default, Azure Purview will have the parent Azure Data Lake Storage Gen2 account selected and therefore include all paths in scope. To reduce the scope, deselect the parent and select the **Twitter** folder only. Click on **Continue**.
 
     ![Scope Scan](../images/module05/M5-Update10.png)
 
@@ -215,7 +215,7 @@ Microsoft Purview provides a large set of default classifications that represent
 
 ## 6. Search by Classification
 
-1. Once the scan has been completed, perform a wildcard search by typing in the asterisk character (**\***) into the search bar and hit Enter.
+1. Once the scan is completed, perform a wildcard search by typing in the asterisk character (**\***) into the search bar and hit Enter.
 
     ![Wildcard Search](../images/module05/m5ex6stp1.png)
 

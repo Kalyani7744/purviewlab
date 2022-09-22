@@ -215,7 +215,7 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 
       ![ALT](../images/module11/M11-T4-img13.png)
       
- 16. After the **Runtime** is installed, on the **Register Integration Runtime (Self-hosted)** enter the key copied in Step-8 and select **Register** and select **Finsh** once registerd .
+ 16. After the **Runtime** is installed, on the **Register Integration Runtime (Self-hosted)** enter the key copied in Step-8 and select **Register** and select **Finish** once registerd .
  
       ![ALT](../images/module11/M11-T4-img14.png)
   
@@ -339,13 +339,13 @@ This has been a long read, but also demonstrates how you can use your own integr
 
 <div align="right"><a href="#module-11---securely-scan-sources-using-self-hosted-integration-runtimes">↥ back to top</a></div>
 
-> :bulb: **Did you know?**
+>**Did you know?**
 >
 > The Purview Integration Runtime can also be used to scan and ingest metadata assets from Azure cloud services that are hidden behind private endpoints, such as Azure Data Lake, Azure SQL Database, Azure Cosmos DB [and more](https://docs.microsoft.com/azure/purview/catalog-private-link#support-matrix-for-scanning-data-sources-through-ingestion-private-endpoint).
 
 <div align="right"><a href="#module-11---securely-scan-sources-using-self-hosted-integration-runtimes">↥ back to top</a></div>
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [https://aka.ms/purviewlab/q11](https://aka.ms/purviewlab/q11)
 
@@ -370,7 +370,7 @@ This has been a long read, but also demonstrates how you can use your own integr
 
 <div align="right"><a href="#module-11---securely-scan-sources-using-self-hosted-integration-runtimes">↥ back to top</a></div>
 
-## :tada: Summary
+## Summary
 
 In this module, you learned how to install the self-hosted integration runtime to your virtual machine network and get it connected up to Microsoft Purview. If you'd like continue with this module to complete further tasks, please feel free to complete the tutorial links below:
 

@@ -46,7 +46,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
     ![System default term template](../images/module04/m4-t1-step3-1.png)
 
-4. Change the **Status** of the term to `Approved` and then **copy** and **paste** the values below into the appropriate field, then click **Create**.
+4. In the New term tab, provide the following details and click on **Create**.
 
     **Status**
     ```
