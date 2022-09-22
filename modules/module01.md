@@ -73,7 +73,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
 ## 2. Grant Access to Microsoft Purview's Data Plane
 
-1. Navigate to your Microsoft Purview account and click **Open** within the **Open Purview Studio** tile.
+1. Navigate to your Microsoft Purview account and click **Open** on  **Microsoft Purview Governance Portal** tile.
 
     ![Access Control](../images/module01/purv5.png)
 
@@ -111,25 +111,25 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
 [http://aka.ms/purviewlab/q01](http://aka.ms/purviewlab/q01)
 
-1. Which of the following Microsoft Purview pricing meters is fluid, with consumption varying based on usage?
+1. Which of the following Microsoft Purview pricing meters is **serverless** and used to support **data map population** through scanning and ingestion jobs?
 
     A ) Capacity Units  
     B ) vCore Hours  
     C ) Neither
 
-2. Which of the following Microsoft Purview pricing meters is always on, with consumption based on quantity provisioned?
+2. Which of the following Microsoft Purview pricing meters is **always on** and used to support **data map consumption** through capacity and storage?
 
     A ) Capacity Units  
     B ) vCore Hours  
     C ) Neither
 
-3. Which Microsoft Purview module provides the base functionality (i.e. source registration, automated scanning and classification, data discovery)?
+3. Which Microsoft Purview **feature** is included and billed with the consumption of the **data map**?
 
-    A ) C0  
-    B ) C1  
-    C ) D0
+    A ) Data Estate Insights  
+    B ) Search and browse of data assets  
+    C ) SQL DevOps access
 
-4. Which predefined Microsoft Purview role provides access to manage data sources?
+4. Which predefined Microsoft Purview role provides access to **manage data sources**?
 
     A ) Purview Data Reader  
     B ) Purview Data Curator  
