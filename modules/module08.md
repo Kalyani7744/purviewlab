@@ -70,10 +70,10 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
     ![Metrics Time Range](../images/module08/upd-08.08-metrics-range.png)
 
 5. Below is an example.
- > **Note**: The account instance would need some historical scan activity in order to visualize the metric. 
+   > **Note**: The account instance would need some historical scan activity in order to visualize the metric. 
 
  
- ![Metrics Graph](../images/module08/upd-M8-t2-s5.png)
+    ![Metrics Graph](../images/module08/upd-M8-t2-s5.png)
 
 ## 3. Send Diagnostic Logs to Azure Storage
 
