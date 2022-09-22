@@ -10,11 +10,6 @@ When implementing your Glossary it is important to think about how you will stru
 
 In this lab you learn how to create terms using a system and custom term template. You'll also learn how to import and export terms. Lastly, you learn about linking terms to data assets, which helps to relate technical metadata to business metadata.
 
-## Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
-* A Microsoft Purview account (see [module 01](../modules/module01.md)).
-
 ## Objectives
 
 * Create a Term in the Glossary using the System Default Term Template.
