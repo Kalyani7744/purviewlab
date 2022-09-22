@@ -73,15 +73,15 @@ View key metrics about your data estate's health and performance.
 
 4. Navigate to **Catalog adoption** to view the following tile.
    
-  **Active users by feature category**
+   **Active users by feature category**
 
    ![Stewardship Graph 04](../images/module07/07.06-stewardship-activeusers.png)
 
-  **Most viewed assets**
+   **Most viewed assets**
 
    ![Stewardship Graph 05](../images/module07/07.07-stewardship-mostviewed.png)
 
-  **Top searched keywords**
+   **Top searched keywords**
 
    ![Stewardship Graph 06](../images/module07/07.08-stewardship-topsearched.png)
 
@@ -201,11 +201,11 @@ View key metrics about the sensitivity labels applied to sources, files, and tab
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Data estate insights** > **Sensitivity labels**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Sensitivity labels** state how **sensitive** data is in your organization. For example, data contained within a particular asset might be `highly confidential`. **Classifications** on the other hand indicate the **type** of data values (e.g. Driver's License Number, Email Address, SWIFT Code, etc).
     >
-    > Microsoft Purview's ability to apply sensitivity labels is controlled within the **Microsoft Purview Compliance Portal**. Note: You must have an active Microsoft 365 license that offers the benefit of automatically applying sensitivity labels. For more information, check out how to [How to label your data](https://docs.microsoft.com/azure/purview/how-to-automatically-label-your-content).
+    > Microsoft Purview's ability to apply sensitivity labels is controlled within the **Microsoft Purview Compliance Portal**. 
 
     ![Sensitivity labels](../images/module07/upd-07.25-insights-labels.png)
 
