@@ -33,7 +33,7 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
     ![Storage RBAC Assignment](../images/module09/upd-09.02-storage-rbaca.png)
 
-3. To add your account click **Select members (1)**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" /> (2)** in your Azure Active Directory , select the account from the list **(3)**, and click **Select (4)** and then click **Next (5)**.
+3. To add your account click **Select members (1)**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" /> (2)** in your Azure Active Directory , select the account from the list **(3)**, and click **Select (4)**. Once the user is selected click **Next (5)**.
 
     ![Storage RBAC Assignment](../images/module09/upd-09.16-rbac-members-1.png)
 
