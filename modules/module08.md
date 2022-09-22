@@ -131,7 +131,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
     B ) Metrics Reader  
     C ) Monitoring Reader
 
-2. Which of the following is **not** available as an Azure Purview metric?
+2. Which of the following is **not** available as a Microsoft Purview metric?
 
     A ) ScanCompleted  
     B ) ScanDuration  
