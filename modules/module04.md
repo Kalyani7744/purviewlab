@@ -213,11 +213,11 @@ In this lab you learn how to create terms using a system and custom term templat
 
 1. From the **Glossary** screen, open an existing term `Aggregation`.
 
-   ![Term Details](../images/module04/M4-T6-S1.1.png)
+   ![Term Details](../images/module04/04.24-term-view.png)
 
 2. Navigate to the **Related** tab and click **Edit**.
 
-    ![Related](../images/module04M4-Update9.1.png)
+    ![Related](../images/module04/04.25-term-related.png)
 
 3. Use the drop-down menu to assign two glossary terms as **Synonyms** i.e **Workspace Analytics> Attended** and **Workspace Analytics> Attendee**.
 
@@ -225,11 +225,11 @@ In this lab you learn how to create terms using a system and custom term templat
     >
     > **Synonyms** are other terms with the same or similar definitions. Where as **Related terms** are other terms that are related but have different definitions.
 
-    ![Synonyms](../images/module04/M4-T6-S3.1.png)
+    ![Synonyms](../images/module04/04.26-term-synonym.png)
 
 4. Use the drop-down menu to assign two glossary terms as **Related terms** i.e  **Workspace Analytics> Collaborator group** and **Workspace Analytics> Collaborators** .
 
-    ![Related Terms](../images/module04/M4-T6-S4.1.png)
+    ![Related Terms](../images/module04/04.27-term-related.png)
 
 5. Navigate to the **Contacts** tab and assign an **Expert** and a **Steward** to the user named **ODL_User [DID]**. Click **Save**.
 
