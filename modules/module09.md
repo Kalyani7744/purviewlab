@@ -25,7 +25,7 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 >
 > Note: Before we can demonstrate the ability to query external data sources from Azure Synapse Analytics, we need to ensure our account has the appropriate level of access (i.e. `Storage Blob Data Reader`).
 
-1. Navigate to the **Azure Data Lake Storage Gen2 account** `pvlab{DID}adls`), select **Access Control (IAM)**, and then click **Add role assignment**.
+1. Navigate to the **Azure Data Lake Storage Gen2 account** `pvlab{DID}adls`), select **Access Control (IAM)**, and then click on **Add role assignment**.
 
     ![Storage Access Control](../images/module09/upd-M9-T1-S1.png)
 
@@ -33,21 +33,21 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
     ![Storage RBAC Assignment](../images/module09/upd-09.02-storage-rbaca.png)
 
-3. To add your account click **Select members (1)**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" /> (2)** in your Azure Active Directory , select the account from the list **(3)**, and click **Select (4)**. Once the user is selected click **Next (5)**.
+3. To add your account click on **+ Select members (1)**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" /> (2)** in your Azure Active Directory , select the account from the list **(3)**, and click on **Select (4)**. Once the user is selected click **Next (5)**.
 
     ![Storage RBAC Assignment](../images/module09/upd-09.16-rbac-members-1.png)
 
-4. Click **Review + assign** to progress to the final confirmation screen and then click **Review + assign** once more.
+4. Navigate to **Review + assign** tab to progress to the final confirmation screen and then click on **Review + assign** to initiate the role assignment.
 
     ![Storage RBAC Assignment](../images/module09/upd-09.17-rbac-reviewa.png)
 
 ## 2. Connect to a Purview Account
 
-1. Within the Azure portal, navigate to the **purviewlab-rg** and open the Synapse workspace named **pvlab-{randomId}-synapse** and click **Open** under Open Synapse Studio.
+1. Within the Azure portal, navigate to the **purviewlab-rg** and open the Synapse workspace named **pvlab-{randomId}-synapse** and click on **Open** under Open Synapse Studio.
 
     ![Open Synapse Studio](../images/module09/upd-09.08-synapse-studioa.png)
 
-2. Navigate to **Manage (1)**> **Microsoft Purview (2)** and click **Connect to a Purview account (3)**.
+2. Navigate to **Manage (1)**> **Microsoft Purview (2)** and click on **Connect to a Purview account (3)**.
 
     ![Connect to a Purview Account](../images/module09/09.09-synapse-connect-1.1.png)
 
@@ -81,7 +81,8 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
     ![Select Top 100](../images/module09/upd-09.14-synapse-select.png)
 
-4. To execute the query, click **Run**. 
+4. To execute the query, click **Run**.
+ 
     ![Run Query](../images/module09/upd-09.15-synapse-run.png)
 
 ## Knowledge Check
