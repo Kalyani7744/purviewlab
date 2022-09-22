@@ -138,7 +138,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
     ![](../images/module02/m2bex4stp5.png)
 
-7. From the **Management** tab, select **Credentials** and click on **New**.
+7. From the **Management** tab, select **Credentials** from the side blade and click on **New**.
 
     ![prv15](../images/module02/prv16.png)
 
@@ -189,7 +189,12 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
     ![](../images/module02/Mod2B-purview03-1.png)
 
-2. Select the **Database** named **pvlab-{randomId}-sqldb** and **Credential** named **credential-SQL** from the drop-down menus. Set **Lineage extraction (preview)** to **Off**. Click **Test connection**. Click **Continue**.
+2. In the **Scan "AzureSqlDatabase-H30"**, Provide the following deatils and click on **Continue** **(6)**
+    - Database name: **pvlab-{randomId}-sqldb** **(1)**
+    - Credential: **credential-SQL** **(2)**
+    - Lineage extraction (preview): Toggle **off** **(3)** the button.
+    - Select a collection: **pvlab-{randomId}-pv> Contoso** **(4)**
+    - Click on **Test connection** **(5)**
 
     ![](../images/module02/azure-purview-azuresqldatabase.png)
 
