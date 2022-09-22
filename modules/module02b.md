@@ -194,7 +194,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
     - Credential: **credential-SQL** **(2)**
     - Lineage extraction (preview): Toggle **off** **(3)** the button.
     - Select a collection: **pvlab-{randomId}-pv> Contoso** **(4)**
-    - Click on **Test connection** **(5)**
+    - Click on **Test connection** **(5)** and make sure that the connection testing is successful.
 
     ![](../images/module02/azure-purview-azuresqldatabase.png)
 
