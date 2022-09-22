@@ -240,7 +240,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 2. At which point does Microsoft Purview begin to populate the data map with assets?
 
-    A ) After an Microsoft Purview account is created  
+    A ) After a Microsoft Purview account is created  
     B ) After a Data Source has been registered    
     C ) After a Data Source has been scanned
 

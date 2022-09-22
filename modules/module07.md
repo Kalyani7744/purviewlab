@@ -38,7 +38,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 > * Data Estate Insights can take several hours to surface post the completion of a scan.          
 > * At this point of the workshop, only a limited number of data visualisations may be populated.  
 > * To populate all reports with data, Microsoft Purview requires an environment with a variety of sources and assets to be scanned that is beyond the scope of this workshop.                      
-> * The screenshots and information below, has been provided so that you can conceptualise the typeof insights that can be gleaned from a fully populated environment.
+> * The screenshots and information below, has been provided so that you can conceptualise the type of insights that can be gleaned from a fully populated environment.
 
 
 
@@ -48,7 +48,7 @@ View key metrics about your data estate's health and performance.
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Data estate insights** > **Data stewardship**.
 
-    ![Data stewardship](../images/module07/07.01-insights-stewardship.png)
+    ![Data stewardship](../images/module07/upd-07.01-insights-stewardship.png)
 
 2. The Data Stewardship page displays the following **high-level metrics**.
     * **Number of Assets by Curation Status**
@@ -65,25 +65,25 @@ View key metrics about your data estate's health and performance.
 
     **Asset curation**
 
-    ![Stewardship Graph 02](../images/module07/07.04-stewardship-curation.png)
+    ![Stewardship Graph 02](../images/module07/22p2.png)
 
     **Trends and gap analysis**
 
-    ![Stewardship Graph 03](../images/module07/07.05-stewardship-gap.png)
+    ![Stewardship Graph 03](../images/module07/22p3.png)
 
-4.  Navigate to **Catalog adoption** to view the following tile.
+4. Navigate to **Catalog adoption** to view the following tile.
    
    **Active users by feature category**
 
-    ![Stewardship Graph 04](../images/module07/07.06-stewardship-activeusers.png)
+   ![Stewardship Graph 04](../images/module07/07.06-stewardship-activeusers.png)
 
-    **Most viewed assets**
+   **Most viewed assets**
 
-    ![Stewardship Graph 05](../images/module07/07.07-stewardship-mostviewed.png)
+   ![Stewardship Graph 05](../images/module07/07.07-stewardship-mostviewed.png)
 
-    **Top searched keywords**
+   **Top searched keywords**
 
-    ![Stewardship Graph 06](../images/module07/07.08-stewardship-topsearched.png)
+   ![Stewardship Graph 06](../images/module07/07.08-stewardship-topsearched.png)
 
 
 ## 2. Assets Insights
@@ -92,7 +92,7 @@ View key metrics about your data estate's assets.
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Data estate insights** > **Assets**.
 
-    ![Assets](../images/module07/07.09-insights-assets.png)
+    ![Assets](../images/module07/upd-07.09-insights-assets.png)
 
 2. The Assets page displays the following **high-level metrics**.
     * **Number of Assets**
@@ -115,7 +115,7 @@ View key metrics about your data estate's assets.
 
     **Files not stored in resource sets**
 
-    ![Assets Graph 03](../images/module07/07.13-assets-resourcesets.png)
+    ![Assets Graph 03](../images/module07/22p4.png)
 
     > **Did you know?**
     >
@@ -129,7 +129,7 @@ View key metrics about glossary terms.
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Data estate insights** > **Glossary**.
 
-    ![Glossary](../images/module07/07.14-insights-glossary.png)
+    ![Glossary](../images/module07/upd-07.14-insights-glossary.png)
 
 2. The Glossary page displays the following **high-level metrics**.
     * **Total Number of Terms**
@@ -164,7 +164,7 @@ View key metrics about the classifications applied to sources, files, and tables
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Data estate insights** > **Classifications**.
 
-    ![Classifications](../images/module07/07.19-insights-classifications.png)
+    ![Classifications](../images/module07/upd-07.19-insights-classifications.png)
 
 2. The Classifications page displays the following **high-level metrics**.
     * **Total Number of Classified Assets**
@@ -201,13 +201,13 @@ View key metrics about the sensitivity labels applied to sources, files, and tab
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Data estate insights** > **Sensitivity labels**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Sensitivity labels** state how **sensitive** data is in your organization. For example, data contained within a particular asset might be `highly confidential`. **Classifications** on the other hand indicate the **type** of data values (e.g. Driver's License Number, Email Address, SWIFT Code, etc).
     >
-    > Microsoft Purview's ability to apply sensitivity labels is controlled within the **Microsoft Purview Compliance Portal**. Note: You must have an active Microsoft 365 license that offers the benefit of automatically applying sensitivity labels. For more information, check out how to [How to label your data](https://docs.microsoft.com/azure/purview/how-to-automatically-label-your-content).
+    > Microsoft Purview's ability to apply sensitivity labels is controlled within the **Microsoft Purview Compliance Portal**. 
 
-    ![Sensitivity labels](../images/module07/07.25-insights-labels.png)
+    ![Sensitivity labels](../images/module07/upd-07.25-insights-labels.png)
 
 2. The Sensitivity Labels page displays the following **high-level metrics**.
     * **Total Number of Labeled Assets**
@@ -222,7 +222,7 @@ View key metrics about the sensitivity labels applied to sources, files, and tab
 
     **Top sources with labeled data (last 30 days)**
 
-    ![Sensitivity labels Graph 01](../images/module07/07.27-labels-sources.png)
+    ![Sensitivity labels Graph 01](../images/module07/22p1.png)
 
     **Top labels applied across sources**
 
