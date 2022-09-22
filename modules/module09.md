@@ -88,17 +88,17 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
 [http://aka.ms/purviewlab/q09](http://aka.ms/purviewlab/q09)
 
-1. Connecting a Synapse workspace to Azure Purview enables you to discover data assets that live **outside** of the Azure Synapse Analytics workspace?
+1. Connecting a Synapse workspace to Microsoft Purview enables you to discover data assets that live **outside** of the Azure Synapse Analytics workspace?
 
     A ) True  
     B ) False  
 
-2. A single Synapse Analytics workspace can connect to **multiple** Azure Purview accounts?
+2. A single Synapse Analytics workspace can connect to **multiple** Microsoft Purview accounts?
 
     A ) True  
     B ) False  
 
-3. Once Synapse Analytics is connected to an Azure Purview account, users can quickly generate a new linked service or integration dataset via the action buttons (for supported file types)?
+3. Once Synapse Analytics is connected to a Microsoft Purview account, users can quickly generate a new linked service or integration dataset via the action buttons (for supported file types)?
 
     A ) True    
     B ) False  
