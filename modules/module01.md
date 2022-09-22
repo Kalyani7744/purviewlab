@@ -67,7 +67,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
     ![Create Purview Account](../images/module01/purv4.png)
 
-7. Wait several minutes while your deployment is in progress. Once complete, click **Go to resource**.
+7. Please wait for 5 - 10 minutes until the deployment is completed and then click on **Go to resource**.
 
     ![Go to resource](../images/module01/Mod1-purview05.png)
 
