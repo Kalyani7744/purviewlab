@@ -65,11 +65,11 @@ View key metrics about your data estate's health and performance.
 
     **Asset curation**
 
-    ![Stewardship Graph 02](../images/module07/07.04-stewardship-curation.png)
+    ![Stewardship Graph 02](../images/module07/22p2.png)
 
     **Trends and gap analysis**
 
-    ![Stewardship Graph 03](../images/module07/07.05-stewardship-gap.png)
+    ![Stewardship Graph 03](../images/module07/22p3.png)
 
 4. Navigate to **Catalog adoption** to view the following tile.
    
@@ -115,7 +115,7 @@ View key metrics about your data estate's assets.
 
     **Files not stored in resource sets**
 
-    ![Assets Graph 03](../images/module07/07.13-assets-resourcesets.png)
+    ![Assets Graph 03](../images/module07/22p4.png)
 
     > **Did you know?**
     >
@@ -222,7 +222,7 @@ View key metrics about the sensitivity labels applied to sources, files, and tab
 
     **Top sources with labeled data (last 30 days)**
 
-    ![Sensitivity labels Graph 01](../images/module07/07.27-labels-sources.png)
+    ![Sensitivity labels Graph 01](../images/module07/22p1.png)
 
     **Top labels applied across sources**
 
