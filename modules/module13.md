@@ -24,12 +24,16 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
 ## 1. Setup environment
 
 1. Go back to Azure portal, navigate to **Microsoft Purview account** and select **pvlab-{DID}-pv**.
- 
-2. In Microsoft Purview account, select **Properties** under settings and copy **Atlas Kafka endpoint primary connection string**.
+
+2. In Microsoft Purview account, select **Managed resources (1)**. Now select **Enable (2)** for Event Hubs namespace name and click on **Save (3)**.
+
+   ![](../images/module13/kafka-upd.png)
+   
+3. In Microsoft Purview account, select **Properties** under settings and copy **Atlas Kafka endpoint primary connection string**.
 
    ![](../images/module13/kafka01.png)
 
-3. Next we need to create a new project. You can simply do this by installing the required package for NodeJS, allowing to communicate with the Kafka Endpoint. In labvm open **Command prompt** run the following command.  
+4. Next we need to create a new project. You can simply do this by installing the required package for NodeJS, allowing to communicate with the Kafka Endpoint. In labvm open **Command prompt** run the following command.  
 
    ```
    npm install node-rdkafka
