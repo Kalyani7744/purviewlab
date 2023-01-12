@@ -128,7 +128,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 1. Navigate back to the browser tab in which Purview Studio is open. From the Purview Studio, navigate to **Data Map** > **Collections**, and click  **Add a collection**.
 
-    ![New Collection](../images/module02/m2aex3stp1.png)
+    ![New Collection](../images/module02/lab2-purview01.png)
 
 2. Provide the below value for the collection name and click on **Create**.
 
@@ -142,7 +142,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 1. From the Purview Studio, navigate to **Data Map** > **Sources**, and click on **Register**.
 
-    ![Register](../images/module02/m2aex4stp1.png)
+    ![Register](../images/module02/lab2-purview02.png)
 
 2. On the **Register Sources** blade, scroll down and select **Azure Data Lake Storage Gen2** and click **Continue**.
 
@@ -164,7 +164,7 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 1. From the Purview Studio, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, click the **New Scan** button.
 
-    ![New Scan](../images/module02/m2aex5stp1.png)
+    ![New Scan](../images/module02/lab2-purview03.png)
 
 2. Click **Test connection** to ensure the Microsoft Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. If successful, click **Continue**.
 
@@ -196,17 +196,17 @@ In this module, you'll walk through how to register and scan data sources. You'l
 
 8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
 
-    ![Monitor Scan](../images/module02/m2aex5stp8.png)
+    ![Monitor Scan](../images/module02/lab2-purview04.png)
 
 ## 6. View Assets
 
 1. Navigate to **Purview Studio** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hit the Enter key to submit the query.
 
-    ![](../images/module02/m2ex6stp1.png)
+    ![](../images/module02/lab2-purview05.png)
 
 2. You should be able to see a list of assets within the search results, which is a result of the scan.
 
-    ![](../images/module02/m2aex6stp2.png)
+    ![](../images/module02/purview06.png)
 
 ## Knowledge Check
 
