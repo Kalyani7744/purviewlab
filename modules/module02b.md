@@ -111,11 +111,11 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 1. Navigate back to the browser tab in which **Purview Studio** is open, then select **Management** from the left hand side menu.
 
-    ![prv15](../images/module02/prv15.1.png)
+    ![prv15](../images/module02/lab2b-purview01.png)
     
 2. Click on **Credentials** then select **Manage Key Vault connections**.
 
-    ![prv15](../images/module02/prv15.png)
+    ![prv15](../images/module02/lab2b-purview02.png)
 
 3. Click on **New** to add the new Key Vault connection.
 
@@ -165,7 +165,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 1. From the Purview Studio, navigate to **Data map** > **Sources**, and click **Register**.
 
-    ![prv17](../images/module02/prv17.png)
+    ![prv17](../images/module02/lab2-purview02.png)
 
 2. Navigate to the **Azure** tab, select **Azure SQL Database**, click **Continue**.
 
@@ -184,7 +184,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 1. From the Purview Studio, select **Data map** from the left hand side menu.
 
-    ![](../images/module01/purvex1tsk2stp2.png)
+    ![](../images/module01/purview01.png)
 1. Navigate to**Sources**, and within the Azure SQL Database tile, click the **New Scan** button.
 
     ![](../images/module02/Mod2B-purview03-1.png)
@@ -216,17 +216,17 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 7. To monitor the progress of the scan, click **View Details**.
 
-    ![](../images/module02/Mod2B-purview4-1.png)
+    ![](../images/module02/lab2b-purview03.png)
 
 8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
 
-    ![](../images/module02/Mod2B-purview5.png)
+    ![](../images/module02/lab2-purview04.png)
 
 ## 7. View Assets
 
 1. To view the assets that have materialised as an outcome of running the scans, perform a wildcard search by typing the asterisk character (`*`) into the search bar and hit the Enter key to submit the query and return the search results.
 
-    ![](../images/module02/M2BT7S1.png)
+    ![](../images/module02/purview06.png)
 
 ## Knowledge Check
 
