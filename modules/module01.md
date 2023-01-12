@@ -80,15 +80,15 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
 2. On the left-hand side, navigate to **Data map**.
 
-    ![Add Role Assignment](../images/module01/purvex1tsk2stp2.png)
+    ![Add Role Assignment](../images/module01/purview01.png)
 
 3. Select **Collections (1)** and click on **Role assignments (2)**.
 
-    ![Collections](../images/module01/m1ex2stp3.png)
+    ![Collections](../images/module01/purview02.png)
 
 4. On the **Role assignments** blade, scroll down and click on the **Add** icon that is next to **Data curators**.
 
-    ![Add Role Assignment](../images/module01/Mod1-purview09.png)
+    ![Add Role Assignment](../images/module01/purview03.png)
 
 5. Search for the user **user 01** within your Azure Active Directory, select their account and click OK.
 
