@@ -24,7 +24,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Data Catalog** > **Home**, type the asterisk character (**\***) into the search bar, and hit **Enter**.
 
-    ![Search Wildcard](../images/module03/prv20.png)
+    ![Search Wildcard](../images/module03/lab2-purview05.png)
 
 2. Filter the search results by **Classification** (e.g. **Country/Region**) and click the hyperlinked asset name to view the details (e.g. `QueriesByState`).
 
