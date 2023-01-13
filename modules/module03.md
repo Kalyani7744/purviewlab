@@ -28,7 +28,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
 
 2. Filter the search results by **Classification** (e.g. **Country/Region**) and click the hyperlinked asset name to view the details (e.g. `QueriesByState`).
 
-    ![Filter by Classification](../images/module03/prv21.png)
+    ![Filter by Classification](../images/module03/lab3-purview01.png)
 
 
 > **Did you know?**
@@ -39,7 +39,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
 
 1. Click **Edit** to modify the asset details.
 
-    ![Edit Asset](../images/module03/m3tsk2st1.png)
+    ![Edit Asset](../images/module03/lab3-purview02.png)
 
 2. Update the **Description** by copying and pasting the sample text below.
 
@@ -47,7 +47,7 @@ In this module, you'll learn to edit technical metadata by adding definitions an
     This dataset was curated from the Bing search logs (desktop users only) over the period of Jan 1st, 2020 – (Current Month - 1). Only searches that were issued many times by multiple users were included. The dataset includes queries from all over the world that had an intent related to the Coronavirus or Covid-19. In some cases this intent is explicit in the query itself (e.g., “Coronavirus updates Seattle”), in other cases it is implicit , e.g. “Shelter in place”
     ```
 
-    ![Update Description](../images/module03/m3tsk2stp2.png)
+    ![Update Description](../images/module03/lab3-purview03.png)
 
 3. Assign a **Classification** named **World Cities** using the drop-down menu.
 
@@ -106,19 +106,19 @@ While the search experience is ideal for keyword based discovery, Purview Studio
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Data Catalog** and click **Browse Assets**.
 
-    ![Browse Assets](../images/module03/m3tsk3stp1.png)
+    ![Browse Assets](../images/module03/lab3-purview04.png)
 
 2. Switch to the **By source type** tab and select a **source** `Azure Data Lake Storage Gen2`.
 
-    ![ADLS Gen2](../images/module03/m3tsk3stp2.png)
+    ![ADLS Gen2](../images/module03/lab3-purview05.png)
 
 3. Select an **account** named `pvlab{randomId}adls`.
 
-    ![ADLS Gen2 Account](../images/module03/m3ex3stp3.png)
+    ![ADLS Gen2 Account](../images/module03/lab3-purview06.png)
 
 4. Select a **container** with the name `raw`.
 
-    ![ADLS Gen2 Container](../images/module03/m3ex3stp4.png)
+    ![ADLS Gen2 Container](../images/module03/lab3-purview07.png)
 
 ## 4. Bulk Edit
 
@@ -127,7 +127,7 @@ Microsoft Purview allows us to perform certain operations (add/replace/remove) a
 
 1. Open the **Microsoft Purview Governance Portal**, navigate to **Data Catalog** > **Home**, type the asterisk character (**\***) into the search bar, and hit **Enter**.
 
-    ![Search Wildcard](../images/module03/m3tsk4stp1.png)
+    ![Search Wildcard](../images/module03/lab3-purview04.png)
 
 2. Hover your mouse over an item in the list to reveal the checkbox on the right-hand side. Select five items and click **View selected**.
 
